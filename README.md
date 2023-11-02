@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Practical searching & self-learning & are my other abilities<br>🌱 I'm on track with learning more about Frond-End, Design, DevOps and new stuff.<br>💬 You can drop me an email at <a href="mailto:TohidEq@gmail.com" target="_blank">TohidEq@gmail.com </a> with a subject containing "GitHub: ..."! It will be a pleasure to talk with you!<br>⚡ In my free time, I enjoy working out & watching series & playing games with my friends(<a href="http://steamcommunity.com/id/tohideq" target="_blank">My Steam</a>) </p>
+<p align="left">✨ Practical searching & self-learning & are my other abilities<br>🌱 I'm on track with learning more about Frond-End, Design, DevOps and new stuff.<br>💬 You can drop me an email at <a href="mailto:TohidEq@gmail.com" target="_blank">TohidEq@gmail.com </a> with a subject containing "GitHub: ..."! It will be a pleasure to talk with you!<br>⚡ In my free time, I enjoy working out & watching series & playing games with my friends (<a href="http://steamcommunity.com/id/tohideq" target="_blank">My Steam</a>) </p>
 
 ###
 
@@ -67,16 +67,15 @@
 
 ###
 
-<!--
 <div align="center">
   <img src="https://profile-counter.glitch.me/TohidEq/count.svg?"  />
 </div>
 
-### -->
+###
 
-<!-- <img src="https://raw.githubusercontent.com/TohidEq/TohidEq/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/TohidEq/TohidEq/output/snake.svg" alt="Snake animation" />
 
-### -->
+###
 
 <div align="left">
   <img src="https://img.shields.io/static/v1?message=@Tohid_Eq&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="telegram logo"  />
