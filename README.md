@@ -2,15 +2,15 @@
 
 ###
 
-<h4 align="left">BEGIN! the rest is easy :D</h4>
+<h3 align="left">Dream it. Believe it. Build it.</h3>
 
 ###
 
-<p align="left">I am student of Chamran Technical University (Iran> Gilan> Rasht) and I love to make lovely websites.</p>
+<p align="left">I am using JavaScript & TypeScript, specially ReactJS library & NextJS freamwork to build beautiful web applications which support responsive & localization & multi-theme (like dark mode)<!-- & 2-way direction (soon) --></p>
 
 ###
 
-<p align="left">🌱 I'm on track with learning more about Frond-End, Design, DevOps and new stuff.<br>💬 You can drop me an email at TohidEq@gmail.com with a subject containing "GitHub: ..."! It will be a pleasure to talk with you!<br>⚡ In my free time, I enjoy playing games with friends.</p>
+<p align="left">✨ Practical searching & self-learning & are my other abilities<br>🌱 I'm on track with learning more about Frond-End, Design, DevOps and new stuff.<br>💬 You can drop me an email at <a href="mailto:TohidEq@gmail.com" target="_blank">TohidEq@gmail.com </a> with a subject containing "GitHub: ..."! It will be a pleasure to talk with you!<br>⚡ In my free time, I enjoy working out & watching series & playing games with my friends(<a href="http://steamcommunity.com/id/tohideq" target="_blank">My Steam</a>) </p>
 
 ###
 
