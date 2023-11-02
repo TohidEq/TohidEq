@@ -67,15 +67,16 @@
 
 ###
 
+<!--
 <div align="center">
   <img src="https://profile-counter.glitch.me/TohidEq/count.svg?"  />
 </div>
 
-###
+### -->
 
-<img src="https://raw.githubusercontent.com/TohidEq/TohidEq/output/snake.svg" alt="Snake animation" />
+<!-- <img src="https://raw.githubusercontent.com/TohidEq/TohidEq/output/snake.svg" alt="Snake animation" />
 
-###
+### -->
 
 <div align="left">
   <img src="https://img.shields.io/static/v1?message=@Tohid_Eq&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="telegram logo"  />
