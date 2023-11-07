@@ -145,8 +145,8 @@ progressive web applications which support responsive, localization and multi-th
   <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="25" alt="mongodb logo"  />
   <img width="5" />
   <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=black&style=for-the-badge" height="25" alt="php logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" height="25" alt="laravel logo"  />
+<!--   <img width="5" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" height="25" alt="laravel logo"  /> -->
 </div>
 
 ###
