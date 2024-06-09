@@ -15,6 +15,77 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
+<p>
+
+<details>
+  <summary>
+  <b>Checkout my Projects</b>
+  </summary>
+  <br>
+  <details>
+    <summary>
+    <b>Web-Front</b>
+    </summary>
+    <br>
+    - NextJS:
+      <br>
+      - <a href="https://github.com/TohidEq/nextjs-blog/" target="_blank">Nextjs Blog</a> . Getting posts from <a href="https://github.com/TohidEq/test-mdx-posts" target="blank">A Github Repo</a> and show them to u :D . NextJS . <a href="http://tohideq-blog.vercel.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/next-counter/" target="_blank">Counter app</a> . Counter app . NextJS . <a href="https://next-counter-teq.netlify.app/6/2/" target="_blank">Demo (change numbers in url)</a>
+      <br>
+      - <a href="https://github.com/TohidEq/wiki-cher/" target="_blank">Wiki Cher</a> . Search into WikiPedia . NextJS . <a href="https://wikicher.netlify.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/sha256-guess/" target="_blank">Sha256 Guess</a> . Sha256 Guessing game . NextJS . <a href="https://sha256-guess.vercel.app/" target="_blank">Demo</a>
+      <br><br>
+    - React:
+      <br>
+      - <a href="https://github.com/TohidEq/finger-gridshot-aimlab" target="_blank">AimLab (Finger Gridshot)</a> . Finger mode of AimLab game . React . <a href="http://finger-gridshot.vercel.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/simple-blog/" target="_blank">Blog (Local Storage)</a> . Blog with saving data in localstorage . React . <a href="http://simple-blog-tohideq.netlify.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/knights-tour/" target="_blank">Knight's Tour</a> . Simple Gmae. This is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once . React . <a href="http://knights-tour-zeta.vercel.app" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/joke-maker-site" target="_blank">Joke Maker</a> . Generate Jokes with your name :D . React . <a href="http://joke-maker-tohideq.netlify.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/cooking-bro/" target="_blank">Cooking Recipes</a> . With more themes . JSon-server, React
+      <br>
+      - <a href="https://github.com/TohidEq/100-hour-clock/" target="_blank">100 Hours Clock</a> . Your days are 100H. Enjoy your new timing . React . <a href="http://100-hour-clock.vercel.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/memory-game" target="_blank">Memory Game</a> . Memory Card Game . React . <a href="http://memory-game-te.vercel.app/" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/blog-json-server/" target="_blank">Blog + JSon server</a> . JSon-server, React
+      <br><br>
+    - More:<br>
+      - <a href="https://github.com/TohidEq/personal_website" target="_blank">Personal Website</a> . Just 4 training coding . <a href="https://verdant-piroshki-de0372.netlify.app/public/" target="_blank">Demo</a><br>
+      - <a href="https://github.com/TohidEq/G2Tech-Exercise-2-Calculator" target="_blank">Calculator</a> . Simple Calculator . <a href="http://calculator-simple-rho.vercel.app" target="_blank">Demo</a><br>
+  </details>
+  <br>
+  <details>
+    <summary>
+    <b>Web-Back</b>
+    </summary>
+    - <a href="https://github.com/TohidEq/chat-app-1/" target="_blank">Chat App</a> . Chat with different browser sessions in your system
+    <br>
+  </details>
+  <br>
+  <details>
+    <summary>
+    <b>Rust</b>
+    </summary>
+    - <a href="https://github.com/TohidEq/rust-game-tetris/" target="_blank">Tetris Game</a>
+    <br>
+    - <a href="https://github.com/TohidEq/rust-game-minesweeper/" target="_blank">Minesweeper Game</a>
+    <br>
+    - <a href="https://github.com/TohidEq/rust-game-snake/" target="_blank">Snake Game</a>
+    <br>
+    - <a href="https://github.com/TohidEq/rust-game-riverride/" target="_blank">Riverride Game</a>
+
+  </details>
+</details>
+</p>
+
+###
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=TohidEq&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true&order=1" height="170" alt="stats graph"  />
 </div>
