@@ -94,7 +94,7 @@ progressive web applications which support responsive, localization and multi-th
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=TohidEq&locale=en&mode=daily&theme=github_dark&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=TohidEq&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=4&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=TohidEq&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
 ###
@@ -216,8 +216,8 @@ progressive web applications which support responsive, localization and multi-th
   <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="25" alt="mongodb logo"  />
   <img width="5" />
   <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=black&style=for-the-badge" height="25" alt="php logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" height="25" alt="laravel logo"  />
+<!--   <img width="5" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" height="25" alt="laravel logo"  /> -->
 </div>
 
 ###
