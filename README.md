@@ -7,7 +7,7 @@
 ###
 
 <p align="left">I am a junior web developer with over 2 years of experience.<br>I use JavaScript, TypeScript, and specifically the ReactJS library and NextJS framework to build
-progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami resume.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
+progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami Resume.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
 
 ###
 
