@@ -155,8 +155,6 @@ progressive web applications which support responsive, localization and multi-th
   <img width="8" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" height="26" alt="css3 logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="26" alt="figma logo"  />
-  <img width="8" />
   <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="26" alt="tailwindcss logo"  />
   <img width="8" />
   <img src="https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=black&style=for-the-badge" height="26" alt="sass logo"  />
