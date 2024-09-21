@@ -1,0 +1,13 @@
+Bash
+Calculator
+Cantata
+Clementine
+Displays...
+Emacs
+Firefox
+Krusader
+Mixxx
+Search
+System...
+Terminal
+Thunderbird

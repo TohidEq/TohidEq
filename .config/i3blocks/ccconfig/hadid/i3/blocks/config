@@ -1,0 +1,66 @@
+
+interval=5
+color=#FFFFFF
+
+[battery]
+command=$scriptdir/battery.sh
+label=
+color=#00FF00
+
+[wifi]
+command=$scriptdir/wifi.sh wlp4s0
+label=
+
+[cpu]
+command=$scriptdir/cpu_usage.sh
+color=#FF6060
+label=
+
+[memory]
+command=$scriptdir/memory.sh
+color=#6060FF
+label=
+
+[diskfree]
+command=$scriptdir/diskfree.sh
+color=#A0A0A0
+label=
+
+[separator]
+markup=pango
+full_text=<span foreground="#5D53C3" size="large"></span>
+
+[displays]
+command=$scriptdir/displays.sh
+
+[volume]
+command=$scriptdir/pulseaudio.sh
+label=
+
+[kbdlayout]
+command=$scriptdir/kbdlayout.sh
+label=
+
+[vpn]
+command=$scriptdir/vpn.sh
+
+[separator]
+markup=pango
+full_text=<span foreground="#5D53C3" size="large"></span>
+
+[weather]
+command=$scriptdir/weather.sh
+interval=600
+color=#92CBE6
+
+[date]
+command=date "+%a %d.%m."
+label=
+
+[clock]
+command=date "+%H:%M  "
+label=
+
+[separator]
+markup=pango
+full_text=<span foreground="#5D53C3" size="large">   </span>

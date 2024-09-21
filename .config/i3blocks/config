@@ -1,0 +1,340 @@
+
+# color
+# $bgcolor
+#background=#16a085
+
+
+#white
+# $in-text
+#color=#f3f4f5
+
+# black
+# $in-bgcolor
+#color=#030203
+# full_text=salaaam
+color=#f3f4f5
+
+background=#263238
+separator_block_width=0
+# markup=none
+markup=none
+align=center
+border_top=0
+border_right=0
+border_bottom=0
+border_left=0
+
+
+
+
+
+
+
+
+
+
+
+
+#[ram]
+#command=echo -n ' '; ./memory/memory | grep -E -o '^[0-9]+.[0-9]G'
+
+#command=./blocks/memory2 -f '  {used} {uunit}B' -tw '{pfree}' '<' 30 -tc '{pfree}' '<' 15
+#command=./blocks/memory
+#interval=1
+#label=🖥
+#markup=pango
+#signal=11
+#min_width=90
+#background=#16a085
+#color=#030203
+
+
+
+
+#[cpu_usage2]
+#command=./cpu_usage2/cpu_usage2
+#markup=pango
+#interval=persist
+#REFRESH_TIME=1
+#LABEL= 
+#WARN_PERCENT=50
+#CRIT_PERCENT=80
+#DECIMALS=2
+#min_width=98
+
+#color=#f3f4f5
+#background=#263238
+
+
+
+#[wallpaperchanger]
+#command=./wallpaperchanger.sh
+#full_text=" "
+#min_width=10
+#interval=600
+#color=#030203
+#background=#263238
+
+
+
+
+
+
+#[volume-pulseaudio]
+#command=$SCRIPT_DIR/volume-pulseaudio/volume-pulseaudio
+#interval=1
+#signal=1
+##MIXER=[determined automatically]
+##SCONTROL=[determined automatically]
+##exposed format variables: ${SYMB}, ${VOL}, ${INDEX}, ${NAME}
+#LONG_FORMAT=${SYMB} ${VOL}%
+##SHORT_FORMAT=${SYMB} ${VOL}% ${INDEX}
+##AUDIO_HIGH_SYMBOL='  '
+###AUDIO_MED_THRESH=50
+#AUDIO_MED_SYMBOL='  '
+#AUDIO_LOW_THRESH=0
+#AUDIO_LOW_SYMBOL='  '
+#AUDIO_DELTA=5
+#DEFAULT_COLOR="#030203"
+#MUTED_COLOR="#3B3B3B"
+#background=#16a085
+#USE_ALSA_NAME=0
+#USE_DESCRIPTION=0
+## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
+#SUBSCRIBE=0
+#min_width=90
+
+
+
+
+#[blackspace]
+#full_text=" "
+#min_width=10
+#interval=once
+#color=#030203
+#background=#263238
+
+
+
+
+
+
+
+
+
+[orangespace]
+full_text=" "
+min_width=10
+interval=once
+background=#16a085
+color=#292F34
+
+[rofi-wttr]
+label= 
+command=./rofi-wttr/rofi-wttr
+LOCATION=Rasht
+interval=3600
+background=#16a085
+color=#030203
+
+[orangespace]
+full_text=" "
+min_width=10
+interval=once
+background=#16a085
+color=#292F34
+
+
+
+
+
+[blackspace]
+full_text=" "
+min_width=15
+interval=once
+color=#030203
+background=#263238
+
+[rofi-calendar]
+command=./rofi-calendar/rofi-calendar
+interval=5
+color=#f3f4f5
+background=#263238
+
+[blackspace]
+full_text=" "
+min_width=15
+interval=once
+color=#030203
+background=#263238
+
+
+
+
+
+
+
+
+
+
+
+[time]
+command=./time/time
+interval=1
+label= 
+#TZ_FILE=~/.tz
+STRFTIME_FORMAT=%H:%M
+TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
+TZ_LABELS=,Brazil,AU,Hyderabad
+background=#16a085
+color=#030203
+min_width=80
+
+
+
+
+
+#[brightness]
+#command=./brightness/brightness2
+#interval=1
+#label=💡 
+#min_width=80
+##color=#f3f4f5
+#background=#263238
+
+[blackspace]
+full_text=" "
+min_width=5
+interval=once
+color=#030203
+background=#263238
+
+# ip:
+[iface]
+command=$SCRIPT_DIR/iface/iface
+LABEL=
+#IFACE=wlan0
+#ADDRESS_FAMILY=inet6?
+interval=10
+# set this to 1 to display the name of the connected WIFI interface instead of the IP address.
+display_wifi_name=0
+color=#f3f4f5
+background=#263238
+
+[blackspace]
+full_text=" "
+min_width=5
+interval=once
+color=#030203
+background=#263238
+
+
+[ping]
+command=$SCRIPT_DIR/blocks/ping
+markup=pango
+interval=20
+signal=14
+label=- 
+background=#263238
+# label=⟟ 
+
+[blackspace]
+full_text=" "
+min_width=5
+interval=once
+color=#030203
+background=#263238
+
+
+
+
+[orangespace]
+full_text=" "
+min_width=5
+interval=once
+background=#16a085
+color=#292F34
+
+
+[displays]
+command=./ccconfig/hadid/i3/blocks/displays.sh
+interval=1
+background=#16a085
+color=#030203
+
+
+[orangespace]
+full_text=" "
+min_width=5
+interval=once
+background=#16a085
+color=#292F34
+
+[moltimonitor]
+full_text=L|D|E
+command=./blocks/moltimonitor
+interval=once
+signal=1
+label= 
+background=#16a085
+color=#030203
+min_width=70
+
+[orangespace]
+full_text=" "
+min_width=15
+interval=once
+background=#16a085
+color=#292F34
+
+#[colorpicker]
+#full_text= 
+#command=./blocks/colorpicker
+#interval=once
+#signal=10
+#label=🖱 
+#color=#f3f4f5
+#background=#263238
+#min_width=80
+
+
+
+
+
+[key_layout]
+command=./key_layout/key_layout.sh
+label=   
+interval=1
+color=#f3f4f5
+background=#263238
+min_width=35
+
+
+
+
+
+[orangespace]
+full_text=" "
+min_width=15
+interval=once
+background=#16a085
+color=#292F34
+
+
+[battery]
+command=./battery/battery
+LABEL= 
+BAT_NUMBER=0
+interval=30
+color=#030203
+background=#16a085
+
+[orangespace]
+full_text=" "
+min_width=15
+interval=once
+background=#16a085
+color=#292F34
+
+
+

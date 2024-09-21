@@ -1,0 +1,35 @@
+!! Enforce correct caps lock behaviour
+keycode 66 = Caps_Lock
+add Lock = Caps_Lock
+
+!! Notebook Fn + a => Compose
+keycode 210 = Multi_key
+
+!!  AltGr + i/j/k/l => Up/Left/Down/Right
+!!               Shift   ?    ?    AltGr    Shift+AltGr    ?
+keycode  31 = i  I       i    I    Up       Up            rightarrow
+keycode  44 = j  J       j    J    Left     Left          dead_belowdot
+keycode  45 = k  K       k    K    Down     Down          kra
+keycode  46 = l  L       l    L    Right    Right         lstroke
+
+!!  AltGr + o/p => PageUp/PageDown
+!!               Shift   ?    ?    AltGr    Shift+AltGr    ?
+keycode  32 = o  O       x    y    Prior    Prior          oslash
+keycode  33 = p  P       p    P    Next     Next           thorn
+
+!! AltGr + v => Insert
+!!                       Shift                            AltGr  Shift+AltGr
+!keycode  51 = numbersign apostrophe numbersign apostrophe Insert Insert      rightsinglequotemark grave numbersign apostrophe rightsinglequotemark grave
+keycode  55 = v          V           v          V         Insert  Insert
+
+!! AltGr + d => Delete
+!!                      Shift               AltGr     Shift+AltGr
+!keycode  21 = acute     grave  acute grave  Delete    Delete       cedilla cedilla acute grave cedilla cedilla
+keycode  40 =  d        D       d     D     Delete    Delete
+
+!! AltGr + n/m => Home/End
+!!                    Shift                     AltGr  Shift+AltGr
+!keycode  59 = comma   semicolon comma semicolon Home   Home         periodcentered
+!keycode  60 = period  colon     period colon    End    End          U2026
+keycode  57 = n       N         n      N        Home   Home
+keycode  58 = m       M         m      M        End    End

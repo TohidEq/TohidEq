@@ -1,0 +1,17 @@
+#!/bin/sh
+# moltimonitor
+
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  colorpicked=$(xcolor)
+  echo $colorpicked | xclip -selection clipboard | echo $colorpicked
+fi
+
+if [[ "${BLOCK_BUTTON}" -eq 2 ]]; then
+  colorpicked=$(xcolor)
+  echo $colorpicked | xclip -selection clipboard | echo $colorpicked
+fi
+
+if [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+  colorpicked=$(xcolor)
+  echo $colorpicked | xclip -selection clipboard | echo $colorpicked
+fi

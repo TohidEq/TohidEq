@@ -1,0 +1,37 @@
+#!/bin/bash
+
+PROG=${0##*/}
+
+usage() {
+    echo $"Usage: $PROG [laptop|monitor|both]"
+    echo $"Switch to the laptop, the external monitor (VGA) or both displays."
+    echo
+    echo $"If no option is given, the name of the actual output is returned."
+}
+
+[[ "$1" == "-h" ]] && usage && exit
+
+output () {
+    i3-msg -t get_workspaces | JSON.sh -b | \
+    awk '/focused/ {focused = $2} /output/ {if (focused == "true") print $2}' | \
+    sed 's/"//g'
+}
+
+N=$(output | sed 's/[A-Z]*//g')
+LVDS="LVDS$N"
+VGA="VGA$N"
+
+case "$1" in
+    laptop)
+        xrandr --output $LVDS --auto --primary --output $VGA --off
+        ;;
+    monitor)
+        xrandr --output $LVDS --off --output $VGA --auto --primary
+        ;;
+    both)
+        xrandr --output $LVDS --auto --primary --pos 0x590 --output $VGA --auto --pos 1366x0
+        ;;
+    *)
+        echo $(output)
+        ;;
+esac

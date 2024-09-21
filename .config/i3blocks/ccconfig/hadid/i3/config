@@ -1,0 +1,325 @@
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod     Mod4
+set $normal  #5D53C3
+set $urgent  #D37458
+set $scriptdir  ~/.config/i3
+
+# Mod1 aka Alt_L
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+#font pango: Font Awesome 10
+#font pango:monospace 10
+font pango:DejaVu Sans 10
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+t exec i3-sensible-terminal
+
+# kill focused window
+bindsym $mod+q kill
+
+# start dmenu (a program launcher)
+# bindsym $mod+d exec dmenu_run
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu "dmenu -b -i -sb $normal"
+
+# change focus
+bindsym $mod+i focus up
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Mod1+i move up
+bindsym $mod+Mod1+j move left
+bindsym $mod+Mod1+k move down
+bindsym $mod+Mod1+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Mod1+Left move left
+bindsym $mod+Mod1+Down move down
+bindsym $mod+Mod1+Up move up
+bindsym $mod+Mod1+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# toggle floating window being sticky
+bindsym $mod+minus sticky toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Shift+space focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+##############################################################################
+# Assign icons to workspaces
+# Font Awesome 4.7 icons as unicode characters
+
+# fa-terminal
+set $ws1 "1: "
+# fa-email
+set $ws2 "2: "
+# fa-firefox
+set $ws3 "3: "
+set $ws4 "4: ℰ"
+# fa-music
+set $ws5 "5: "
+set $ws6 "6: "
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+bindsym $mod+Tab workspace back_and_forth
+
+# move focused container to workspace
+bindsym $mod+Mod1+1 exec --no-startup-id $scriptdir/move-and-follow.sh $ws1
+bindsym $mod+Mod1+2 exec --no-startup-id $scriptdir/move-and-follow.sh $ws2
+bindsym $mod+Mod1+3 exec --no-startup-id $scriptdir/move-and-follow.sh $ws3
+bindsym $mod+Mod1+4 exec --no-startup-id $scriptdir/move-and-follow.sh $ws4
+bindsym $mod+Mod1+5 exec --no-startup-id $scriptdir/move-and-follow.sh $ws5
+bindsym $mod+Mod1+6 exec --no-startup-id $scriptdir/move-and-follow.sh $ws6
+bindsym $mod+Mod1+7 exec --no-startup-id $scriptdir/move-and-follow.sh 7
+bindsym $mod+Mod1+8 exec --no-startup-id $scriptdir/move-and-follow.sh 8
+bindsym $mod+Mod1+9 exec --no-startup-id $scriptdir/move-and-follow.sh 9
+bindsym $mod+Mod1+0 exec --no-startup-id $scriptdir/move-and-follow.sh $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym odiaeresis resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+bar {
+    output primary
+    tray_output primary
+    position top
+    font pango: Font Awesome 8
+    separator_symbol "   "
+    status_command scriptdir=$scriptdir/blocks i3blocks -c $scriptdir/blocks/config
+    colors {
+      background #000000
+      statusline #FFFFFF
+      separator  #666666
+
+      # class            border  bground text
+      focused_workspace  $normal $normal #FFFFFF
+      active_workspace   #333333 #222222 #FFFFFF
+      inactive_workspace #333333 #222222 #888888
+      urgent_workspace   $urgent $urgent #FFFFFF
+      binding_mode       $urgent $urgent #FFFFFF
+  }
+}
+
+##############################################################################
+
+# class                 border  backgr. text    indicator child_border
+client.focused          $normal $normal #ffffff #928CD7   $normal
+client.urgent           $urgent $urgent #ffffff $urgent   $urgent
+
+
+
+##############################################################################
+# My additional settings
+
+# Desktop env feature checklist
+# - Display brightness control
+# - Screen lock
+# - Support for multiple monitors --> xrandr
+# - Display of notifications
+# - Switch from/to external soundcard --> pavucontrol
+# - Automount of USB devices --> udiskie
+# - Network device+connection control --> nmcli + nm-applet
+# - Keyboard speed
+# - Play music using Clementine
+# - Volume control via keyboard
+# - Trackpad natural scrolling
+# - Nightlight
+# - Cycling through keyboard layouts
+# - Keyboard light toggle --> just works with Fn+Space
+# - TODO Automatic lock on suspend
+# - TODO Authentication integration (PolicyKit)
+
+# Extras to install on Ubuntu 18.04
+# sudo apt install compton i3blocks feh pavucontrol clementine xbacklight fonts-font-awesome udiskie redshift flameshot htop
+
+# SSH-Agent needs to be started
+exec_always $scriptdir/ssh-agent.sh
+
+# Transparency
+exec --no-startup-id killall compton ; compton -Gf -b --vsync opengl
+
+# Redshift with lat-lon coords of Bonn, Germany
+exec --no-startup-id redshift -l 50.73438:7.09549
+
+# Background wallpaper display
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/i3.jpg
+
+# Screen lock
+bindsym $mod+Ctrl+l exec --no-startup-id $scriptdir/lock.sh
+
+# Cycling through keyboard layouts
+bindsym $mod+F9 exec --no-startup-id $scriptdir/cycle-kbd-layout.sh
+
+# Setup keyboard layout on restart
+exec --no-startup-id $scriptdir/setup-kbd.sh "de(nodeadkeys)"
+
+# Trackpad Natural Scrolling
+exec --no-startup-id xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Natural Scrolling Enabled' 1
+
+# Automount USB devices
+exec --no-startup-id udiskie -ans &
+
+# Screenshot tool
+exec --no-startup-id flameshot &
+
+# Network-Manager applet
+exec --no-startup-id nm-applet &
+
+# Pulse Audio controls
+# increase sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id $scriptdir/volctl.sh +5%
+# decrease sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id $scriptdir/volctl.sh -5%
+# mute sound
+bindsym XF86AudioMute exec --no-startup-id  $scriptdir/volctl.sh mute
+
+# Music playback control based on Clementine
+bindsym $mod+F10 exec --no-startup-id clementine --toggle-pretty-osd
+bindsym $mod+F11 exec --no-startup-id clementine --play-pause
+bindsym $mod+F12 exec --no-startup-id clementine --next
+
+# Special codes that QMK keyboard sends on layer changes
+#bindcode $mod+191 exec --no-startup-id notify-send -t 2000 "Numpads are off"
+#bindcode $mod+192 exec --no-startup-id notify-send -t 2000 "Numpads are on"
+
+# Screen brightness controls
+# Make sure /etc/X11/xorg.conf exists with contents:
+#
+# Section "Device"
+#         Identifier  "Intel Graphics"
+#         Driver      "intel"
+#         Option      "Backlight"  "intel_backlight"
+# EndSection
+#
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
+bindsym $mod+less move workspace to output right
+bindsym $mod+x exec --no-startup-id $scriptdir/appswitch.sh
+
+# Open htop in floating terminal window
+bindsym $mod+Ctrl+p exec --no-startup-id gnome-terminal --title "Htop" -e htop
+for_window [title="Htop"] floating enable, resize set 1920 600, move position center
+
+# Open calendar in floating terminal window
+bindsym $mod+Ctrl+c exec --no-startup-id gnome-terminal --title "3 months" -e $scriptdir/calendar.sh
+for_window [title="3 months"] floating enable, resize set 640 200
+
+# Open flameshot
+bindsym Print exec --no-startup-id flameshot gui
+bindsym $mod+Ctrl+s exec --no-startup-id flameshot gui
+
+# Default title format
+for_window [class=".*"] title_format "  %title"
+
+# Specific window settings
+# (you can find classnames by starting xprop and clicking the desired window)
+for_window [class="Gnome-calculator"] floating enable border pixel 6
+for_window [class="Pavucontrol"] floating enable, resize set 640 480, move position center
+for_window [class="KeePass2"] floating enable
+for_window [class="keepassxc"] floating enable
+for_window [title="gedit"] floating enable, resize set 640 400, move position 1320 680
+for_window [class="vlc"] floating enable
+
+# Thunderbird + Skype
+assign [class="Thunderbird"] $ws2
+assign [class="Skype"] $ws2
+
+# Firefox
+assign [class="Firefox"] $ws3
+
+# Emacs
+assign [class="Emacs"] $ws4
+for_window [class="Emacs"] workspace $ws4
+
+# Music/Media
+assign [class="cantata"] $ws5
+for_window [class="cantata"] workspace $ws5, move to workspace $ws5
+assign [class="Mixxx"] $ws5
+for_window [class="Mixxx"] workspace $ws5, move to workspace $ws5
+assign [class="Clementine"] $ws5
+for_window [class="Clementine"] workspace $ws5, move to workspace $ws5
+
+# Krusader
+assign [class="krusader"] $ws6

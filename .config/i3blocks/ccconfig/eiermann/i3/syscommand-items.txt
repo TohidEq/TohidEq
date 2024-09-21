@@ -1,0 +1,4 @@
+Suspend
+Logout
+Reboot
+Off

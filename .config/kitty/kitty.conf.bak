@@ -1,0 +1,73 @@
+# vim:ft=kitty
+
+## name:     Catppuccin Kitty Macchiato
+## author:   Catppuccin Org
+## license:  MIT
+## upstream: https://github.com/catppuccin/kitty/blob/main/themes/macchiato.conf
+## blurb:    Soothing pastel theme for the high-spirited!
+
+
+
+# The basic colors
+# foreground              #CAD3F5
+# background              #24273A
+# selection_foreground    #24273A
+# selection_background    #F4DBD6
+
+# # Cursor colors
+cursor                  #F4DBD6
+# cursor_text_color       #24273A
+
+# # URL underline color when hovering with mouse
+# url_color               #F4DBD6
+
+# # Kitty window border colors
+# active_border_color     #B7BDF8
+# inactive_border_color   #6E738D
+# bell_border_color       #0d0f18
+
+# # OS Window titlebar colors
+# wayland_titlebar_color system
+# macos_titlebar_color system
+
+
+# # Tab bar colors
+# active_tab_foreground   #001419
+# active_tab_background   #859900
+# inactive_tab_foreground #222222
+# inactive_tab_background #a4a4a4
+# tab_bar_background      #073642
+
+
+tab_bar_min_tabs            1
+tab_bar_edge                bottom
+#tab_bar_style               powerline
+#tab_powerline_style         angled
+
+# inja:::: uncomment she :( 
+tab_title_template          {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
+# tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"
+
+cursor_shape block
+#cursor_beam_thickness 5.0
+
+window_padding_width 4
+
+tab_bar_margin_height 9.0 0.0
+
+
+background_opacity 0.9
+background_blur 1
+font_size 10.0
+
+
+remember_window_size  no
+initial_window_width  840
+initial_window_height 600
+
+
+font_family   JetBrainsMono NF
+#font_family    Fira Code Nerd Font
+
+open_url_with brave
+include ./theme.conf

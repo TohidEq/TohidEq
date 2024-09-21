@@ -1,0 +1,25 @@
+#!/bin/sh
+# moltimonitor
+intern="eDP-1"
+extern="HDMI-1"
+
+
+
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  xrandr --output "$extern" --off --output "$intern" --auto
+  echo "Laptop"
+fi
+
+
+if [[ "${BLOCK_BUTTON}" -eq 2 ]]; then
+  xrandr --output "$extern" --set audio force-dvi --mode 1920x1080 && xrandr --output "$intern" --auto --output "$extern" --same-as "$intern"
+  echo "Douplicate"
+fi
+
+
+if [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+  xrandr --output "$extern" --set audio force-dvi --mode 1920x1080 && xrandr --output "$intern" --auto --output "$extern" --right-of "$intern"
+  echo "Extra"
+fi
+
+

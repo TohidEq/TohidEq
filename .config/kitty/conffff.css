@@ -1,0 +1,50 @@
+div {
+  foreground: #a9b1d6;
+  background: #202128;
+
+  /* # Black */
+  color0: #414868;
+  color8: #212848;
+  /* # Red */
+  color1: #f7768e;
+  color9: #d7566e;
+  /* # Green */
+  color2: #73daca;
+  color10: #33baaa;
+  /* # Yellow */
+  color3: #e0af68;
+  color11: #c08f48;
+  /* # Blue */
+  color4: #7aa2f7;
+  color12: #5a82d7;
+  /* # Magenta */
+  color5: #bb9af7;
+  color13: #9b7ad7;
+  /* # Cyan */
+  color6: #7dcfff;
+  color14: #5dafdf;
+  /* # White */
+  color7: #c0caf5;
+  color15: #a0aad5;
+  /* # Cursor */
+  cursor: #c0caf5;
+  cursor_text_color: #1a1b26;
+  /* # Selection highlight */
+  selection_background: #4a4128;
+  /* # The color for highlighting URLs on mouse-over */
+  url_color: #9ece6a;
+  /* # Window borders */
+  active_border_color: #3d59a1;
+  inactive_border_color: #101014;
+  bell_border_color: #e0af68;
+  /* # Tab bar */
+  /* tab_bar_style fade */
+  /* tab_fade 1 */
+  active_tab_foreground: #f0f0f0;
+  active_tab_background: #16161e;
+  /* active_tab_font_style   bold */
+  inactive_tab_foreground: #919191;
+  inactive_tab_background: #161616;
+  /* inactive_tab_font_style bold */
+  tab_bar_background: #292d37;
+}

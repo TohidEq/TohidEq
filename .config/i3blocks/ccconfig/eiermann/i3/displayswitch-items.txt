@@ -1,0 +1,7 @@
+1-Internal only
+2-Office
+3-Externals only
+4-Projection left
+5-Projection right
+Nightlight
+Daylight
