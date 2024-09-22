@@ -1,7 +1,7 @@
 
 # color
 # $bgcolor
-#background=#16a085
+#background=#16a085f0
 
 
 #white
@@ -10,11 +10,11 @@
 
 # black
 # $in-bgcolor
-#color=#030203
+#color=#f3f4f5
 # full_text=salaaam
 color=#f3f4f5
 
-background=#263238
+background=#26323800
 separator_block_width=0
 # markup=none
 markup=none
@@ -45,8 +45,8 @@ border_left=0
 #markup=pango
 #signal=11
 #min_width=90
-#background=#16a085
-#color=#030203
+#background=#16a085f0
+#color=#f3f4f5
 
 
 
@@ -63,7 +63,7 @@ border_left=0
 #min_width=98
 
 #color=#f3f4f5
-#background=#263238
+#background=#26323800
 
 
 
@@ -72,8 +72,8 @@ border_left=0
 #full_text=" "
 #min_width=10
 #interval=600
-#color=#030203
-#background=#263238
+#color=#f3f4f5
+#background=#26323800
 
 
 
@@ -95,9 +95,9 @@ border_left=0
 #AUDIO_LOW_THRESH=0
 #AUDIO_LOW_SYMBOL='  '
 #AUDIO_DELTA=5
-#DEFAULT_COLOR="#030203"
+#DEFAULT_COLOR="#f3f4f5"
 #MUTED_COLOR="#3B3B3B"
-#background=#16a085
+#background=#16a085f0
 #USE_ALSA_NAME=0
 #USE_DESCRIPTION=0
 ## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
@@ -111,8 +111,8 @@ border_left=0
 #full_text=" "
 #min_width=10
 #interval=once
-#color=#030203
-#background=#263238
+#color=#f3f4f5
+#background=#26323800
 
 
 
@@ -123,26 +123,41 @@ border_left=0
 
 
 [orangespace]
-full_text=" "
+full_text="🬤"
 min_width=10
 interval=once
-background=#16a085
-color=#292F34
+color=#16a085f0
+background=#00000000
+
+[blackspace]
+full_text=" "
+min_width=15
+interval=once
+color=#f3f4f5
+background=#16a085f0
 
 [rofi-wttr]
 label= 
 command=./rofi-wttr/rofi-wttr
 LOCATION=Rasht
 interval=3600
-background=#16a085
-color=#030203
+background=#16a085f0
+color=#000000
 
 [orangespace]
 full_text=" "
 min_width=10
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
+
+
+[orangespace]
+full_text="🬗"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
 
 
 
@@ -152,21 +167,21 @@ color=#292F34
 full_text=" "
 min_width=15
 interval=once
-color=#030203
-background=#263238
+color=#f3f4f5
+background=#26323800
 
 [rofi-calendar]
 command=./rofi-calendar/rofi-calendar
 interval=5
 color=#f3f4f5
-background=#263238
+background=#26323800
 
 [blackspace]
 full_text=" "
 min_width=15
 interval=once
-color=#030203
-background=#263238
+color=#f3f4f5
+background=#26323800
 
 
 
@@ -174,9 +189,12 @@ background=#263238
 
 
 
-
-
-
+[orangespace]
+full_text="🬤"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
 
 [time]
 command=./time/time
@@ -186,9 +204,16 @@ label=
 STRFTIME_FORMAT=%H:%M
 TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
 TZ_LABELS=,Brazil,AU,Hyderabad
-background=#16a085
-color=#030203
-min_width=80
+background=#16a085f0
+color=#000000
+min_width=75
+
+[orangespace]
+full_text="🬗"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
 
 
 
@@ -200,14 +225,14 @@ min_width=80
 #label=💡 
 #min_width=80
 ##color=#f3f4f5
-#background=#263238
+#background=#26323800
 
 [blackspace]
 full_text=" "
 min_width=5
 interval=once
-color=#030203
-background=#263238
+color=#f3f4f5
+background=#26323800
 
 # ip:
 [iface]
@@ -219,14 +244,14 @@ interval=10
 # set this to 1 to display the name of the connected WIFI interface instead of the IP address.
 display_wifi_name=0
 color=#f3f4f5
-background=#263238
+background=#26323800
 
 [blackspace]
 full_text=" "
 min_width=5
 interval=once
-color=#030203
-background=#263238
+color=#f3f4f5
+background=#26323800
 
 
 [ping]
@@ -235,40 +260,50 @@ markup=pango
 interval=20
 signal=14
 label=- 
-background=#263238
+background=#26323800
 # label=⟟ 
 
 [blackspace]
 full_text=" "
 min_width=5
 interval=once
-color=#030203
-background=#263238
+color=#f3f4f5
+background=#26323800
 
 
 
 
 [orangespace]
+full_text="🬤"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
+
+[orangespace]
 full_text=" "
 min_width=5
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
 
 
 [displays]
 command=./ccconfig/hadid/i3/blocks/displays.sh
 interval=1
-background=#16a085
-color=#030203
+background=#16a085f0
+color=#000000
 
 
 [orangespace]
 full_text=" "
 min_width=5
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
+
+
+
 
 [moltimonitor]
 full_text=L|D|E
@@ -276,16 +311,27 @@ command=./blocks/moltimonitor
 interval=once
 signal=1
 label= 
-background=#16a085
-color=#030203
+background=#16a085f0
+color=#000000
 min_width=70
 
 [orangespace]
 full_text=" "
 min_width=15
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
+
+
+[orangespace]
+full_text="🬗"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
+
+
+
 
 #[colorpicker]
 #full_text= 
@@ -294,7 +340,7 @@ color=#292F34
 #signal=10
 #label=🖱 
 #color=#f3f4f5
-#background=#263238
+#background=#26323800
 #min_width=80
 
 
@@ -306,18 +352,25 @@ command=./key_layout/key_layout.sh
 label=   
 interval=1
 color=#f3f4f5
-background=#263238
+background=#26323800
 min_width=35
 
 
 
+
+[orangespace]
+full_text="🬤"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
 
 
 [orangespace]
 full_text=" "
 min_width=15
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
 
 
@@ -326,15 +379,24 @@ command=./battery/battery
 LABEL= 
 BAT_NUMBER=0
 interval=30
-color=#030203
-background=#16a085
+color=#000000
+background=#16a085f0
 
 [orangespace]
 full_text=" "
 min_width=15
 interval=once
-background=#16a085
+background=#16a085f0
 color=#292F34
+
+[orangespace]
+full_text="🬗"
+min_width=10
+interval=once
+color=#16a085f0
+background=#00000000
+
+
 
 
 

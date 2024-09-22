@@ -349,7 +349,7 @@ bar {
 	position top
         # ...... 
 
-	i3bar_command i3bar
+	i3bar_command i3bar --transparency
 	status_command i3status
         status_command SCRIPT_DIR=~/.config/i3blocks i3blocks 
 
@@ -370,16 +370,16 @@ bar {
 #   font xft:URWGothic-Book 11
 
     colors {
-        background #263238
+        background #26323800
         statusline #F9FAF9
         separator  #454947
 
 #                      border  backgr. text
-        focused_workspace  #16a085 #16a085 #292F34
-        active_workspace   #16a085 #353836 #FDF6E3
-        inactive_workspace #263238 #263238 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+        focused_workspace  #16a085f0 #16a085f0 #000000
+        active_workspace   #16a085f0 #353836f0 #F9FAF9
+        inactive_workspace #26323800 #26323800 #EEE8D5
+        binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
+        urgent_workspace   #16a085f0 #FDF6E360 #E5201D
     }
 }
 
@@ -391,7 +391,7 @@ bar {
         hidden_state hide
         # ......
     	font pango: JetBrainsMono Nerd Font 10
-	i3bar_command i3bar
+	i3bar_command i3bar --transparency
 	status_command i3status
 	position top
         # ......
@@ -414,16 +414,16 @@ bar {
 #   font xft:URWGothic-Book 11
 
     colors {
-        background #263238
+        background #26323800
         statusline #F9FAF9
         separator  #454947
 
 #                      border  backgr. text
-        focused_workspace  #16a085 #16a085 #292F34
-        active_workspace   #16a085 #353836 #FDF6E3
-        inactive_workspace #263238 #263238 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+        focused_workspace  #16a085f0 #16a085f0 #000000
+        active_workspace   #16a085f0 #353836f0 #F9FAF9
+        inactive_workspace #26323800 #26323800 #EEE8D5
+        binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
+        urgent_workspace   #16a085f0 #FDF6E360 #E5201D
     }
 }
 
