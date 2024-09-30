@@ -48,8 +48,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-
+#bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/rofi-launcher.sh
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
@@ -71,6 +71,8 @@ bindsym $mod+Ctrl+m exec kitty -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
+
+bindsym $mod+F1 exec code
 bindsym $mod+F2 exec brave
 #pcmanfm
 bindsym $mod+F3 exec thunar 
@@ -88,29 +90,30 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
+set $movemouse "sh -c 'eval `xdotool getactivewindow getwindowgeometry --shell`; xdotool mousemove $((X+WIDTH/2)) $((Y+HEIGHT/2))'"
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+j focus left; exec $movemouse
+bindsym $mod+k focus down; exec $movemouse
+bindsym $mod+l focus up; exec $movemouse
+bindsym $mod+semicolon focus right; exec $movemouse
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Left focus left; exec $movemouse
+bindsym $mod+Down focus down; exec $movemouse
+bindsym $mod+Up focus up; exec $movemouse
+bindsym $mod+Right focus right; exec $movemouse
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+j move left; exec $movemouse
+bindsym $mod+Shift+k move down; exec $movemouse
+bindsym $mod+Shift+l move up; exec $movemouse
+bindsym $mod+Shift+semicolon move right; exec $movemouse
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left move left; exec $movemouse
+bindsym $mod+Shift+Down move down; exec $movemouse
+bindsym $mod+Shift+Up move up; exec $movemouse
+bindsym $mod+Shift+Right move right; exec $movemouse
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
@@ -353,7 +356,9 @@ bar {
 	status_command i3status
         status_command SCRIPT_DIR=~/.config/i3blocks i3blocks 
 
-        font pango: JetBrainsMono Nerd Font 10
+        # ......
+    	#font pango: JetBrainsMono Nerd Font 10
+    	font pango: noto sans mono 10
         output primary
         position top
         strip_workspace_numbers yes
@@ -390,7 +395,8 @@ bar {
         mode hide
         hidden_state hide
         # ......
-    	font pango: JetBrainsMono Nerd Font 10
+    	#font pango: JetBrainsMono Nerd Font 10
+    	font pango: unixel-Regular 10
 	i3bar_command i3bar --transparency
 	status_command i3status
 	position top
