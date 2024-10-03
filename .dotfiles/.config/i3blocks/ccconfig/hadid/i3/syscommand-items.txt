@@ -1,4 +1,0 @@
-Suspend
-Logout
-Reboot
-Off

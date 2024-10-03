@@ -15,6 +15,10 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
+<p align="left">And here is  <a href="https://github.com/TohidEq/TohidEq/tree/master/.dotfiles" target="_blank">⚙ My Configs</a> </p>
+
+###
+
 <p>
 
 <details>

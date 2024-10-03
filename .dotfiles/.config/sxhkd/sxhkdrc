@@ -1,7 +1,3 @@
-#!/bin/bash
-
-
-
 # i3 workspaces
 # 1nd monitor
 # {"1:","2:","3: ","4: ","5: ","6: ","7: ","8:♫ "}
@@ -110,7 +106,7 @@ super+m
 super + u
   i3-msg  border none
 super + y
-  i3-msg  border pixel 1
+  i3-msg  border pixel 2
 super + n
   i3-msg  border normal
 
@@ -140,7 +136,7 @@ super + z
 
 # change keyboard layout 
 Shift_L + alt
-  exec ~/.config/i3/scripts/keyboard_layout_switch.sh
+  exec keyboard_layout_switch
 
 # change wallpaper
 #Super_L + shift_L + i
@@ -223,7 +219,8 @@ super + ctrl + x
 
 # find window name
 super + ctrl + z
-  exec "xprop > ~/Desktop/xprop.txt; kitty nvim ~/Desktop/xprop.txt"
+  xprop > ~/Desktop/xprop.txt; \
+  kitty nvim ~/Desktop/xprop.txt
 
 # color picker, saves colorHex in clipboard
 super + ctrl + c

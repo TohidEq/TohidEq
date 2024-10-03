@@ -1,1 +1,0 @@
-feh --bg-max --randomize ~/Pictures/wallpapers/dota2/

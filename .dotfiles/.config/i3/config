@@ -23,7 +23,7 @@ set $sm HDMI-1
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 2 
 default_floating_border normal
 
 # Hide borders
@@ -94,12 +94,12 @@ workspace_auto_back_and_forth yes
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="alsamixer"] floating enable border pixel 2
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="fpakman"] floating enable
-for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="Galculator"] floating enable border pixel 2
 for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
@@ -122,8 +122,12 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
-for_window [title="nvim-by-fzf"] floating enable border pixel 1
-for_window [title="bmenu"] floating enable border pixel 1
+for_window [title="nvim-by-fzf"] floating enable border pixel 2
+for_window [title="bmenu"] floating enable border pixel 2
+
+
+for_window [class="nm-connection-editor"] floating enable border pixel 2
+for_window [title="Network Connections"] floating enable border pixel 2
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -236,7 +240,7 @@ bar {
 
 	i3bar_command i3bar --transparency
 	status_command i3status
-        status_command SCRIPT_DIR=~/.config/i3blocks i3blocks 
+        status_command SCRIPT_DIR=~/myScripts/i3blocks i3blocks
 
         # ......
         #font pango: JetBrainsMono Nerd Font 10
@@ -255,7 +259,7 @@ bar {
         bindsym button4 nop
         bindsym button5 nop
         #   font xft:URWGothic-Book 11
-
+        #d7566e
         colors {
                 background #26323800
                 statusline #F9FAF9
@@ -263,7 +267,7 @@ bar {
 
                 #                      border  backgr. text
                 focused_workspace  #16a085f0 #16a085f0 #000000
-                active_workspace   #16a085f0 #353836f0 #F9FAF9
+                active_workspace   #353836f0 #353836f0 #F9FAF9
                 inactive_workspace #26323800 #26323800 #EEE8D5
                 binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
                 urgent_workspace   #16a085f0 #FDF6E360 #E5201D
@@ -278,12 +282,12 @@ bar {
         hidden_state hide
         # ......
         #font pango: JetBrainsMono Nerd Font 10
-        font pango: unixel-Regular 10
+        font pango: noto sans mono 10
         i3bar_command i3bar --transparency
         status_command i3status
         position top
         # ......
-        status_command SCRIPT_DIR=~/.config/i3blocks i3blocks
+        status_command SCRIPT_DIR=~/myScripts/i3blocks i3blocks
 	strip_workspace_numbers yes
 
 	separator_symbol        " "
@@ -308,7 +312,7 @@ bar {
 
                 #                      border  backgr. text
                 focused_workspace  #16a085f0 #16a085f0 #000000
-                active_workspace   #16a085f0 #353836f0 #F9FAF9
+                active_workspace   #353836f0 #353836f0 #F9FAF9
                 inactive_workspace #26323800 #26323800 #EEE8D5
                 binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
                 urgent_workspace   #16a085f0 #FDF6E360 #E5201D
@@ -337,14 +341,14 @@ bar {
 
 
 # Theme colors
-# class                   border  backgr. text    indic.   child_border
-        client.focused          #556064 #556064 #80FFF9 #FDF6E3
-        client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-        client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-        client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-        client.placeholder      #000000 #0c0c0c #ffffff #000000 
+# class                         border    backgr.   text    indic.   child_border
+        client.focused          #16a085ff #16a085ff #000000 #fddc80ad
+        client.focused_inactive #16a08563 #16a08563 #ffffff #16a085
+        client.unfocused        #0c0c0c63 #0c0c0c63 #1ABC9C #454948
+        client.urgent           #CB4B16df #FDF6E3df #1ABC9C #268BD2
+        client.placeholder      #0c0c0cdf #0c0c0cdf #ffffff #000000 
 
-        client.background       #2B2C2B
+        client.background       #2B2C2Bff
 
 #############################
 ### settings for i3-gaps: ###

@@ -1,0 +1,33 @@
+
+
+[blackspace]
+command=echo 'x'
+min_width=15
+interval=once
+color=#030203
+background=#030203
+
+
+
+
+
+[orangespace]
+command=echo 'x'
+min_width=15
+interval=once
+background=#d8881e
+color=#d8881e
+
+
+
+
+
+
+# text
+color=#ffffff
+background=#030203
+
+
+
+background=#d8881e
+color=#000000
