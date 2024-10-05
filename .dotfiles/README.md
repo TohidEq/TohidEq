@@ -9,4 +9,4 @@ rofi launcher
 
 ## Live Wallpapaer (gif):
 
-<video src="./vids/preview-live-wallpaper.mp4" controls></video>
+<video src="./vids/preview-live-wallpaper.mp4" width="100%" height="100%"  controls></video>
