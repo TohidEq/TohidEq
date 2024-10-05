@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# by chatgpt :)
+# Set the directory path
+directory=~/myworld/Media/wallpaper/gifs-raw
+
+# Find all GIF files in the directory (case-insensitive search)
+gif_files=($(find "$directory" -iname "*.gif"))
+
+# Check if there are any GIF files
+if [ ${#gif_files[@]} -eq 0 ]; then
+  echo "No GIF files found in the directory."
+  exit 1
+fi
+
+# Select a random GIF file
+random_gif=${gif_files[RANDOM % ${#gif_files[@]}]}
+
+# Output the randomly chosen GIF file path
+echo "$random_gif"

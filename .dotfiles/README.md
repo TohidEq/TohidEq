@@ -6,3 +6,7 @@
 
 rofi launcher
 ![SS-roofi](./images/ss-rofi-3.10.2024.png)
+
+## Live Wallpapaer (gif):
+
+<video src="./vids/preview-live-wallpaper.mp4" controls></video>

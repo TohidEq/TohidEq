@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# by chatgpt :)
+
+# Path to the directory
+DIR=~/myworld/Media/wallpaper/animatedwallpapers
+
+# Check if the directory exists
+if [ ! -d "$DIR" ]; then
+  echo "Directory $DIR does not exist."
+  exit 1
+fi
+
+# Get a list of all directories in the specified folder
+folders=($(find "$DIR" -mindepth 1 -maxdepth 1 -type d))
+
+# Check if there are any directories
+if [ ${#folders[@]} -eq 0 ]; then
+  echo "No folders found in $DIR."
+  exit 1
+fi
+
+# Pick a random folder from the list
+random_folder=${folders[$RANDOM % ${#folders[@]}]}
+
+# Output the random folder
+echo "$random_folder"

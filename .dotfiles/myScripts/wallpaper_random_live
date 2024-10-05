@@ -1,0 +1,4 @@
+#!/bin/bash
+pkill wallpaper_loop_
+exec wallpaper_loop_pngs $(wallpapaer_random_folder)
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+pkill wallpaper-set-g
+pkill gifview
+exec wallpaper-set-gif $(wallpapaer_random_gif)
