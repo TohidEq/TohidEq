@@ -9,4 +9,5 @@ rofi launcher
 
 ## Live Wallpapaer (gif):
 
-<video src="https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/preview-live-wallpaper.mp4" width="1280" height="720"  controls></video>
+https://github.com/user-attachments/assets/a58bbcb3-7d35-453b-aa19-95981e079213
+
