@@ -1,0 +1,6 @@
+#!/bin/sh
+# Uses xwinwrap to display given animated .gif in the center of the screen
+
+killall -9 wallpaper-set-g
+killall -9 xwinwrap
+killall -9 gifview

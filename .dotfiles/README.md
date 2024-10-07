@@ -10,4 +10,3 @@ rofi launcher
 ## Live Wallpapaer (gif):
 
 https://github.com/user-attachments/assets/a58bbcb3-7d35-453b-aa19-95981e079213
-

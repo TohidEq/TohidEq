@@ -1,0 +1,14 @@
+#!/bin/sh
+# Uses xwinwrap to display given animated .gif in the center of the screen
+
+if [ $# -ne 1 ]; then
+  echo 1>&2 Usage: $0 image.gif
+  exit 1
+fi
+
+
+
+
+xwinwrap -g 1920x1080+1920+0 -ov -ni -s -nf -- gifview -w %WID $1 -a
+
+exit 0
