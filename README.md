@@ -33,7 +33,9 @@ progressive web applications which support responsive, localization and multi-th
     <br>
     - NextJS:
       <br>
-      - <a href="https://github.com/TohidEq/web-design-1" target="_blank">🌙✨ Night Trips</a> . Coding <a href="https://www.figma.com/design/qinMy6AE08VosT4d52uHxH/" target="blank">this FigmaProject </a> . NextJS . <a href="https://web-design-1-night-trips-teq.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/web-design-1" target="_blank">🎮🛡️ DOT Game</a> . Like Dota . Coding <a href="https://figma.com/design/9zO7zf75KQkSMipkQJzqhK " target="blank">this FigmaProject</a> . NextJS . <a href="https://dot-t-eq.vercel.app/en" target="_blank">Demo</a>
+      <br>
+      - <a href="https://github.com/TohidEq/web-design-1" target="_blank">🌙✨ Night Trips</a> . Coding <a href="https://www.figma.com/design/qinMy6AE08VosT4d52uHxH/" target="blank">this FigmaProject</a> . NextJS . <a href="https://web-design-1-night-trips-teq.vercel.app/" target="_blank">Demo</a>
       <br>
       - <a href="https://github.com/TohidEq/nextjs-blog/" target="_blank">Nextjs Blog</a> . Getting posts from <a href="https://github.com/TohidEq/test-mdx-posts" target="blank">A Github Repo</a> and show them to u :D . NextJS . <a href="http://tohideq-blog.vercel.app/" target="_blank">Demo</a>
       <br>
