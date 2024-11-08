@@ -2,7 +2,7 @@
 
 #include configs for desktops
 include $HOME/.config/i3/workspaces.conf
-#bar mode 
+#bar mode
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -23,7 +23,7 @@ set $sm HDMI-1
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2 
+default_border pixel 2
 default_floating_border normal
 
 # Hide borders
@@ -180,7 +180,7 @@ mode "resize" {
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # wallpaper old:
-#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 # wallpaper live(ram eater...):
 #exec --no-startup-id wallpaper_loop_pngs $(wallpapaer_random_folder)
 exec --no-startup-id wllppr-set-random-gif
@@ -211,7 +211,7 @@ exec_always --no-startup-id sxhkd
 # Change the variable name at the place you want to match the color
 # of your terminal like this:
 # [example]
-# If you want your bar to have the same background color as your 
+# If you want your bar to have the same background color as your
 # terminal background change the line 362 from:
 # background #14191D
 # to:
@@ -242,7 +242,7 @@ bar {
         hidden_state hide
         # ......
 	position top
-        # ...... 
+        # ......
 
 	i3bar_command i3bar --transparency
 	status_command i3status
@@ -267,16 +267,16 @@ bar {
         #   font xft:URWGothic-Book 11
         #d7566e
         colors {
-                background #26323800
-                statusline #F9FAF9
-                separator  #454947
+                background  #26323800
+                statusline  #f0f0f0
+                separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace  #16a085f0 #16a085f0 #000000
-                active_workspace   #353836f0 #353836f0 #F9FAF9
-                inactive_workspace #26323800 #26323800 #EEE8D5
-                binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
-                urgent_workspace   #16a085f0 #FDF6E360 #E5201D
+                focused_workspace   #f0e3ca80 #f0e3ca80 #030303
+                active_workspace    #f0e3ca50 #f0e3ca50 #F0E3CA
+                inactive_workspace  #11001100 #11001100 #F0E3CA
+                binding_mode        #f0e3ca80 #0f0f0f80 #f0e3ca
+                urgent_workspace    #f0e3ca80 #f0e3ca80 #030303
         }
 }
 
@@ -298,7 +298,7 @@ bar {
 
 	separator_symbol        " "
 	workspace_buttons       yes
-        
+
 	output nonprimary
         tray_output eDP-1
 
@@ -312,16 +312,16 @@ bar {
         #   font xft:URWGothic-Book 11
 
         colors {
-                background #26323800
-                statusline #F9FAF9
-                separator  #454947
+                background  #26323800
+                statusline  #f0f0f0
+                separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace  #16a085f0 #16a085f0 #000000
-                active_workspace   #353836f0 #353836f0 #F9FAF9
-                inactive_workspace #26323800 #26323800 #EEE8D5
-                binding_mode       #16a085f0 #2C2C2C60 #F9FAF9
-                urgent_workspace   #16a085f0 #FDF6E360 #E5201D
+                focused_workspace   #f0e3ca80 #f0e3ca80 #030303
+                active_workspace    #f0e3ca50 #f0e3ca50 #F0E3CA
+                inactive_workspace  #11001100 #11001100 #F0E3CA
+                binding_mode        #f0e3ca80 #0f0f0f80 #f0e3ca
+                urgent_workspace    #f0e3ca80 #f0e3ca80 #030303
         }
 }
 
@@ -347,14 +347,14 @@ bar {
 
 
 # Theme colors
-# class                         border    backgr.   text    indic.   child_border
-        client.focused          #16a085ff #16a085ff #000000 #fddc80ad
-        client.focused_inactive #16a08563 #16a08563 #ffffff #16a085
-        client.unfocused        #0c0c0c63 #0c0c0c63 #1ABC9C #454948
-        client.urgent           #CB4B16df #FDF6E3df #1ABC9C #268BD2
-        client.placeholder      #0c0c0cdf #0c0c0cdf #ffffff #000000 
+# class                 border  backgr  text    indic.   child_brdr
+client.focused          #1d1d1d #1d1d1d #f0e3ca #ffffff70
+client.focused_inactive #1d1d1d #1d1d1d #f0e3ca #ffffff50
+client.unfocused        #000000 #000000 #f0e3ca #ffffff40
+client.urgent           #3a3a3a #f0e3ca #3f3f3f #ffffff40
+client.placeholder      #000000 #000000 #f0e3ca #000000
 
-        client.background       #2B2C2Bff
+client.background       #00000000
 
 #############################
 ### settings for i3-gaps: ###
@@ -372,7 +372,7 @@ gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps off
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 # smart_borders on
 

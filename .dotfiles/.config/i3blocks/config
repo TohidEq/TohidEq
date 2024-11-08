@@ -1,22 +1,8 @@
 
-# color
-# $bgcolor
-#background=#16a085f0
-
-
-#white
-# $in-text
-#color=#f3f4f5
-
-# black
-# $in-bgcolor
-#color=#f3f4f5
-# full_text=salaaam
 color=#f3f4f5
 
-background=#26323800
+background=#11001100
 separator_block_width=0
-# markup=none
 markup=none
 align=center
 border_top=0
@@ -25,6 +11,7 @@ border_bottom=0
 border_left=0
 
 
+#background=#00000050
 
 
 
@@ -32,267 +19,209 @@ border_left=0
 
 
 
+[colortext]
+full_text=" "
+min_width=25
+interval=once
+color=#F0E3CA
+background=#A34A2800
 
-
-
-#[ram]
-#command=$SCRIPT_DIR/echo -n ' '; ./memory/memory | grep -E -o '^[0-9]+.[0-9]G'
-
-#command=$SCRIPT_DIR/memory2x -f '  {used} {uunit}B' -tw '{pfree}' '<' 30 -tc '{pfree}' '<' 15
-#command=$SCRIPT_DIR/memoryx
-#interval=1
-#label=🖥
-#markup=pango
-#signal=11
-#min_width=90
-#background=#16a085f0
-#color=#f3f4f5
-
-
-
-
-#[cpu_usage2]
-#command=$SCRIPT_DIR/cpu_usage2x
-#markup=pango
-#interval=persist
-#REFRESH_TIME=1
-#LABEL= 
-#WARN_PERCENT=50
-#CRIT_PERCENT=80
-#DECIMALS=2
-#min_width=98
-
-#color=#f3f4f5
-#background=#26323800
-
-
-
-#[wallpaperchanger]
-#command=$SCRIPT_DIR/wallpaper-changerx
-#full_text=" "
-#min_width=10
-#interval=600
-#color=#f3f4f5
-#background=#26323800
-
-
-
-
-
-
-#[volume-pulseaudio]
-#command=$SCRIPT_DIR/volume-pulseaudiox
-#interval=1
-#signal=1
-##MIXER=[determined automatically]
-##SCONTROL=[determined automatically]
-##exposed format variables: ${SYMB}, ${VOL}, ${INDEX}, ${NAME}
-#LONG_FORMAT=${SYMB} ${VOL}%
-##SHORT_FORMAT=${SYMB} ${VOL}% ${INDEX}
-##AUDIO_HIGH_SYMBOL='  '
-###AUDIO_MED_THRESH=50
-#AUDIO_MED_SYMBOL='  '
-#AUDIO_LOW_THRESH=0
-#AUDIO_LOW_SYMBOL='  '
-#AUDIO_DELTA=5
-#DEFAULT_COLOR="#f3f4f5"
-#MUTED_COLOR="#3B3B3B"
-#background=#16a085f0
-#USE_ALSA_NAME=0
-#USE_DESCRIPTION=0
-## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
-#SUBSCRIBE=0
-#min_width=90
-
-
-
-
-#[blackspace]
-#full_text=" "
-#min_width=10
-#interval=once
-#color=#f3f4f5
-#background=#26323800
-
-
+[borderedspace]
+full_text=" "
+min_width=10
+interval=once
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
 [focused window]
 command=xtitle -s
 interval=persist
-color=#ffffff
-background=#26323800
+color=#F0E3CA
 min_width=35
-border_top=1
-border=#b4ff53
+border_top=2
+border=#A34A2800
+#background=#00000050
+
+
+[borderedspace]
+full_text=" "
+min_width=10
+interval=once
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
 
-[blackspace]
+[justspace]
+background=#00000000
 full_text=" "
 min_width=5
 interval=once
-color=#f3f4f5
-background=#26323800
 
 
 
 
 
 
-[orangespace]
-full_text="🬤"
-min_width=10
-interval=once
-color=#c08f48
+
+#[colortext]
+#full_text="  "
+#min_width=15
+#interval=once
+#color=#F0E3CA
+#background=#A34A2800
+
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+#border_top=2
+#border=#A34A2800
+
+#[rofi-wttr]
+#label=
+#command=$SCRIPT_DIR/rofi-wttrx
+#LOCATION=Rasht
+#interval=3600
+#color=#F0E3CA
+#background=#11001100
+#border_top=2
+#border=#A34A2800
+
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+#border_top=2
+#border=#A34A2800
+
+
+#[justspace]
 background=#00000000
+#full_text=" "
+#min_width=5
+#interval=once
 
-[blackspace]
-full_text="  "
+
+
+
+
+
+
+[colortext]
+full_text="  ‌ ‌ "
 min_width=15
 interval=once
-color=#000000
-background=#c08f48
+background=#A34A2800
+color=#F0E3CA
 
-[rofi-wttr]
-label= 
-command=$SCRIPT_DIR/rofi-wttrx
-LOCATION=Rasht
-interval=3600
-background=#c08f48e0
-color=#000000
-
-[orangespace]
+[borderedspace]
 full_text=" "
 min_width=10
 interval=once
-background=#c08f48e0
-color=#292F34
-
-
-[orangespace]
-full_text="🬗"
-min_width=10
-interval=once
-color=#c08f48e0
-background=#00000000
-
-
-
-
-
-[blackspace]
-full_text=" "
-min_width=5
-interval=once
-color=#f3f4f5
-background=#26323800
-border_top=1
-border=#53ffa9e0
-
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 [rofi-calendar]
 command=$SCRIPT_DIR/rofi-calendarx
+label=
 interval=5
 color=#f3f4f5
-background=#26323800
-border_top=1
-border=#53ffa9e0
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
-[blackspace]
+[borderedspace]
+full_text=" "
+min_width=10
+interval=once
+border_top=2
+border=#A34A2800
+#background=#00000050
+
+
+
+
+
+
+
+[justspace]
+background=#00000000
 full_text=" "
 min_width=5
 interval=once
-color=#f3f4f5
-background=#26323800
-border_top=1
-border=#53ffa9e0
 
 
 
-
-
-
-
-
-[orangespace]
-full_text="🬤"
+[colortext]
+full_text="    "
 min_width=10
 interval=once
-color=#5dafdf
-background=#00000000
-
-[orangespace]
-full_text="  "
-min_width=10
-interval=once
-background=#5dafdf
-color=#000000
+background=#A34A2800
+color=#F0E3CA
 
 [time]
 command=$SCRIPT_DIR/timex
 interval=1
-label= 
+label=
 #TZ_FILE=~/.tz
 STRFTIME_FORMAT=%H:%M
 TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
 TZ_LABELS=,Brazil,AU,Hyderabad
-background=#5dafdfe0
-color=#000000
-min_width=75
+border_top=2
+border=#A34A2800
+color=#F0E3CA
+min_width=50
+#background=#00000050
 
-[orangespace]
-full_text=" "
-min_width=10
-interval=once
-background=#5dafdfe0
-color=#000000
-
-[orangespace]
-full_text="🬗"
-min_width=10
-interval=once
-color=#5dafdfe0
+[justspace]
 background=#00000000
-
-
-
-
-
-[blackspace]
 full_text=" "
 min_width=5
 interval=once
-color=#f3f4f5
-background=#26323800
-border_top=1
-border=#7269f5e0
+
+
+
+
+
+
+
+[colortext]
+full_text=" "
+min_width=30
+interval=once
+background=#A34A2800
+color=#F0E3CA
+
 
 
 # ip:
 [iface]
 command=$SCRIPT_DIR/ifacex
-LABEL=
+LABEL= ‌
 #IFACE=wlan0
 #ADDRESS_FAMILY=inet6?
 interval=10
 # set this to 1 to display the name of the connected WIFI interface instead of the IP address.
 display_wifi_name=0
 color=#f3f4f5
-background=#26323800
-border_top=1
-border=#7269f5e0
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
-[blackspace]
+[borderedspace]
 full_text=" "
-min_width=5
+min_width=10
 interval=once
-color=#f3f4f5
-background=#00000000
-border_top=1
-border=#7269f5e0
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
 
@@ -301,42 +230,36 @@ command=$SCRIPT_DIR/pingx
 markup=pango
 interval=20
 signal=14
-label=- 
-background=#26323800
-# label=⟟ 
-border_top=1
-border=#7269f5e0
+label=- ‌
+# label=⟟
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
 
-[orangespace]
-full_text="🬤"
+[justspace]
+background=#00000000
+full_text=" "
 min_width=10
 interval=once
 color=#9b7ad7
-background=#00000000
 
-[orangespace]
-full_text=" "
-min_width=5
-interval=once
-background=#9b7ad7
-color=#292F34
+
 
 
 [displays]
 command=$SCRIPT_DIR/displaysx
 interval=1
-background=#9b7ad7
-color=#000000
+background=#A34A2800
+color=#F0E3CA
 
 
-[orangespace]
+[colorspace]
 full_text=" "
 min_width=5
 interval=once
-background=#9b7ad7
-color=#292F34
+background=#A34A2800
 
 
 
@@ -346,110 +269,101 @@ full_text=L|D|E
 command=$SCRIPT_DIR/moltimonitorx
 interval=once
 signal=1
-label= 
-background=#9b7ad7e0
-color=#000000
-min_width=70
+label=‌‌‌ ‌
+color=#F0E3CA
+min_width=50
+border_top=2
+border=#A34A2800
+#background=#00000050
 
-[orangespace]
+#[borderedspace]
+#full_text=" "
+#min_width=15
+#interval=once
+#border_top=2
+#border=#A34A2800
+##background=#00000050
+
+
+[justspace]
+background=#00000000
 full_text=" "
+min_width=5
+interval=once
+
+
+
+
+
+
+
+
+
+
+[colortext]
+full_text="   ‌"
 min_width=15
 interval=once
-background=#9b7ad7e0
-color=#292F34
-
-
-[orangespace]
-full_text="🬗"
-min_width=10
-interval=once
-color=#9b7ad7e0
-background=#00000000
-
-
-
-
-#[colorpicker]
-#full_text= 
-#command=$SCRIPT_DIR/colorpickerx
-#interval=once
-#signal=10
-#label=🖱 
-#color=#f3f4f5
-#background=#26323800
-#min_width=80
-
-
-
+color=#F0E3CA
+background=#A34A2800
 
 
 [key_layout]
 command=$SCRIPT_DIR/key_layoutx
-label=   
+label=
 interval=1
-color=#f3f4f5
-background=#26323800
+align=center
 min_width=35
+color=#F0E3CA
+border_top=2
+border=#A34A2800
+#background=#00000050
 
-border_top=1
-border=#ca57c0e0
 
 
-
-[orangespace]
-full_text="🬤"
+[justspace]
+background=#00000000
+full_text=" "
 min_width=10
 interval=once
-color=#d7566e
-background=#00000000
 
 
-[orangespace]
-full_text=".🖤."
+[colortext]
+full_text="  "
 min_width=15
 interval=once
-background=#d7566e
-color=#000000
+color=#F0E3CA
+background=#A34A2800
 
-[orangespace]
-full_text=" "
-min_width=15
-interval=once
-background=#d7566ee0
-color=#292F34
+#[borderedspace]
+#full_text=" "
+#min_width=15
+#interval=once
+#border_top=2
+#border=#A34A2800
+##background=#00000050
 
 
 [battery]
 command=$SCRIPT_DIR/batteryx
 markup=pango
-#LABEL= 
+#LABEL=
 BAT_NUMBER=0
 interval=30
-color=#000000
-background=#d7566ee0
+color=#F0E3CA
+border_top=2
+border=#A34A2800
+#background=#00000050
 
-[orangespace]
+[borderedspace]
 full_text=" "
 min_width=15
 interval=once
-background=#d7566ee0
-color=#292F34
-
-[orangespace]
-full_text="🬗"
-min_width=10
-interval=once
-color=#d7566ee0
-background=#00000000
+border_top=2
+border=#A34A2800
+#background=#00000050
 
 
 
 
 
-
-[blackspace]
-full_text=" "
-min_width=5
-interval=once
-color=#f3f4f5
-background=#26323800
