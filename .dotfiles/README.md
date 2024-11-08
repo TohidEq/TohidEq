@@ -2,7 +2,7 @@
 
 ## Preview:
 
-![SS](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-3.10.2024.png)
+![SS](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-9.11.2024.png)
 
 rofi launcher
 ![SS-roofi](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-rofi-3.10.2024.png)
