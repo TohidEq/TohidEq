@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Tohid and I'm a Front-End Developer from Iran</h2>
+<h2 align="left">Hi 👋! I'm Tohid, a Front-End Developer from Iran</h2>
 
 ###
 
@@ -88,6 +88,14 @@ progressive web applications which support responsive, localization and multi-th
     <br>
     - <a href="https://github.com/TohidEq/rust-game-riverride/" target="_blank">Riverride Game</a>
 
+  </details>
+  <br>
+  <details>
+    <summary>
+    <b>Python</b>
+    </summary>
+    - <a href="https://github.com/TohidEq/py-2048-cli" target="_blank">2048 Game</a> in terminal
+    <br>
   </details>
 </details>
 </p>
