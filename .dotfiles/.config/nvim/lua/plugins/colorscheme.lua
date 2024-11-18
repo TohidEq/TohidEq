@@ -10,11 +10,12 @@ return {
       palette = "default", -- or create your own ^^ e.g. justinsgithub
       inc_search = "underline", -- underline | background
       background_clear = {
-        "float_win",
         "toggleterm",
+        "float_win",
         "telescope",
         "which-key",
         "renamer",
+        "neo-tree",
       }, -- "float_win", "toggleterm", "telescope", "which-key", "renamer", "neo-tree"
       plugins = {
         bufferline = {
