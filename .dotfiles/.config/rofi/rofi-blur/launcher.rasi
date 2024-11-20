@@ -21,10 +21,10 @@ configuration {
 * {
     border-colour:               var(selected);
     handle-colour:               var(selected);
-    background-colour:           var(background);
+    background-colour:           var(background-t-one);
     foreground-colour:           var(foreground);
     alternate-background:        var(background-alt);
-    normal-background:           var(background);
+    normal-background:           var(background-t-one);
     normal-foreground:           var(foreground);
     urgent-background:           var(urgent);
     urgent-foreground:           var(background);
@@ -36,7 +36,7 @@ configuration {
     selected-urgent-foreground:  var(background);
     selected-active-background:  var(urgent);
     selected-active-foreground:  var(background);
-    alternate-normal-background: var(background);
+    alternate-normal-background: var(background-t-two);
     alternate-normal-foreground: var(foreground);
     alternate-urgent-background: var(urgent);
     alternate-urgent-foreground: var(background);
@@ -61,7 +61,7 @@ window {
     margin:                      0px;
     /*padding:                     0px;*/
     border:                      0px solid;
-    border-radius:               0px;
+    /*border-radius:               0px;*/
     border-color:                @border-colour;
     cursor:                      "default";
     /* Backgroud Colors */
@@ -83,7 +83,7 @@ mainbox {
     margin:                      0px;
     padding:                     30px;
     border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
+    /*border-radius:               0px 0px 0px 0px;*/
     border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
@@ -96,7 +96,7 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    /*border-radius:               0px;*/
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -121,7 +121,7 @@ entry {
     padding:                     8px 0px;
     background-color:            #000000a0;
     padding:                     8px ;
-    border-radius:               8px;
+    /*border-radius:               8px;*/
     text-color:                  inherit;
     cursor:                      text;
     placeholder:                 "Search...";
@@ -169,7 +169,7 @@ listview {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    /*border-radius:               0px;*/
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -178,7 +178,7 @@ listview {
 scrollbar {
     handle-width:                5px ;
     handle-color:                @handle-colour;
-    border-radius:               10px;
+    /*border-radius:               10px;*/
     background-color:            @alternate-background;
 }
 
@@ -189,7 +189,7 @@ element {
     margin:                      0px;
     padding:                     6px;
     border:                      0px solid;
-    border-radius:               8px;
+    /*border-radius:               8px;*/
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -253,7 +253,7 @@ mode-switcher{
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    /*border-radius:               0px;*/
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -261,7 +261,7 @@ mode-switcher{
 button {
     padding:                     0px 15px 0px 9px;
     border:                      0px solid;
-    border-radius:               8px;
+    /*border-radius:               8px;*/
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -278,7 +278,7 @@ message {
     margin:                      0px;
     padding:                     8px 12px;
     border:                      0px solid;
-    border-radius:               8px;
+    /*border-radius:               8px;*/
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -298,7 +298,7 @@ textbox {
 error-message {
     padding:                     15px;
     border:                      0px solid;
-    border-radius:               10px;
+    /*border-radius:               10px;*/
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;
