@@ -41,6 +41,7 @@ Or just edit your shell config (`~/.bashrc` or `~/.zshrc` or whatever u use) (fi
 # open shell config with nano or vim or vscode or ...
 nano ~/.config/fish/config.fish
 # add this line at the end of the config file
+# PLS change  /TOHID-EQ/   to your home directory name
 set PATH /home/tohid-eq/myScripts/ $PATH
 
 ```
@@ -128,4 +129,37 @@ wllppr-set-random-gif-2nd-monitor
 # kill all gif wallpapers (both monitors)
 wllppr-kill-gif
 # then u can choose new random gif for your 1nd and after that for 2nd monitor
+```
+
+#### i3blocks
+
+Same as `myScripts` u should to make scripts executable and put scripts folder to your system PATH:
+
+```bash
+# make executable
+chmod +x ~/myScripts/i3blocks/*
+
+# add path in end of your shell config
+# open shell config with nano or vim or vscode or ...
+nano ~/.config/fish/config.fish
+# add this line at the end of the config file
+# PLS change  /TOHID-EQ/   to your home directory name
+set PATH /home/tohid-eq/myScripts/i3blocks/ $PATH
+```
+
+To run your i3bar with this scripts u can use `status_command SCRIPT_DIR=~/myScripts/i3blocks i3blocks` in your `i3 config` in `bar` section
+
+- `moltimonitorx`
+  remember to change `intern`(1nd) and `extern`(2nd) as your 1nd and 2nd monitor name that u can get them from `xrandr` command:
+
+```
+>>> xrandr
+
+# for me 1nd monitor is eDP-1
+eDP-1 connected primary 1920x1080+0+0 (normal left inverted right x ...
+...
+
+# for me 2nd monitor is HDMI-1
+HDMI-1 connected 1920x1080+1920+0 (normal left inverted right x ...
+...
 ```
