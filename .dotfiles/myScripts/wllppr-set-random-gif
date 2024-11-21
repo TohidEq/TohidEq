@@ -4,6 +4,4 @@ killall -9 wallpaper-set-g
 killall -9 xwinwrap
 killall -9 gifview
 
-exec wallpaper-set-gif $(wallpapaer_random_gif)
-
-
+exec wallpaper-set-gif $(wallpaper-random-gif)

@@ -1,6 +1,3 @@
 #!/bin/bash
 
-
-exec wallpaper-set-gif-2nd-monitor $(wallpapaer_random_gif)
-
-
+exec wallpaper-set-gif-2nd-monitor $(wallpaper-random-gif)

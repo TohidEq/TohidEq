@@ -6,9 +6,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-
-
-
+#           1920x1080+1920+0 : width x height + posX + posY
 xwinwrap -g 1920x1080+1920+0 -ov -ni -s -nf -- gifview -w %WID $1 -a
 
 exit 0
