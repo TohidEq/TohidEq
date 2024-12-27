@@ -23,7 +23,7 @@ border_left=0
 full_text=" "
 min_width=25
 interval=once
-color=#F0E3CA
+color=#ffffff
 background=#A34A2800
 
 [borderedspace]
@@ -38,7 +38,7 @@ border=#A34A2800
 [focused window]
 command=xtitle -s
 interval=persist
-color=#F0E3CA
+color=#ffffff
 min_width=35
 border_top=2
 border=#A34A2800
@@ -71,7 +71,7 @@ interval=once
 #full_text="  "
 #min_width=15
 #interval=once
-#color=#F0E3CA
+#color=#ffffff
 #background=#A34A2800
 
 #[borderedspace]
@@ -86,7 +86,7 @@ interval=once
 #command=$SCRIPT_DIR/rofi-wttrx
 #LOCATION=Rasht
 #interval=3600
-#color=#F0E3CA
+#color=#ffffff
 #background=#11001100
 #border_top=2
 #border=#A34A2800
@@ -111,12 +111,12 @@ background=#00000000
 
 
 
-[colortext]
-full_text="  ‌ ‌ "
-min_width=15
-interval=once
-background=#A34A2800
-color=#F0E3CA
+#[colortext]
+#full_text="  ‌ ‌ "
+#min_width=15
+#interval=once
+#background=#A34A2800
+#color=#ffffff
 
 [borderedspace]
 full_text=" "
@@ -163,7 +163,7 @@ full_text="    "
 min_width=10
 interval=once
 background=#A34A2800
-color=#F0E3CA
+color=#ffffff
 
 [time]
 command=$SCRIPT_DIR/timex
@@ -175,7 +175,7 @@ TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
 TZ_LABELS=,Brazil,AU,Hyderabad
 border_top=2
 border=#A34A2800
-color=#F0E3CA
+color=#ffffff
 min_width=50
 #background=#00000050
 
@@ -196,7 +196,7 @@ full_text=" "
 min_width=30
 interval=once
 background=#A34A2800
-color=#F0E3CA
+color=#ffffff
 
 
 
@@ -252,7 +252,7 @@ color=#9b7ad7
 command=$SCRIPT_DIR/displaysx
 interval=1
 background=#A34A2800
-color=#F0E3CA
+color=#ffffff
 
 
 [colorspace]
@@ -270,7 +270,7 @@ command=$SCRIPT_DIR/moltimonitorx
 interval=once
 signal=1
 label=‌‌‌ ‌
-color=#F0E3CA
+color=#ffffff
 min_width=50
 border_top=2
 border=#A34A2800
@@ -304,7 +304,7 @@ interval=once
 full_text="   ‌"
 min_width=15
 interval=once
-color=#F0E3CA
+color=#ffffff
 background=#A34A2800
 
 
@@ -314,7 +314,7 @@ label=
 interval=1
 align=center
 min_width=35
-color=#F0E3CA
+color=#ffffff
 border_top=2
 border=#A34A2800
 #background=#00000050
@@ -328,11 +328,13 @@ min_width=10
 interval=once
 
 
-[colortext]
-full_text="  "
-min_width=15
+[screenpenx]
+full_text="   "
+command=$SCRIPT_DIR/screenpenx
 interval=once
-color=#F0E3CA
+signal=1
+min_width=15
+color=#ffffff
 background=#A34A2800
 
 #[borderedspace]
@@ -350,7 +352,7 @@ markup=pango
 #LABEL=
 BAT_NUMBER=0
 interval=30
-color=#F0E3CA
+color=#ffffff
 border_top=2
 border=#A34A2800
 #background=#00000050

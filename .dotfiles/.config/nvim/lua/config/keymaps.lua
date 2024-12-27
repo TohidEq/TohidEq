@@ -3,8 +3,8 @@
 -- Add any additional keymaps here
 --
 
-local decipline = require("craftzdog.discipline")
-decipline.cowboy()
+--local decipline = require("craftzdog.discipline")
+--decipline.cowboy()
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }

@@ -183,7 +183,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 # wallpaper live(ram eater...):
 #exec --no-startup-id wallpaper_loop_pngs $(wallpapaer_random_folder)
-exec --no-startup-id wllppr-set-random-gif
+#exec --no-startup-id wllppr-set-random-gif
 
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
@@ -197,13 +197,15 @@ exec --no-startup-id clipit
 #exec --no-startup-id start_conky_grey
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
 
 
 exec --no-startup-id /usr/bin/setxkbmap -layout us,ir
 # exec_always --no-startup-id /usr/bin/setxkbmap -option 'grp:alt_shift_toggle'
 #
+exec_always --no-startup_id pkill sxhkd
 exec_always --no-startup-id sxhkd
+
+exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -268,15 +270,15 @@ bar {
         #d7566e
         colors {
                 background  #26323800
-                statusline  #f0f0f0
+                statusline  #a0a000
                 separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace   #f0e3ca80 #f0e3ca80 #030303
-                active_workspace    #f0e3ca50 #f0e3ca50 #F0E3CA
-                inactive_workspace  #11001100 #11001100 #F0E3CA
-                binding_mode        #f0e3ca80 #0f0f0f80 #f0e3ca
-                urgent_workspace    #f0e3ca80 #f0e3ca80 #030303
+                focused_workspace   #90ff0000 #00000000 #00a0f0
+                active_workspace    #f0900000 #00000000 #00f000
+                inactive_workspace  #11001100 #11001100 #f0f000
+                binding_mode        #f0f30a50 #00009f00 #f0e3ca
+                urgent_workspace    #f0e3ca50 #f0e3ca80 #030303
         }
 }
 
@@ -311,17 +313,17 @@ bar {
         bindsym button5 nop
         #   font xft:URWGothic-Book 11
 
-        colors {
+       colors {
                 background  #26323800
-                statusline  #f0f0f0
+                statusline  #a0a000
                 separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace   #f0e3ca80 #f0e3ca80 #030303
-                active_workspace    #f0e3ca50 #f0e3ca50 #F0E3CA
-                inactive_workspace  #11001100 #11001100 #F0E3CA
-                binding_mode        #f0e3ca80 #0f0f0f80 #f0e3ca
-                urgent_workspace    #f0e3ca80 #f0e3ca80 #030303
+                focused_workspace   #90ff0000 #00000000 #00a0f0
+                active_workspace    #f0900000 #00000000 #00f000
+                inactive_workspace  #11001100 #11001100 #f0f000
+                binding_mode        #f0f30a50 #00009f00 #f0e3ca
+                urgent_workspace    #f0e3ca50 #f0e3ca80 #030303
         }
 }
 

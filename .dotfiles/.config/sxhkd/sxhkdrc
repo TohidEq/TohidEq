@@ -9,19 +9,20 @@
 
 # # switch to workspace
 super + {1-8}
-  i3-msg workspace {"1:","2:","3: ","4: ","5: ","6: ","7: ","8:♫ "}
+  i3-msg workspace {"1:󰣈 ","2: ","3:󰔶 ","4:󰝤 ","5:󰜁 ","6:󰋘 ","7:󰏃 ","8:󰝬 "}
 
 # move focused container to workspace
 super + shift + {1-8}
-  i3-msg move container to workspace {"1:","2:","3: ","4: ","5: ","6: ","7: ","8:♫ "}
+  i3-msg move container to workspace {"1:󰣈 ","2: ","3:󰔶 ","4:󰝤 ","5:󰜁 ","6:󰋘 ","7:󰏃 ","8:󰝬 "}
 
 # # switch to workspace monitor 2
 super + ctrl + {1-8}
-  i3-msg workspace number {"11:","12:","13: ","14: ","15: ","16: ","17: ","18:♫ "}
+  i3-msg workspace number {"11:󰣈 ","12: ","13:󰔶 ","14:󰝤 ","15:󰜁 ","16:󰋘 ","17:󰏃 ","18:󰝬 "}
+
 
 # move focused container to workspace monitor 2
 super + ctrl +shift + {1-8}
-  i3-msg move container to workspace {"11:","12:","13: ","14: ","15: ","16: ","17: ","18:♫ "}
+  i3-msg move container to workspace  {"11:󰣈 ","12: ","13:󰔶 ","14:󰝤 ","15:󰜁 ","16:󰋘 ","17:󰏃 ","18:󰝬 "}
 
 
 # Lock screen
@@ -175,7 +176,8 @@ super + ctrl+b
   exec kitty -e 'bmenu'
 
 super + F1 
-  exec code
+  exec obsidian
+
 super + F2 
   exec brave
 #pcmanfm
@@ -185,6 +187,9 @@ super + F3
 
 super + shift+F3 
   exec pcmanfm_pkexec
+
+super + F4 
+  exec code
 
 #idk wtf is mocp
 #super + F5 

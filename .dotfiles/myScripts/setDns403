@@ -1,0 +1,4 @@
+#/bin/bash
+
+sudo rm -rf /etc/resolv.conf
+sudo cp ~/myworld/miniFiles/dns/403/resolv.conf /etc/resolv.conf
