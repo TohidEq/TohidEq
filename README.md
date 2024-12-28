@@ -96,6 +96,8 @@ progressive web applications which support responsive, localization and multi-th
     </summary>
     - <a href="https://github.com/TohidEq/py-2048-cli" target="_blank">2048 Game</a> in terminal
     <br>
+    - <a href="https://github.com/TohidEq/py-img-to-ascii" target="_blank">Image to ASCII</a> convert images to ASCII art files
+    <br>
   </details>
 </details>
 </p>
