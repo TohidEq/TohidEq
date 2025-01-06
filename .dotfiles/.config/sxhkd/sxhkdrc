@@ -38,10 +38,11 @@ super + shift +b
   i3-msg workspace back_and_forth
 
 # split orientation
-super +h 
-  i3-msg split h;exec notify-send 'tile horizontally'
 super +v 
   i3-msg split v;exec notify-send 'tile vertically'
+super + shift+ v 
+  i3-msg split h;exec notify-send 'tile horizontally'
+
 super +q 
   i3-msg split toggle
 

@@ -60,10 +60,10 @@ exec --no-startup-id volumeicon
 
 set $movemouse "sh -c 'eval `xdotool getactivewindow getwindowgeometry --shell`; xdotool mousemove $((X+WIDTH/2)) $((Y+HEIGHT/2))'"
 # change focus
-bindsym $mod+j focus left; exec $movemouse
-bindsym $mod+k focus down; exec $movemouse
-bindsym $mod+l focus up; exec $movemouse
-bindsym $mod+semicolon focus right; exec $movemouse
+bindsym $mod+h focus left; exec $movemouse
+bindsym $mod+j focus down; exec $movemouse
+bindsym $mod+k focus up; exec $movemouse
+bindsym $mod+l focus right; exec $movemouse
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left; exec $movemouse
@@ -72,10 +72,10 @@ bindsym $mod+Up focus up; exec $movemouse
 bindsym $mod+Right focus right; exec $movemouse
 
 # move focused window
-bindsym $mod+Shift+j move left; exec $movemouse
-bindsym $mod+Shift+k move down; exec $movemouse
-bindsym $mod+Shift+l move up; exec $movemouse
-bindsym $mod+Shift+semicolon move right; exec $movemouse
+bindsym $mod+Shift+h move left; exec $movemouse
+bindsym $mod+Shift+j move down; exec $movemouse
+bindsym $mod+Shift+k move up; exec $movemouse
+bindsym $mod+Shift+l move right; exec $movemouse
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left; exec $movemouse
@@ -129,6 +129,8 @@ for_window [title="bmenu"] floating enable border pixel 2
 for_window [class="nm-connection-editor"] floating enable border pixel 2
 for_window [title="Network Connections"] floating enable border pixel 2
 
+for_window [class="telegram-desktop"] floating enable border pixel 2
+for_window [class="TelegramDesktop"] floating enable border pixel 2
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -160,10 +162,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
