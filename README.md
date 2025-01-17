@@ -111,7 +111,8 @@ progressive web applications which support responsive, localization and multi-th
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=TohidEq&locale=en&mode=daily&theme=github_dark&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
+  <img src="https://github-readme-streak-stats-teq.vercel.app/?user=TohidEq&locale=en&mode=daily&theme=github_dark&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
+
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=TohidEq&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
@@ -251,5 +252,9 @@ progressive web applications which support responsive, localization and multi-th
   <img width="5" />
   <img src="https://skillicons.dev/icons?i=java" height="22" alt="java logo"  />
 </div>
+
+###
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=TohidEq&theme=onestar&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 ###
