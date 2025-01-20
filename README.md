@@ -6,7 +6,7 @@
 
 ###
 
-<p align="left">I am a junior web developer with over 2 years of experience.<br>I use JavaScript, TypeScript, and specifically the ReactJS library and NextJS framework to build
+<p align="left">I am a junior web developer with over 3 years of experience.<br>I use JavaScript, TypeScript, and specifically the ReactJS library and NextJS framework to build
 progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami CV.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
 
 ###
