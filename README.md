@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! I'm Tohid, a Front-End Developer from Iran</h2>
+## Hi 👋! I'm Tohid, a Front-End Developer from Iran
 
 ###
 
@@ -7,7 +7,7 @@
 ###
 
 <p align="left">I am a junior web developer with over 2 years of experience.<br>I use JavaScript, TypeScript, and specifically the ReactJS library and NextJS framework to build
-progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami Resume.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
+progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami CV.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
 
 ###
 
@@ -23,7 +23,7 @@ progressive web applications which support responsive, localization and multi-th
 
 <details>
   <summary>
-  <b>Checkout my Projects</b>
+  <b id="my-projects">Checkout my Projects</b>
   </summary>
   <br>
   <details>
@@ -147,7 +147,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-<h3 align="left">Front-end 🪄</h3>
+### Front-end 🪄
 
 ###
 
@@ -181,7 +181,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-<h4 align="left">Tools 🧰</h4>
+#### Tools 🧰
 
 ###
 
@@ -223,7 +223,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-<h5 align="left">Back-end ⚙️</h5>
+#### Back-end 💻
 
 ###
 
@@ -239,7 +239,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-<h6 align="left">Only to solve university exercises 😉</h6>
+##### Only to solve university exercises 😉
 
 ###
 
@@ -254,6 +254,8 @@ progressive web applications which support responsive, localization and multi-th
 </div>
 
 ###
+
+#### GitHub Trophies 🏆
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=TohidEq&theme=onestar&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
