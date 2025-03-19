@@ -23,80 +23,89 @@ progressive web applications which support responsive, localization and multi-th
 
 <details>
   <summary>
-  <b id="my-projects">Checkout my Projects</b>
+  <b id="my-projects">🗂️ Checkout my Projects</b>
   </summary>
   <br>
   <details>
     <summary>
-    <b>Web-Front</b>
+    <b>🎨 Web-Front</b>
     </summary>
-    <br>
-    - NextJS:
+      <br>
+    <b>+ NextJS:</b>
       <br>
       - <a href="https://github.com/TohidEq/web-design-2" target="_blank">🎮🛡️ DOT Game</a> . Like Dota . Coding <a href="https://figma.com/design/9zO7zf75KQkSMipkQJzqhK " target="blank">this FigmaProject</a> . NextJS . <a href="https://dot-t-eq.vercel.app/en" target="_blank">Demo</a>
       <br>
       - <a href="https://github.com/TohidEq/web-design-1" target="_blank">🌙✨ Night Trips</a> . Coding <a href="https://www.figma.com/design/qinMy6AE08VosT4d52uHxH/" target="blank">this FigmaProject</a> . NextJS . <a href="https://web-design-1-night-trips-teq.vercel.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/nextjs-blog/" target="_blank">Nextjs Blog</a> . Getting posts from <a href="https://github.com/TohidEq/test-mdx-posts" target="blank">A Github Repo</a> and show them to u :D . NextJS . <a href="http://tohideq-blog.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/nextjs-blog/" target="_blank">📝 Nextjs Blog</a> . Getting posts from <a href="https://github.com/TohidEq/test-mdx-posts" target="blank">A Github Repo</a> and show them to u :D . NextJS . <a href="http://tohideq-blog.vercel.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/next-counter/" target="_blank">Counter app</a> . Counter app . NextJS . <a href="https://next-counter-teq.netlify.app/6/2/" target="_blank">Demo (change numbers in url)</a>
+      - <a href="https://github.com/TohidEq/next-counter/" target="_blank">🎰 Counter app</a> . Counter app . NextJS . <a href="https://next-counter-teq.netlify.app/6/2/" target="_blank">Demo (change numbers in url)</a>
       <br>
-      - <a href="https://github.com/TohidEq/wiki-cher/" target="_blank">Wiki Cher</a> . Search into WikiPedia . NextJS . <a href="https://wikicher.netlify.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/wiki-cher/" target="_blank">📚 Wiki Cher</a> . Search into WikiPedia . NextJS . <a href="https://wikicher.netlify.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/sha256-guess/" target="_blank">Sha256 Guess</a> . Sha256 Guessing game . NextJS . <a href="https://sha256-guess.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/sha256-guess/" target="_blank">🔐 Sha256 Guess</a> . Sha256 Guessing game . NextJS . <a href="https://sha256-guess.vercel.app/" target="_blank">Demo</a>
       <br><br>
-    - React:
+    <b>+ React:</b>
       <br>
-      - <a href="https://github.com/TohidEq/finger-gridshot-aimlab" target="_blank">AimLab (Finger Gridshot)</a> . Finger mode of AimLab game . React . <a href="http://finger-gridshot.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/finger-gridshot-aimlab" target="_blank">🎯 AimLab (Finger Gridshot)</a> . Finger mode of AimLab game . React . <a href="http://finger-gridshot.vercel.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/simple-blog/" target="_blank">Blog (Local Storage)</a> . Blog with saving data in localstorage . React . <a href="http://simple-blog-tohideq.netlify.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/simple-blog/" target="_blank">📝 Blog (Local Storage)</a> . Blog with saving data in localstorage . React . <a href="http://simple-blog-tohideq.netlify.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/knights-tour/" target="_blank">Knight's Tour</a> . Simple Gmae. This is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once . React . <a href="http://knights-tour-zeta.vercel.app" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/knights-tour/" target="_blank">♞ Knight's Tour</a> . Simple Gmae. This is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once . React . <a href="http://knights-tour-zeta.vercel.app" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/joke-maker-site" target="_blank">Joke Maker</a> . Generate Jokes with your name :D . React . <a href="http://joke-maker-tohideq.netlify.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/joke-maker-site" target="_blank">🤡 Joke Maker</a> . Generate Jokes with your name :D . React . <a href="http://joke-maker-tohideq.netlify.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/cooking-bro/" target="_blank">Cooking Recipes</a> . With more themes . JSon-server, React
+      - <a href="https://github.com/TohidEq/cooking-bro/" target="_blank">👩🏻‍🍳 Cooking Recipes</a> . With more themes . JSon-server, React
       <br>
-      - <a href="https://github.com/TohidEq/100-hour-clock/" target="_blank">100 Hours Clock</a> . Your days are 100H. Enjoy your new timing . React . <a href="http://100-hour-clock.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/100-hour-clock/" target="_blank">🕓 100 Hours Clock</a> . Your days are 100H. Enjoy your new timing . React . <a href="http://100-hour-clock.vercel.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/memory-game" target="_blank">Memory Game</a> . Memory Card Game . React . <a href="http://memory-game-te.vercel.app/" target="_blank">Demo</a>
+      - <a href="https://github.com/TohidEq/memory-game" target="_blank">🧠 Memory Game</a> . Memory Card Game . React . <a href="http://memory-game-te.vercel.app/" target="_blank">Demo</a>
       <br>
-      - <a href="https://github.com/TohidEq/blog-json-server/" target="_blank">Blog + JSon server</a> . JSon-server, React
+      - <a href="https://github.com/TohidEq/blog-json-server/" target="_blank">📝 Blog + JSon server</a> . JSon-server, React
       <br><br>
-    - More:<br>
-      - <a href="https://github.com/TohidEq/personal_website" target="_blank">Personal Website</a> . Just 4 training coding . <a href="https://verdant-piroshki-de0372.netlify.app/public/" target="_blank">Demo</a><br>
-      - <a href="https://github.com/TohidEq/G2Tech-Exercise-2-Calculator" target="_blank">Calculator</a> . Simple Calculator . <a href="http://calculator-simple-rho.vercel.app" target="_blank">Demo</a><br>
+    <b>+ More:</b>
+    <br>
+      - <a href="https://github.com/TohidEq/personal_website" target="_blank">🌐 Personal Website</a> . Just 4 training coding . <a href="https://verdant-piroshki-de0372.netlify.app/public/" target="_blank">Demo</a><br>
+      - <a href="https://github.com/TohidEq/G2Tech-Exercise-2-Calculator" target="_blank">🖩 Calculator</a> . Simple Calculator . <a href="http://calculator-simple-rho.vercel.app" target="_blank">Demo</a><br>
   </details>
   <br>
   <details>
     <summary>
-    <b>Web-Back</b>
+    <b>🌐 Web-Back</b>
     </summary>
-    - <a href="https://github.com/TohidEq/chat-app-1/" target="_blank">Chat App</a> . Chat with different browser sessions in your system
+    - <a href="https://github.com/TohidEq/chat-app-1/" target="_blank">🗪 Chat App</a> . Chat with different browser sessions in your system
     <br>
   </details>
   <br>
   <details>
     <summary>
-    <b>Rust</b>
+    <b>📜 JavaScript</b>
     </summary>
-    - <a href="https://github.com/TohidEq/rust-game-tetris/" target="_blank">Tetris Game</a>
-    <br>
-    - <a href="https://github.com/TohidEq/rust-game-minesweeper/" target="_blank">Minesweeper Game</a>
-    <br>
-    - <a href="https://github.com/TohidEq/rust-game-snake/" target="_blank">Snake Game</a>
-    <br>
-    - <a href="https://github.com/TohidEq/rust-game-riverride/" target="_blank">Riverride Game</a>
-
+    - <a href="https://github.com/TohidEq/js-soroban-cli" target="_blank">🧮 Cli Soroban</a> A simple ancient calculator in your terminal
   </details>
   <br>
   <details>
     <summary>
-    <b>Python</b>
+    <b>🦀 Rust</b>
     </summary>
-    - <a href="https://github.com/TohidEq/py-2048-cli" target="_blank">2048 Game</a> in terminal
+    - <a href="https://github.com/TohidEq/rust-game-tetris/" target="_blank">🧩 Tetris Game</a> in terminal
     <br>
-    - <a href="https://github.com/TohidEq/py-img-to-ascii" target="_blank">Image to ASCII</a> convert images to ASCII art files
+    - <a href="https://github.com/TohidEq/rust-game-minesweeper/" target="_blank">💣 Minesweeper Game</a> in terminal
+    <br>
+    - <a href="https://github.com/TohidEq/rust-game-snake/" target="_blank">🐍 Snake Game</a> in terminal
+    <br>
+    - <a href="https://github.com/TohidEq/rust-game-riverride/" target="_blank">🛩️ Riverride Game</a> in terminal
+  </details>
+  <br>
+  <details>
+    <summary>
+    <b>🐍 Python</b>
+    </summary>
+    - <a href="https://github.com/TohidEq/py-2048-cli" target="_blank">🧩 2048 Game</a> in terminal
+    <br>
+    - <a href="https://github.com/TohidEq/py-img-to-ascii" target="_blank">🖼️ Image to ASCII</a> convert images to ASCII art files
+    <br>
+    - <a href="https://github.com/TohidEq/py-chat-ai-cli" target="_blank">🗪 Chat With AI in CLI</a> Chat with it whenevere and wherever you want
     <br>
   </details>
 </details>
@@ -147,7 +156,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-### Front-end 🪄
+### 🪄 Front-end
 
 ###
 
@@ -181,7 +190,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-#### Tools 🧰
+#### 🧰 Tools
 
 ###
 
@@ -223,7 +232,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-#### Back-end 💻
+#### 💻 Back-end
 
 ###
 
@@ -255,7 +264,7 @@ progressive web applications which support responsive, localization and multi-th
 
 ###
 
-#### GitHub Trophies 🏆
+#### 🏆 GitHub Trophies
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=TohidEq&theme=onestar&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
