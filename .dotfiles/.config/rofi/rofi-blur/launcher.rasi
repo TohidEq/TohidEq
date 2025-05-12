@@ -62,6 +62,7 @@ window {
     /*padding:                     0px;*/
     border:                      0px solid;
     /*border-radius:               0px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
     /* Backgroud Colors */
@@ -84,6 +85,7 @@ mainbox {
     padding:                     30px;
     border:                      0px solid;
     /*border-radius:               0px 0px 0px 0px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
@@ -97,6 +99,7 @@ inputbar {
     padding:                     0px;
     border:                      0px solid;
     /*border-radius:               0px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -122,6 +125,7 @@ entry {
     background-color:            #000000a0;
     padding:                     8px ;
     /*border-radius:               8px;*/
+    border-radius:               10px;
     text-color:                  inherit;
     cursor:                      text;
     placeholder:                 "Search...";
@@ -164,12 +168,13 @@ listview {
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
-    
+
     spacing:                     5px;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
     /*border-radius:               0px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -179,6 +184,7 @@ scrollbar {
     handle-width:                5px ;
     handle-color:                @handle-colour;
     /*border-radius:               10px;*/
+    border-radius:               10px;
     background-color:            @alternate-background;
 }
 
@@ -190,6 +196,7 @@ element {
     padding:                     6px;
     border:                      0px solid;
     /*border-radius:               8px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -254,6 +261,7 @@ mode-switcher{
     padding:                     0px;
     border:                      0px solid;
     /*border-radius:               0px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -262,6 +270,7 @@ button {
     padding:                     0px 15px 0px 9px;
     border:                      0px solid;
     /*border-radius:               8px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -279,6 +288,7 @@ message {
     padding:                     8px 12px;
     border:                      0px solid;
     /*border-radius:               8px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -299,6 +309,7 @@ error-message {
     padding:                     15px;
     border:                      0px solid;
     /*border-radius:               10px;*/
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;
