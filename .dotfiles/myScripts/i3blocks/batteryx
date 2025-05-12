@@ -37,7 +37,7 @@ _USE_BATT_GRADIENT=${_USE_BATT_GRADIENT:-false}
 _SYMBOLS_ONLY=${_SYMBOLS_ONLY:-false}
 
 # Don't use any symbols.
-_SUPPRESS_SYMBOLS=${_SUPPRESS_SYMBOLS:-false}
+_SUPPRESS_SYMBOLS=${_SUPPRESS_SYMBOLS:-true}
 
 # Hide the battery percentage
 _HIDE_PERCENTAGE=${_HIDE_PERCENTAGE:-false}
@@ -835,4 +835,3 @@ esac
 if not_empty "$battery_percentage" && ((battery_percentage <= 5)); then
   exit 33
 fi
-

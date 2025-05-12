@@ -17,42 +17,42 @@ border_left=0
 
 
 
-
-
-[colortext]
-full_text=" "
-min_width=25
-interval=once
-color=#ffffff
+#
+#
+#[colortext]
+#full_text=" "
+#min_width=25
+#interval=once
+#color=#ffffff
 #background=#A34A2800
 
-[borderedspace]
-full_text=" "
-min_width=10
-interval=once
-#border_top=2
-border=#A34A2800
-#background=#00000050
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+##border_top=2
+#border=#A34A2800
+##background=#00000050
 
 
 
 
 
-[borderedspace]
-full_text=" "
-min_width=10
-interval=once
-#border_top=2
-border=#A34A2800
-#background=#00000050
-
-[borderedspace]
-full_text=" "
-min_width=10
-interval=once
-#border_top=2
-border=#A34A2800
-#background=#00000050
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+##border_top=2
+#border=#A34A2800
+##background=#00000050
+#
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+##border_top=2
+#border=#A34A2800
+##background=#00000050
 
 [focused window]
 command=xtitle -s
@@ -69,9 +69,14 @@ full_text=" "
 min_width=10
 interval=once
 #border_top=2
-border=#A34A2800
 #background=#00000050
 
+
+[colortext]
+full_text="•"
+min_width=5
+interval=once
+color=#ffffff60
 
 
 [justspace]
@@ -136,14 +141,14 @@ interval=once
 #interval=once
 #background=#A34A2800
 #color=#ffffff
-
-[borderedspace]
-full_text=" "
-min_width=10
-interval=once
-#border_top=2
-border=#A34A2800
-#background=#00000050
+#
+#[borderedspace]
+#full_text=" "
+#min_width=10
+#interval=once
+##border_top=2
+#border=#A34A2800
+##background=#00000050
 
 [rofi-calendar]
 command=$SCRIPT_DIR/rofi-calendarx
@@ -154,14 +159,6 @@ color=#f3f4f5
 border=#A34A2800
 #background=#00000050
 
-
-[borderedspace]
-full_text=" "
-min_width=10
-interval=once
-#border_top=2
-border=#A34A2800
-#background=#00000050
 
 
 
@@ -178,11 +175,11 @@ interval=once
 
 
 [colortext]
-full_text="    "
+full_text=""
 min_width=10
 interval=once
 #background=#A34A2800
-color=#ffffff
+color=#ffffff60
 
 [time]
 command=$SCRIPT_DIR/timex
@@ -198,24 +195,16 @@ color=#ffffff
 min_width=50
 #background=#00000050
 
-[justspace]
-#background=#00000000
-full_text=" "
-min_width=5
-interval=once
-
-
-
-
 
 
 
 [colortext]
-full_text=" "
-min_width=30
+full_text="•"
+align=right
+min_width=11
 interval=once
 #background=#A34A2800
-color=#ffffff
+color=#ffffff60
 
 
 
@@ -249,20 +238,22 @@ command=$SCRIPT_DIR/pingx
 markup=pango
 interval=20
 signal=14
-label=- ‌
+label=
 # label=⟟
 #border_top=2
 border=#A34A2800
 #background=#00000050
 
 
-
-[justspace]
-#background=#00000000
-full_text=" "
-min_width=10
+[colortext]
+full_text="•"
+align=center
+min_width=11
 interval=once
-color=#9b7ad7
+#background=#A34A2800
+color=#ffffff60
+
+
 
 
 
@@ -274,23 +265,28 @@ interval=1
 color=#ffffff
 
 
-[colorspace]
-full_text=" "
-min_width=5
+
+[colortext]
+full_text=" •"
+align=center
+min_width=11
 interval=once
 #background=#A34A2800
+color=#ffffff60
+
+
 
 
 
 
 [moltimonitor]
-full_text=L|D|E
+full_text=--
 command=$SCRIPT_DIR/moltimonitorx
 interval=once
 signal=1
-label=‌‌‌ ‌
+label=
 color=#ffffff
-min_width=50
+min_width=33
 #border_top=2
 border=#A34A2800
 #background=#00000050
@@ -304,11 +300,16 @@ border=#A34A2800
 ##background=#00000050
 
 
-[justspace]
-#background=#00000000
-full_text=" "
-min_width=5
+[colortext]
+full_text="•"
+align=center
+min_width=11
 interval=once
+#background=#A34A2800
+color=#ffffff60
+
+
+
 
 
 
@@ -320,8 +321,8 @@ interval=once
 
 
 [colortext]
-full_text="   ‌"
-min_width=15
+full_text=" ‌"
+min_width=5
 interval=once
 color=#ffffff
 #background=#A34A2800
@@ -332,23 +333,27 @@ command=$SCRIPT_DIR/key_layoutx
 label=
 interval=1
 align=center
-min_width=35
+min_width=10
 color=#ffffff
 #border_top=2
 border=#A34A2800
 #background=#00000050
 
 
-
-[justspace]
-#background=#00000000
-full_text=" "
-min_width=10
+[colortext]
+full_text="•"
+align=left
+min_width=16
 interval=once
+#background=#A34A2800
+color=#ffffff60
+
+
+
 
 
 [screenpenx]
-full_text="   "
+full_text="PEN"
 command=$SCRIPT_DIR/screenpenx
 interval=once
 signal=1
@@ -363,6 +368,18 @@ color=#ffffff
 #border_top=2
 #border=#A34A2800
 ##background=#00000050
+
+
+[colortext]
+full_text="•"
+align=right
+min_width=16
+interval=once
+#background=#A34A2800
+color=#ffffff60
+
+
+
 
 
 [battery]
