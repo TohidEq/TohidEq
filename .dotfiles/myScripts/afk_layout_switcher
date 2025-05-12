@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# How many seconds of idle time before switching to EN layout
+IDLE_LIMIT=300  # 5 minutes
+
+while true; do
+    idle_time=$(xprintidle)
+
+    if [ "$idle_time" -ge $((IDLE_LIMIT * 1000)) ]; then
+        # Check current layout
+        current_layout=$(setxkbmap -query | awk '/layout:/ {print $2}')
+        if [ "$current_layout" != "us" ]; then
+            setxkbmap us
+        fi
+    fi
+
+    sleep 60  # Check every 60 seconds
+done

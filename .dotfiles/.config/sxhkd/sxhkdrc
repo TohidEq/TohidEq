@@ -7,27 +7,35 @@
 
 
 
+
 # # switch to workspace
 super + {1-8}
-  i3-msg workspace {"1:󰣈 ","2: ","3:󰔶 ","4:󰝤 ","5:󰜁 ","6:󰋘 ","7:󰏃 ","8:󰝬 "}
+  i3-msg workspace {"1:󱓻 ","2:󱓻 ","3:󱓻 ","4:󱓻 ","5:󱓻 ","6:󱓻 ","7:󱓻 ","8:󱓻 "}
 
 # move focused container to workspace
 super + shift + {1-8}
-  i3-msg move container to workspace {"1:󰣈 ","2: ","3:󰔶 ","4:󰝤 ","5:󰜁 ","6:󰋘 ","7:󰏃 ","8:󰝬 "}
+  i3-msg move container to workspace {"1:󱓻 ","2:󱓻 ","3:󱓻 ","4:󱓻 ","5:󱓻 ","6:󱓻 ","7:󱓻 ","8:󱓻 "}
+
 
 # # switch to workspace monitor 2
 super + ctrl + {1-8}
-  i3-msg workspace number {"11:󰣈 ","12: ","13:󰔶 ","14:󰝤 ","15:󰜁 ","16:󰋘 ","17:󰏃 ","18:󰝬 "}
+  i3-msg workspace number {"11:󱓻 ","12:󱓻 ","13:󱓻 ","14:󱓻 ","15:󱓻 ","16:󱓻 ","17:󱓻 ","18:󱓻 "}
 
 
 # move focused container to workspace monitor 2
 super + ctrl +shift + {1-8}
-  i3-msg move container to workspace  {"11:󰣈 ","12: ","13:󰔶 ","14:󰝤 ","15:󰜁 ","16:󰋘 ","17:󰏃 ","18:󰝬 "}
+  i3-msg move container to workspace  {"11:󱓻 ","12:󱓻 ","13:󱓻 ","14:󱓻 ","15:󱓻 ","16:󱓻 ","17:󱓻 ","18:󱓻 "}
 
 
 # Lock screen
 super + 9 
+  exec setxkbmap us; \
   exec blurlock
+
+# Power menu
+super + 0 
+    exec setxkbmap us
+
 
 
 # workspace back and forth (with/without active container)
@@ -39,12 +47,13 @@ super + shift +b
 
 # split orientation
 super +v 
-  i3-msg split v;exec notify-send 'tile vertically'
+  i3-msg split v;exec notify-send 'Tile Vertically'
 super + shift+ v 
-  i3-msg split h;exec notify-send 'tile horizontally'
+  i3-msg split h;exec notify-send 'Tile Horizontally'
 
 super +q 
-  i3-msg split toggle
+  i3-msg split toggle;exec notify-send 'Toggle Split'
+
 
 # toggle fullscreen mode for the focused container
 super +f 
@@ -52,15 +61,16 @@ super +f
 
 # change container layout (stacked, tabbed, toggle split)
 super +s 
-  i3-msg layout stacking
+  i3-msg layout stacking;exec notify-send 'Toggle Stacking'
+
 super +w 
-  i3-msg layout tabbed
+  i3-msg layout tabbed;exec notify-send 'Tabbed'
 super +e 
-  i3-msg layout toggle split
+  i3-msg layout toggle split;exec notify-send 'Split'
 
 # toggle tiling / floating
 super + shift +space 
-  i3-msg floating toggle
+  i3-msg floating toggle;exec notify-send 'Toglle Floating'
 
 # change focus between tiling / floating windows
 super +space 
@@ -68,7 +78,7 @@ super +space
 
 # toggle sticky
 super + shift +s 
-  i3-msg sticky toggle
+  i3-msg sticky toggle;exec notify-send 'Toglle Sticky'
 
 # focus the parent container
 super +a 
@@ -83,10 +93,16 @@ super + shift +minus
 super +minus 
   i3-msg scratchpad show
 
-#navigate workspaces next / previous
+# navigate workspaces next / previous
+# - next
 super + ctrl + Right 
   i3-msg workspace next
+super + ctrl + l
+  i3-msg workspace next
+# - previous
 super + ctrl + Left 
+  i3-msg workspace prev
+super + ctrl + h
   i3-msg workspace prev
 
 
@@ -110,7 +126,7 @@ super + u
 super + y
   i3-msg  border pixel 2
 super + n
-  i3-msg  border normal
+  i3-msg  border normal 0
 
 
 # start a terminal
@@ -233,3 +249,15 @@ super + ctrl + c
   exec xcolor -s clipboard
 
 # ----------- #
+
+
+
+
+
+
+ctrl + alt + 1
+  blugon --setcurrent="6600"
+ctrl + alt + 2
+  blugon --setcurrent="-600"
+ctrl + alt + 3
+  blugon --setcurrent="+600"

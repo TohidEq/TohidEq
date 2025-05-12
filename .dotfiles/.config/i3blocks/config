@@ -1,7 +1,7 @@
 
 color=#f3f4f5
 
-background=#11001100
+#background=#00000040
 separator_block_width=0
 markup=none
 align=center
@@ -24,23 +24,42 @@ full_text=" "
 min_width=25
 interval=once
 color=#ffffff
-background=#A34A2800
+#background=#A34A2800
 
 [borderedspace]
 full_text=" "
 min_width=10
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
+
+
+
+
+[borderedspace]
+full_text=" "
+min_width=10
+interval=once
+#border_top=2
+border=#A34A2800
+#background=#00000050
+
+[borderedspace]
+full_text=" "
+min_width=10
+interval=once
+#border_top=2
+border=#A34A2800
+#background=#00000050
 
 [focused window]
 command=xtitle -s
 interval=persist
 color=#ffffff
 min_width=35
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -49,14 +68,14 @@ border=#A34A2800
 full_text=" "
 min_width=10
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
 
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=5
 interval=once
@@ -100,7 +119,7 @@ interval=once
 
 
 #[justspace]
-background=#00000000
+#background=#00000000
 #full_text=" "
 #min_width=5
 #interval=once
@@ -122,7 +141,7 @@ background=#00000000
 full_text=" "
 min_width=10
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -131,7 +150,7 @@ command=$SCRIPT_DIR/rofi-calendarx
 label=
 interval=5
 color=#f3f4f5
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -140,7 +159,7 @@ border=#A34A2800
 full_text=" "
 min_width=10
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -151,7 +170,7 @@ border=#A34A2800
 
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=5
 interval=once
@@ -162,7 +181,7 @@ interval=once
 full_text="    "
 min_width=10
 interval=once
-background=#A34A2800
+#background=#A34A2800
 color=#ffffff
 
 [time]
@@ -173,14 +192,14 @@ label=
 STRFTIME_FORMAT=%H:%M
 TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
 TZ_LABELS=,Brazil,AU,Hyderabad
-border_top=2
+#border_top=2
 border=#A34A2800
 color=#ffffff
 min_width=50
 #background=#00000050
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=5
 interval=once
@@ -195,7 +214,7 @@ interval=once
 full_text=" "
 min_width=30
 interval=once
-background=#A34A2800
+#background=#A34A2800
 color=#ffffff
 
 
@@ -210,7 +229,7 @@ interval=10
 # set this to 1 to display the name of the connected WIFI interface instead of the IP address.
 display_wifi_name=0
 color=#f3f4f5
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -219,7 +238,7 @@ border=#A34A2800
 full_text=" "
 min_width=10
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -232,14 +251,14 @@ interval=20
 signal=14
 label=- ‌
 # label=⟟
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
 
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=10
 interval=once
@@ -251,7 +270,7 @@ color=#9b7ad7
 [displays]
 command=$SCRIPT_DIR/displaysx
 interval=1
-background=#A34A2800
+#background=#A34A2800
 color=#ffffff
 
 
@@ -259,7 +278,7 @@ color=#ffffff
 full_text=" "
 min_width=5
 interval=once
-background=#A34A2800
+#background=#A34A2800
 
 
 
@@ -272,7 +291,7 @@ signal=1
 label=‌‌‌ ‌
 color=#ffffff
 min_width=50
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -286,7 +305,7 @@ border=#A34A2800
 
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=5
 interval=once
@@ -305,7 +324,7 @@ full_text="   ‌"
 min_width=15
 interval=once
 color=#ffffff
-background=#A34A2800
+#background=#A34A2800
 
 
 [key_layout]
@@ -315,14 +334,14 @@ interval=1
 align=center
 min_width=35
 color=#ffffff
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
 
 
 [justspace]
-background=#00000000
+#background=#00000000
 full_text=" "
 min_width=10
 interval=once
@@ -335,7 +354,7 @@ interval=once
 signal=1
 min_width=15
 color=#ffffff
-background=#A34A2800
+#background=#A34A2800
 
 #[borderedspace]
 #full_text=" "
@@ -353,7 +372,7 @@ markup=pango
 BAT_NUMBER=0
 interval=30
 color=#ffffff
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 
@@ -361,7 +380,7 @@ border=#A34A2800
 full_text=" "
 min_width=15
 interval=once
-border_top=2
+#border_top=2
 border=#A34A2800
 #background=#00000050
 

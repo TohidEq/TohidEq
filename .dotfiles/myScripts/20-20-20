@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+cd ~/myworld/Applications/github-apps/20_20_20_eye_strain/src
+python main.py

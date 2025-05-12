@@ -13,7 +13,7 @@ fi
 
 
 if [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
-  exec screenpena > /dev/null 2>&1
+  exec screenpen > /dev/null 2>&1
 fi
 
 

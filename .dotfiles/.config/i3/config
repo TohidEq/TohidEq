@@ -23,11 +23,11 @@ set $sm HDMI-1
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2
-default_floating_border normal
+default_border none
+default_floating_border none
 
 # Hide borders
-hide_edge_borders none
+hide_edge_borders both
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -60,28 +60,28 @@ exec --no-startup-id volumeicon
 
 set $movemouse "sh -c 'eval `xdotool getactivewindow getwindowgeometry --shell`; xdotool mousemove $((X+WIDTH/2)) $((Y+HEIGHT/2))'"
 # change focus
-bindsym $mod+h focus left; exec $movemouse
-bindsym $mod+j focus down; exec $movemouse
-bindsym $mod+k focus up; exec $movemouse
-bindsym $mod+l focus right; exec $movemouse
+bindsym $mod+h focus left; exec  --no-startup-id $movemouse
+bindsym $mod+j focus down; exec  --no-startup-id $movemouse
+bindsym $mod+k focus up; exec  --no-startup-id $movemouse
+bindsym $mod+l focus right; exec  --no-startup-id $movemouse
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left; exec $movemouse
-bindsym $mod+Down focus down; exec $movemouse
-bindsym $mod+Up focus up; exec $movemouse
-bindsym $mod+Right focus right; exec $movemouse
+bindsym $mod+Left focus left; exec  --no-startup-id $movemouse
+bindsym $mod+Down focus down; exec  --no-startup-id $movemouse
+bindsym $mod+Up focus up; exec  --no-startup-id $movemouse
+bindsym $mod+Right focus right; exec  --no-startup-id $movemouse
 
 # move focused window
-bindsym $mod+Shift+h move left; exec $movemouse
-bindsym $mod+Shift+j move down; exec $movemouse
-bindsym $mod+Shift+k move up; exec $movemouse
-bindsym $mod+Shift+l move right; exec $movemouse
+bindsym $mod+Shift+h move left; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+j move down; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+k move up; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+l move right; exec  --no-startup-id $movemouse
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left; exec $movemouse
-bindsym $mod+Shift+Down move down; exec $movemouse
-bindsym $mod+Shift+Up move up; exec $movemouse
-bindsym $mod+Shift+Right move right; exec $movemouse
+bindsym $mod+Shift+Left move left; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+Down move down; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+Up move up; exec  --no-startup-id $movemouse
+bindsym $mod+Shift+Right move right; exec  --no-startup-id $movemouse
 
 
 workspace_auto_back_and_forth yes
@@ -94,52 +94,52 @@ workspace_auto_back_and_forth yes
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 2
-for_window [class="calamares"] floating enable border normal
+for_window [title="alsamixer"] floating enable border pixel 0
+for_window [class="calamares"] floating enable border normal 0
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="fpakman"] floating enable
-for_window [class="Galculator"] floating enable border pixel 2
-for_window [class="GParted"] floating enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [class="Galculator"] floating enable border pixel 0
+for_window [class="GParted"] floating enable border normal 0
+for_window [title="i3_help"] floating enable sticky enable border normal 0
 for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Lxappearance"] floating enable sticky enable border normal 0
 for_window [class="Manjaro-hello"] floating enable
-for_window [class="Manjaro Settings Manager"] floating enable border normal
+for_window [class="Manjaro Settings Manager"] floating enable border normal 0
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable border normal 0
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [title="About Pale Moon"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="qt5ct"] floating enable sticky enable border normal 0
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal 0
+for_window [class="Simple-scan"] floating enable border normal 0
+for_window [class="(?i)System-config-printer.py"] floating enable border normal 0
+for_window [class="Skype"] floating enable border normal 0
+for_window [class="Timeset-gui"] floating enable border normal 0
+for_window [class="(?i)virtualbox"] floating enable border normal 0
 for_window [class="Xfburn"] floating enable
 
-for_window [title="nvim-by-fzf"] floating enable border pixel 2
-for_window [title="bmenu"] floating enable border pixel 2
+for_window [title="nvim-by-fzf"] floating enable border pixel 0
+for_window [title="bmenu"] floating enable border pixel 0
 
 
-for_window [class="nm-connection-editor"] floating enable border pixel 2
-for_window [title="Network Connections"] floating enable border pixel 2
+for_window [class="nm-connection-editor"] floating enable border pixel 0
+for_window [title="Network Connections"] floating enable border pixel 0
 
-for_window [class="telegram-desktop"] floating enable border pixel 2
-for_window [class="TelegramDesktop"] floating enable border pixel 2
+for_window [class="telegram-desktop"] floating enable border pixel 0
+for_window [class="TelegramDesktop"] floating enable border pixel 0
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec  --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown !! Set Layout To US !!
 mode "$mode_system" {
         bindsym l exec --no-startup-id i3exit lock, mode "default"
         bindsym s exec --no-startup-id i3exit suspend, mode "default"
@@ -182,7 +182,8 @@ mode "resize" {
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # wallpaper old:
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id picom -b
 # wallpaper live(ram eater...):
 #exec --no-startup-id wallpaper_loop_pngs $(wallpapaer_random_folder)
 #exec --no-startup-id wllppr-set-random-gif
@@ -197,7 +198,8 @@ exec --no-startup-id clipit
 # widget
 #exec --no-startup-id start_conky_maia
 #exec --no-startup-id start_conky_grey
-exec --no-startup-id xautolock -time 10 -locker "setxkbmap us && blurlock"
+exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id afk_layout_switcher
 exec_always --no-startup-id ff-theme-util
 
 
@@ -206,6 +208,7 @@ exec --no-startup-id /usr/bin/setxkbmap -layout us,ir
 #
 exec_always --no-startup_id pkill sxhkd
 exec_always --no-startup-id sxhkd
+exec_always --no-startup-id 'xinput --set-prop 14 "libinput Accel Speed" -0.700000'
 
 exec_always --no-startup-id fix_xcursor
 
@@ -271,16 +274,17 @@ bar {
         #   font xft:URWGothic-Book 11
         #d7566e
         colors {
-                background  #26323800
+                background  #00000060
                 statusline  #a0a000
                 separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace   #90ff0000 #00000000 #00a0f0
-                active_workspace    #f0900000 #00000000 #00f000
-                inactive_workspace  #11001100 #11001100 #f0f000
-                binding_mode        #f0f30a50 #00009f00 #f0e3ca
-                urgent_workspace    #f0e3ca50 #f0e3ca80 #030303
+                focused_workspace   #00000060 #00000060 #ffffffff
+                active_workspace    #00000060 #00000060 #ffffff90
+                inactive_workspace  #00000060 #11001160 #ffffff70
+                binding_mode        #f0f30a50 #00009f60 #f0e3ca90
+                urgent_workspace    #f0e3ca50 #f0e3ca80 #03030390
+
         }
 }
 
@@ -316,16 +320,16 @@ bar {
         #   font xft:URWGothic-Book 11
 
        colors {
-                background  #26323800
+                background  #00000060
                 statusline  #a0a000
                 separator   #454947
 
                 #                      border  backgr. text
-                focused_workspace   #90ff0000 #00000000 #00a0f0
-                active_workspace    #f0900000 #00000000 #00f000
-                inactive_workspace  #11001100 #11001100 #f0f000
-                binding_mode        #f0f30a50 #00009f00 #f0e3ca
-                urgent_workspace    #f0e3ca50 #f0e3ca80 #030303
+                focused_workspace   #00000060 #00000060 #ffffffff
+                active_workspace    #00000060 #00000060 #ffffff90
+                inactive_workspace  #00000060 #11001160 #ffffff70
+                binding_mode        #f0f30a50 #00009f60 #f0e3ca90
+                urgent_workspace    #f0e3ca50 #f0e3ca80 #03030390
         }
 }
 
@@ -352,10 +356,10 @@ bar {
 
 # Theme colors
 # class                 border  backgr  text    indic.   child_brdr
-client.focused          #1d1d1d #1d1d1d #f0e3ca #ffffff70
-client.focused_inactive #1d1d1d #1d1d1d #f0e3ca #ffffff50
-client.unfocused        #000000 #000000 #f0e3ca #ffffff40
-client.urgent           #3a3a3a #f0e3ca #3f3f3f #ffffff40
+client.focused          #f0e3ca #f0e3ca #1d1d1d #1d1d1d
+client.focused_inactive #1d1d1d #1d1d1d #f0e3ca #ffffff
+client.unfocused        #000000 #000000 #f0e3ca #ffff00
+client.urgent           #3a3a3a #f0e3ca #3f3f3f #f00000
 client.placeholder      #000000 #000000 #f0e3ca #000000
 
 client.background       #00000000
