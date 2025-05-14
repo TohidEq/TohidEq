@@ -212,6 +212,8 @@ exec_always --no-startup-id 'xinput --set-prop 14 "libinput Accel Speed" -0.7000
 
 exec_always --no-startup-id fix_xcursor
 
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
@@ -245,14 +247,12 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-        mode hide
+        mode dock
         hidden_state hide
-        # ......
-	position top
         # ......
 
 	i3bar_command i3bar --transparency
-	status_command i3status
+	# status_command i3status
         status_command SCRIPT_DIR=~/myScripts/i3blocks i3blocks
 
         # ......
@@ -292,13 +292,13 @@ bar {
 
 
 bar {
-        mode hide
+        mode dock
         hidden_state hide
         # ......
         #font pango: JetBrainsMono Nerd Font 10
         font pango: noto sans mono 10
         i3bar_command i3bar --transparency
-        status_command i3status
+        # status_command i3status
         position top
         # ......
         status_command SCRIPT_DIR=~/myScripts/i3blocks i3blocks
@@ -310,16 +310,11 @@ bar {
 	output nonprimary
         tray_output eDP-1
 
-
-        ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-        #	tray_output primary
-        #	tray_output eDP1
-
         bindsym button4 nop
         bindsym button5 nop
         #   font xft:URWGothic-Book 11
 
-       colors {
+        colors {
                 background  #00000060
                 statusline  #a0a000
                 separator   #454947
@@ -430,6 +425,8 @@ for_window [window_role="app"]                      floating enable
 for_window [window_role="pop-up"]                   floating enable
 for_window [window_role="task_dialog"]              floating enable
 for_window [title="Preferences$"]                   floating enable
+
+
 
 
 

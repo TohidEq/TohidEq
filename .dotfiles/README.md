@@ -2,10 +2,12 @@
 
 ## Preview
 
-![SS](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-9.11.2024.png)
+![SS 1](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-5.14.2025.png)
 
 rofi launcher
-![SS-roofi](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-rofi-3.10.2024.png)
+![SS-roofi](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-rofi-5.14.2025.png)
+
+![SS 2](https://raw.githubusercontent.com/TohidEq/TohidEq/master/assets/ss-5-15-2025.png)
 
 ## Live Wallpaper (gif)
 
