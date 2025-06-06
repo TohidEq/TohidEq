@@ -33,40 +33,81 @@ progressive web applications which support responsive, localization and multi-th
       <br>
     <b>+ NextJS:</b>
       <br>
+      |
+      <br>
+      - <a href="https://github.com/TohidEq/uni-kar-vamej" target="_blank">💼🧑‍💻 KarVamej - کاروامج</a> . Finding Job and Freelancer Projects
+      <br>
+      | Web Scrapping [Jobinja, Jobvision, Ponisha, Karnalcer] . Puppeteer, NextJS . <a href="https://hub.docker.com/repository/docker/tohideghdami/kar-vamej/general" target="_blank">Docker Image(use `latest` tag)</a>
+      <br> | To visit the demo website <a href="https://kar-vamej-tohideq.kubarcloud.net/" target="_blank">(KarVamej)</a>, reach out to me and I’ll start the server . <a href="https://t.me/tohid_eq/" target="_blank">@Tohid_Eq</a>(Telegram)
+      <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/web-design-2" target="_blank">🎮🛡️ DOT Game</a> . Like Dota . Coding <a href="https://figma.com/design/9zO7zf75KQkSMipkQJzqhK " target="blank">this FigmaProject</a> . NextJS . <a href="https://dot-t-eq.vercel.app/en" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/web-design-1" target="_blank">🌙✨ Night Trips</a> . Coding <a href="https://www.figma.com/design/qinMy6AE08VosT4d52uHxH/" target="blank">this FigmaProject</a> . NextJS . <a href="https://web-design-1-night-trips-teq.vercel.app/" target="_blank">Demo</a>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/nextjs-blog/" target="_blank">📝 Nextjs Blog</a> . Getting posts from <a href="https://github.com/TohidEq/test-mdx-posts" target="blank">A Github Repo</a> and show them to u :D . NextJS . <a href="http://tohideq-blog.vercel.app/" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/next-counter/" target="_blank">🎰 Counter app</a> . Counter app . NextJS . <a href="https://next-counter-teq.netlify.app/6/2/" target="_blank">Demo (change numbers in url)</a>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/wiki-cher/" target="_blank">📚 Wiki Cher</a> . Search into WikiPedia . NextJS . <a href="https://wikicher.netlify.app/" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/sha256-guess/" target="_blank">🔐 Sha256 Guess</a> . Sha256 Guessing game . NextJS . <a href="https://sha256-guess.vercel.app/" target="_blank">Demo</a>
       <br><br>
     <b>+ React:</b>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/finger-gridshot-aimlab" target="_blank">🎯 AimLab (Finger Gridshot)</a> . Finger mode of AimLab game . React . <a href="http://finger-gridshot.vercel.app/" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/simple-blog/" target="_blank">📝 Blog (Local Storage)</a> . Blog with saving data in localstorage . React . <a href="http://simple-blog-tohideq.netlify.app/" target="_blank">Demo</a>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/knights-tour/" target="_blank">♞ Knight's Tour</a> . Simple Gmae. This is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once . React . <a href="http://knights-tour-zeta.vercel.app" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/joke-maker-site" target="_blank">🤡 Joke Maker</a> . Generate Jokes with your name :D . React . <a href="http://joke-maker-tohideq.netlify.app/" target="_blank">Demo</a>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/cooking-bro/" target="_blank">👩🏻‍🍳 Cooking Recipes</a> . With more themes . JSon-server, React
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/100-hour-clock/" target="_blank">🕓 100 Hours Clock</a> . Your days are 100H. Enjoy your new timing . React . <a href="http://100-hour-clock.vercel.app/" target="_blank">Demo</a>
       <br>
+      |
+      <br>
       - <a href="https://github.com/TohidEq/memory-game" target="_blank">🧠 Memory Game</a> . Memory Card Game . React . <a href="http://memory-game-te.vercel.app/" target="_blank">Demo</a>
+      <br>
+      |
       <br>
       - <a href="https://github.com/TohidEq/blog-json-server/" target="_blank">📝 Blog + JSon server</a> . JSon-server, React
       <br><br>
     <b>+ More:</b>
-    <br>
-      - <a href="https://github.com/TohidEq/personal_website" target="_blank">🌐 Personal Website</a> . Just 4 training coding . <a href="https://verdant-piroshki-de0372.netlify.app/public/" target="_blank">Demo</a><br>
-      - <a href="https://github.com/TohidEq/G2Tech-Exercise-2-Calculator" target="_blank">🖩 Calculator</a> . Simple Calculator . <a href="http://calculator-simple-rho.vercel.app" target="_blank">Demo</a><br>
+      <br>
+      |
+      <br>
+        - <a href="https://github.com/TohidEq/personal_website" target="_blank">🌐 Personal Website</a> . Just 4 training coding . <a href="https://verdant-piroshki-de0372.netlify.app/public/" target="_blank">Demo</a>
+      <br>
+      |
+        <br>
+        - <a href="https://github.com/TohidEq/G2Tech-Exercise-2-Calculator" target="_blank">🖩 Calculator</a> . Simple Calculator . <a href="http://calculator-simple-rho.vercel.app" target="_blank">Demo</a><br>
+
   </details>
   <br>
   <details>
