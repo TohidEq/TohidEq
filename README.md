@@ -1,23 +1,23 @@
 ## Hi 👋! I'm Tohid, a Front-End Developer from Iran
 
-###
+#####
 
 <h3 align="left">Dream it. Believe it. Build it.</h3>
 
-###
+######
 
 <p align="left">I am a junior web developer with over 3 years of experience.<br>I use JavaScript, TypeScript, and specifically the ReactJS library and NextJS framework to build
 progressive web applications which support responsive, localization and multi-theme (like dark mode) (<a href="/Tohid Eghdami CV.pdf" target="_blank">📜 Resume</a>)<!-- & 2-way direction (soon) --></p>
 
-###
+#####
 
 <p align="left">✨ Practical searching and self-learning are my other abilities<br>🌱 I'm on track with learning more about Front-End, Design and new stuff.<br>💬 You can drop me an email at <a href="mailto:TohidEq@gmail.com" target="_blank">📧 TohidEq@gmail.com </a> with a subject containing "GitHub: ..."! It will be a pleasure to talk with you!<br>⚡ In my free time I enjoy working out, watching series and playing chess (<a href="https://lichess.org/@/Tohid_Eghdami" target="_blank">♘ My LiChess</a>) </p>
 
-###
+#####
 
-<p align="left">And here is  <a href="https://github.com/TohidEq/TohidEq/tree/master/.dotfiles" target="_blank">⚙ My Configs</a> </p>
+<p align="left">And here is  <a href="https://github.com/TohidEq/dotfiles" target="_blank">⚙ My Configs</a> </p>
 
-###
+---
 
 <p>
 
@@ -152,13 +152,13 @@ progressive web applications which support responsive, localization and multi-th
 </details>
 </p>
 
-###
+---
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=TohidEq&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true&order=1" height="170" alt="stats graph"  />
 </div>
 
-###
+#####
 
 <div align="center">
   <img src="https://github-readme-streak-stats-teq.vercel.app/?user=TohidEq&locale=en&mode=daily&theme=github_dark&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
@@ -166,147 +166,160 @@ progressive web applications which support responsive, localization and multi-th
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=TohidEq&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
-###
+#####
 
 <h3 align="center">Profile views</h3>
 
-###
+#####
 
 <div align="center">
   <img src="https://profile-counter.glitch.me/TohidEq/count.svg?"  />
 </div>
 
-###
+#####
 
 <img src="https://raw.githubusercontent.com/TohidEq/TohidEq/output/snake.svg" alt="Snake animation" />
 
-###
+---
+
+
+### 🗺️ Where to Find Me
+
+#####
 
 <div align="left">
-  <img src="https://img.shields.io/static/v1?message=@Tohid_Eq&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="telegram logo"  />
+  
+  <a href="http://t.me/Tohid_Eq" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=@Tohid_Eq&logo=telegram&label&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="telegram logo"  />
+  </a>
   <a href="@TohidEq" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=@TohidEq&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="discord logo"  />
+    <img src="https://img.shields.io/static/v1?message=@TohidEq&logo=discord&label=&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="discord logo"  />
   </a>
   <a href="mailto:TohidEq@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="gmail logo"  />
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="gmail logo"  />
   </a>
   <a href="https://stackoverflow.com/users/18447603/tohideq" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Stackoverflow&logo=stackoverflow&label=&color=FE7A16&logoColor=white&labelColor=&style=for-the-badge" height="31" alt="stackoverflow logo"  />
+    <img src="https://img.shields.io/static/v1?message=Stackoverflow&logo=stackoverflow&label=&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="stackoverflow logo"  />
+  </a>
+  <br>
+  <a href="tel:+989307827788" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=0930 782 7788&logo=Google Messages&label&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="messages logo"  />
+  </a>
+  <a href="tel:+989119224882" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=0911 922 4882&logo=Google Messages&label&logoColor=EEE&color=0d1117&logoWidth=20&labelColor=&style=for-the-badge" height="28" alt="messages logo"  />
   </a>
 </div>
 
-###
+---
 
 ### 🪄 Front-end
 
-###
+#####
 
 <div align="left">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="30" alt="javascript logo"  />
+
+
+
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="javascript logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" height="30" alt="typescript logo"  />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="typescript logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white&style=for-the-badge" height="30" alt="jquery logo"  />
+  <img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="jquery logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="30" alt="react logo"  />
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="react logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge" height="30" alt="nextjs logo"  />
+    <br>
+  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="nextjs logo"  />
   <img width="8" />
-  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white&style=for-the-badge" height="30" alt="redux logo"  />
+  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="redux logo"  />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="html5 logo"  />
+  <img width="8" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="css3 logo"  />
+    <br>
+  <img width="8" />
+  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="tailwindcss logo"  />
+  <img width="8" />
+  <img src="https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="sass logo"  />
+  <img width="8" />
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="bootstrap logo"  />
 </div>
 
-###
-
-<div align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" height="26" alt="html5 logo"  />
-  <img width="8" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" height="26" alt="css3 logo"  />
-  <img width="8" />
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="26" alt="tailwindcss logo"  />
-  <img width="8" />
-  <img src="https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=black&style=for-the-badge" height="26" alt="sass logo"  />
-  <img width="8" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" height="26" alt="bootstrap logo"  />
-</div>
-
-###
+---
 
 #### 🧰 Tools
 
-###
+#####
 
 <div align="left">
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge" height="25" alt="linux logo"  />
+  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="linux logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/GNU Bash-4EAA25?logo=gnubash&logoColor=white&style=for-the-badge" height="25" alt="bash logo"  />
+  <img src="https://img.shields.io/badge/GNU Bash-4EAA25?logo=gnubash&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="bash logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge" height="25" alt="git logo"  />
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="git logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="25" alt="github logo"  />
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="github logo"  />
+    <br>
   <img width="5" />
-  <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=for-the-badge" height="25" alt="npm logo"  />
+  <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="npm logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=white&style=for-the-badge" height="25" alt="yarn logo"  />
+  <img src="https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="yarn logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" height="25" alt="vite logo"  />
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="vite logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white&style=for-the-badge" height="25" alt="eslint logo"  />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="eslint logo"  />
+    <br>
   <img width="5" />
-  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=black&style=for-the-badge" height="25" alt="webpack logo"  />
+  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="webpack logo"  />
+  <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=visualstudiocode&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="vscode logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Vim-019733?logo=vim&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="vim logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="neovim logo"  />
+    <br>
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Adobe Illustrator-FF9A00?logo=adobeillustrator&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="illustrator logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="postman logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="figma logo"  />
 </div>
 
-###
-
-<div align="left">
-  <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" height="25" alt="vscode logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Vim-019733?logo=vim&logoColor=white&style=for-the-badge" height="25" alt="vim logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=black&style=for-the-badge" height="25" alt="neovim logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Adobe Illustrator-FF9A00?logo=adobeillustrator&logoColor=black&style=for-the-badge" height="25" alt="illustrator logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=black&style=for-the-badge" height="25" alt="postman logo"  />
-  <img width="5" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="25" alt="figma logo"  />
-</div>
-
-###
+---
 
 #### 💻 Back-end
 
-###
+#####
 
 <div align="left">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge" height="25" alt="mysql logo"  />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="mysql logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="25" alt="mongodb logo"  />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="mongodb logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=black&style=for-the-badge" height="25" alt="php logo"  />
+  <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="php logo"  />
 <!--   <img width="5" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" height="25" alt="laravel logo"  /> -->
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="laravel logo"  /> -->
 </div>
 
-###
+---
 
-##### Only to solve university exercises 😉
+#### 👩‍🎓 University
 
-###
+#####
 
 <div align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" height="22" alt="python logo"  />
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="22" alt="python logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge" height="22" alt="cplusplus logo"  />
+  <img src="https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="22" alt="cplusplus logo"  />
   <img width="5" />
-  <img src="https://img.shields.io/badge/C Sharp-239120?logo=csharp&logoColor=white&style=for-the-badge" height="22" alt="csharp logo"  />
+  <img src="https://img.shields.io/badge/C Sharp-239120?logo=csharp&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="22" alt="csharp logo"  />
   <img width="5" />
-  <img src="https://skillicons.dev/icons?i=java" height="22" alt="java logo"  />
+  <img src="https://img.shields.io/badge/Java-00599C?logo=java&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="22" alt="cplusplus logo"  />
 </div>
 
-###
+---
 
 #### 🏆 GitHub Trophies
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=TohidEq&theme=onestar&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
-###
+#####
