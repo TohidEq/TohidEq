@@ -282,6 +282,8 @@ progressive web applications which support responsive, localization and multi-th
   <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="postman logo"  />
   <img width="5" />
   <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="figma logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/Docker-F24E1E?logo=docker&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="docker logo"  />
 </div>
 
 ---
@@ -294,6 +296,8 @@ progressive web applications which support responsive, localization and multi-th
   <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="mysql logo"  />
   <img width="5" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="mongodb logo"  />
+  <img width="5" />
+  <img src="https://img.shields.io/badge/NodeJS-777BB4?logo=nodedotjs&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="nodejs logo"  />
   <img width="5" />
   <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=EEE&color=0d1117&logoWidth=20&style=for-the-badge" height="24" alt="php logo"  />
 <!--   <img width="5" />
