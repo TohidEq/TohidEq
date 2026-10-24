@@ -14,13 +14,16 @@
   --sun: #f2ff00;
 
   --light: #fff956;
-
+  --night-light: transparent;
+  --red-night-light: transparent;
 
   --light-source: transparent;
 
   --white: #efefef;
   --black: #1f1f1f;
   --greenc: #137d13;
+  --redc: #ff3535;
+  --only-redc: #ff3535;
   --woodenc: #7A4110;
   --filec: #a987ec;
   --paperc: #dec5b4;
@@ -31,12 +34,14 @@
 
 [data-theme='dark'] {
   --light-source: #fff715;
-
-  --white: #959595;
+  --night-light: #fff956;
+  --red-night-light: #ff3535;
+  --white: #656565;
   --black: #0a0a0a;
   --greenc: #0c490c;
+  --redc: #7a1313;
   --woodenc: #3f250f;
-  --filec: #5d5865;
+  --filec: #524c5d;
   --paperc: #a58e7f;
 }
 
@@ -53,6 +58,7 @@
 
   --color-only-black: var(--only-black);
   --color-only-white: var(--only-white);
+  --color-only-redc: var(--only-redc);
 
   --color-sky-day: var(--sky-day);
   --color-sky-night: var(--sky-night);
@@ -60,9 +66,12 @@
   --color-sun: var(--sun);
 
   --color-light: var(--light);
+  --color-night-light: var(--night-light);
   --color-light-source: var(--light-source);
+  --color-red-night-light: var(--red-night-light);
 
   --color-greenc: var(--greenc);
+  --color-redc: var(--redc);
   --color-woodenc: var(--woodenc);
   --color-filec: var(--filec);
   --color-paperc: var(--paperc);
@@ -94,6 +103,51 @@ body {
 
 
 
+
+/* ---------- ITEMS ----------- */
+
+#wall{
+  @apply -z-50;
+
+}
+
+#clock{
+  @apply -z-40
+  absolute
+  left-[30%]
+  top-[8%];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------- */
 button{
   @apply font-hand bg-filec text-foreground font-extrabold;
@@ -102,3 +156,5 @@ button{
 .asd{
   @apply bg-pure-black;
 }
+
+

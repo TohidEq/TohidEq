@@ -3,6 +3,7 @@ import ThemeToggle from '@/components/theme-toggle';
 import { useMounted } from '@/hooks/use-mounted';
 import { useTheme } from 'next-themes';
 import Wall from '@/components/wall/wall';
+import Clock from '../components/clock/clock';
 
 export default function Home() {
 
@@ -14,12 +15,15 @@ export default function Home() {
       <main className="home__countainer">
         <div className="home__content">
           <Wall />
-          <ThemeToggle />aaaaaaa
-          <div className="asd">ASD
+          <Clock />
+
+          <br /><br /><br />
+          <div className="asd">
             <span className='text-yellow-800'>
               {mounted && theme}
             </span>
           </div>
+          <ThemeToggle />
 
         </div>
       </main>

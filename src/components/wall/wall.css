@@ -2,7 +2,6 @@
 
 .wall{
   @apply
-  -z-50
   w-screen
   h-screen
   relative

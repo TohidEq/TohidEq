@@ -1,0 +1,107 @@
+
+@reference "../../app/globals.css";
+
+.clock {
+  @apply grid w-fit ;
+}
+
+.clock__container {
+  @apply w-[10vmax] max-w-80;
+}
+
+.clock__content {
+  @apply w-full;
+}
+
+.clock__frame {
+  @apply relative aspect-square w-full overflow-hidden rounded-full border-2 border-black bg-background;
+}
+
+/* Clock hands */
+
+.clock__h,
+.clock__m,
+.clock__s {
+  @apply absolute left-1/2 rounded-full;
+  bottom: 50%;
+  transform: translateX(-50%) rotate(var(--rotation, 0deg));
+  transform-origin: bottom center;
+}
+
+.clock__h {
+  @apply z-10 h-[25%] w-[2.5px] bg-black;
+}
+
+.clock__m {
+  @apply z-20 h-[30%] w-[2.5px] bg-black;
+}
+
+.clock__s {
+  @apply z-30 h-[42%] w-[2px] bg-redc;
+}
+
+/* Dots at the tips of the hands */
+
+.clock__h span,
+.clock__m span,
+.clock__s span {
+  @apply absolute left-1/2 top-0 block -translate-x-1/2 -translate-y-1/2 rounded-full;
+}
+
+.clock__h span {
+  @apply h-1.5 w-1.5 bg-black
+  shadow-[0_0_8px_2px_var(--night-light)];
+}
+
+.clock__m span {
+  @apply h-1.5 w-1.5 bg-black
+  shadow-[0_0_8px_2px_var(--night-light)];
+}
+
+.clock__s span {
+  @apply h-1 w-1  bg-only-redc
+  shadow-[0_0_8px_2px_var(--red-night-light)];
+}
+
+[data-theme='dark'] .clock__dots__3,
+[data-theme='dark'] .clock__dots__6,
+[data-theme='dark'] .clock__dots__9,
+[data-theme='dark'] .clock__dots__12,
+[data-theme='dark'] .clock__m span,
+[data-theme='dark'] .clock__h span
+{
+  @apply
+
+  border
+  border-light-source ;
+}
+
+/* Clock face markers */
+
+.clock__dots {
+  @apply absolute inset-0;
+}
+
+.clock__dots__3,
+.clock__dots__6,
+.clock__dots__9,
+.clock__dots__12 {
+  @apply absolute block rounded-full bg-black h-1.5 w-1.5
+  border border-foreground;
+}
+
+.clock__dots__12 {
+  @apply left-1/2 top-[7%]  -translate-x-1/2;
+}
+
+.clock__dots__3 {
+  @apply right-[7%] top-1/2 -translate-y-1/2;
+}
+
+.clock__dots__6 {
+  @apply bottom-[7%] left-1/2 -translate-x-1/2;
+}
+
+.clock__dots__9 {
+  @apply left-[7%] top-1/2 -translate-y-1/2;
+}
