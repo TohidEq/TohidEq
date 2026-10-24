@@ -1,17 +1,11 @@
 'use client';
 import ThemeToggle from '@/components/theme-toggle';
+import { useMounted } from '@/hooks/use-mounted';
 import { useTheme } from 'next-themes';
-import { useSyncExternalStore } from 'react';
 
 export default function Home() {
-const emptySubscribe = () => () => {};
-function useMounted() {
-  return useSyncExternalStore(
-    emptySubscribe,
-    () => true,
-    () => false
-  );
-}
+
+  const mounted = useMounted();
   const { theme, setTheme } = useTheme()
 
   return (
@@ -21,7 +15,7 @@ function useMounted() {
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis, obcaecati beatae illo consequatur voluptatum ut, tenetur odio, rerum iure quia laboriosam quibusdam eos nemo eius. Ut explicabo magnam dolorum.</div>
 
         <ThemeToggle />
-        <div className="asd">ASD <span className='text-yellow-800'>{ useMounted() && theme}</span></div>a
+        <div className="asd">ASD <span className='text-yellow-800'>{ mounted && theme}</span></div>a
       </main>
     </div>
   );

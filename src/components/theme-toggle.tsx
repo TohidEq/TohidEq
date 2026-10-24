@@ -1,25 +1,16 @@
 "use client";
 
+import { useMounted } from "@/hooks/use-mounted";
 import { useTheme } from "next-themes";
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
 
-  // ======== Fix next-theme Errors ========== //
-  const emptySubscribe = () => () => {};       //
-  function useMounted() {                      //
-    return useSyncExternalStore(               //
-      emptySubscribe,                          //
-      () => true,                              //
-      () => false                              //
-    );                                         //
-  }                                            //
-  // ========================================= //
+  const mounted = useMounted();
+  const { theme, setTheme } = useTheme()
 
   return (
     <div>
-      The current theme is: {useMounted() && theme}
+      The current theme is: {mounted && theme}
       <br />
       <button onClick={() => setTheme('light')}>Light Mode</button>
       <br />
