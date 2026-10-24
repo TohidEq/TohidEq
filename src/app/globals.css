@@ -7,23 +7,67 @@
   --only-black: #1f1f1f;
   --only-white: #efefef;
 
+
+  --sky-day: #88edff;
+  --sky-nighgt: #203539;
+  --moon: #f9ff88;
+  --sun: #f2ff00;
+
+  --light: #fff956;
+
+
+  --light-source: transparent;
+
   --white: #efefef;
   --black: #1f1f1f;
+  --greenc: #137d13;
+  --woodenc: #7A4110;
+  --filec: #a987ec;
+  --paperc: #dec5b4;
+
+
 
 }
 
 [data-theme='dark'] {
+  --light-source: #fff715;
+
   --white: #959595;
   --black: #0a0a0a;
-
+  --greenc: #0c490c;
+  --woodenc: #3f250f;
+  --filec: #5d5865;
+  --paperc: #a58e7f;
 }
 
 
 @theme {
-  --color-pure-black: var(--pure-black);
 
   --color-foreground: var(--black);
+  --color-black: var(--black);
   --color-background: var(--white);
+  --color-white: var(--white);
+
+  --color-pure-black: var(--pure-black);
+  --color-pure-white: var(--pure-white);
+
+  --color-only-black: var(--only-black);
+  --color-only-white: var(--only-white);
+
+  --color-sky-day: var(--sky-day);
+  --color-sky-night: var(--sky-night);
+  --color-moon: var(--moon);
+  --color-sun: var(--sun);
+
+  --color-light: var(--light);
+  --color-light-source: var(--light-source);
+
+  --color-greenc: var(--greenc);
+  --color-woodenc: var(--woodenc);
+  --color-filec: var(--filec);
+  --color-paperc: var(--paperc);
+
+
 
   --font-hand: var(--font-coming-soon);
   --font-machine: var(--font-special-elite);
@@ -33,11 +77,26 @@
 
 
 body {
-  @apply font-machine text-foreground bg-background;
+  @apply
+  font-hand
+  text-foreground
+  bg-background
+  overflow-x-hidden;
 }
 
+.home__content{
+  @apply
+  relative
+  overflow-x-hidden
+  ;
+}
+
+
+
+
+/* -------------------- */
 button{
-  @apply font-hand;
+  @apply font-hand bg-filec text-foreground font-extrabold;
 }
 
 .asd{

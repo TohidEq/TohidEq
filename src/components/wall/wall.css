@@ -1,0 +1,76 @@
+@reference "../../app/globals.css";
+
+.wall{
+  @apply
+  -z-50
+  w-screen
+  h-screen
+  relative
+  bg-greenc/0
+
+  ;
+}
+
+.wall__container{
+
+}
+
+.wall__content{
+  @apply
+  w-[80vmin]
+  h-[80vmin]
+
+  absolute
+  left-[25%]
+  bottom-1/3
+
+  ;
+}
+
+.wall__x, .wall__y, .wall__z{
+  @apply
+  bg-linear-to-r
+  from-foreground
+  via-foreground
+  to-transparent
+  from-0%
+  via-70%
+  to-90%
+
+  h-[1.5px]
+
+  w-[75vmax]
+
+  origin-bottom-left
+  absolute
+  bottom-0
+  left-0
+  ;
+}
+
+.wall__y{
+  @apply
+  -rotate-90;
+}
+
+.wall__z__container{
+  @apply absolute
+  w-1/2
+  h-full
+  bg-sun/0
+  origin-left
+  perspective-origin-left
+  ;
+
+  transform: perspective(30vw) rotateY(60deg);
+
+}
+.wall__z{
+  @apply
+  h-[4px]
+  w-full
+  -scale-x-100
+  ;
+
+}
+

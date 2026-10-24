@@ -2,20 +2,26 @@
 import ThemeToggle from '@/components/theme-toggle';
 import { useMounted } from '@/hooks/use-mounted';
 import { useTheme } from 'next-themes';
+import Wall from '@/components/wall/wall';
 
 export default function Home() {
 
   const mounted = useMounted();
-  const { theme, setTheme } = useTheme()
+  const { theme } = useTheme()
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16  sm:items-start">
+    <div className="home" id="home">
+      <main className="home__countainer">
+        <div className="home__content">
+          <Wall />
+          <ThemeToggle />aaaaaaa
+          <div className="asd">ASD
+            <span className='text-yellow-800'>
+              {mounted && theme}
+            </span>
+          </div>
 
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis, obcaecati beatae illo consequatur voluptatum ut, tenetur odio, rerum iure quia laboriosam quibusdam eos nemo eius. Ut explicabo magnam dolorum.</div>
-
-        <ThemeToggle />
-        <div className="asd">ASD <span className='text-yellow-800'>{ mounted && theme}</span></div>a
+        </div>
       </main>
     </div>
   );
