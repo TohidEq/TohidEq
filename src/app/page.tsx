@@ -1,9 +1,17 @@
 'use client';
 import ThemeToggle from '@/components/theme-toggle';
 import { useTheme } from 'next-themes';
+import { useSyncExternalStore } from 'react';
 
 export default function Home() {
-
+const emptySubscribe = () => () => {};
+function useMounted() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
+}
   const { theme, setTheme } = useTheme()
 
   return (
@@ -13,7 +21,7 @@ export default function Home() {
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis, obcaecati beatae illo consequatur voluptatum ut, tenetur odio, rerum iure quia laboriosam quibusdam eos nemo eius. Ut explicabo magnam dolorum.</div>
 
         <ThemeToggle />
-        <div className="asd">ASD <span className='text-yellow-800'>{ theme}</span></div>
+        <div className="asd">ASD <span className='text-yellow-800'>{ useMounted() && theme}</span></div>a
       </main>
     </div>
   );
