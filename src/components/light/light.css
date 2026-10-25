@@ -100,7 +100,7 @@
   transition: opacity 500ms ease;
 }
 
-.light__rays--on{
+[data-theme='light'] .light__rays{
   @apply
   bg-linear-to-b
   from-light/42
@@ -137,10 +137,12 @@
 .light__switch__title{
   @apply absolute bottom-full  left-0 ;
 }
+/*  ON and OFF texts */
 .light__switch__content>span {
   @apply text-black-2-light-source
   font-extrabold
-  bg-transparent;
+  bg-transparent
+  transition-all duration-200;
 
 }
 
@@ -167,10 +169,11 @@
   -translate-x-1/2
   bg-light-source
   shadow-[0_0_8px_2px_var(--night-light)]
-  rounded-full;
+  rounded-full
+  transition-all duration-300;
 }
 
-.light__switch__key--off.light__switch__key{
+[data-theme='dark'] .light__switch__key{
   @apply -scale-100;
 
 }

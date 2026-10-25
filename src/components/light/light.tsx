@@ -2,12 +2,10 @@
 
 import { useTheme } from 'next-themes';
 import './light.css';
-import { useMounted } from '@/hooks/use-mounted';
 
 export default function Light() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
-  const mounted = useMounted();
   const toggleTheme = () => {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
@@ -34,7 +32,7 @@ export default function Light() {
             </div>
           </div>
 
-          <span className={`light__rays ${(mounted) && (theme=="light"? "light__rays--on":"light__rays--off")}`} />
+          <span className="light__rays" />
         </button>
 
         {/* Light switch */}
@@ -48,7 +46,7 @@ export default function Light() {
           <span className="light__switch__title">Light</span>
           <div className="light__switch__content">
             <span>ON</span>
-            <div className={`light__switch__key ${(mounted) && (theme=="light"? "light__switch__key--on":"light__switch__key--off")}`}></div>
+            <div className="light__switch__key"></div>
             <span>OFF</span>
           </div>
         </button>

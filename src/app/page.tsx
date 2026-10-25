@@ -8,9 +8,6 @@ import Plant from '../components/plant/plant';
 
 export default function Home() {
 
-  const mounted = useMounted();
-  const { theme } = useTheme()
-
   return (
     <div className="home" id="home">
       <main className="home__countainer">
@@ -21,8 +18,6 @@ export default function Home() {
             <Plant />
             <Light />
           </div>
-
-
         </div>
       </main>
     </div>

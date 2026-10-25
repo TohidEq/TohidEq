@@ -45,7 +45,8 @@
 .clock__h span,
 .clock__m span,
 .clock__s span {
-  @apply absolute left-1/2 top-0 block -translate-x-1/2 -translate-y-1/2 rounded-full;
+  @apply absolute left-1/2 top-0 block -translate-x-1/2 -translate-y-1/2 rounded-full
+  transition-colors duration-300;
 }
 
 .clock__h span {
@@ -70,7 +71,8 @@
 {
   @apply
   border
-  border-light-source ;
+  border-light-source
+  transition-colors duration-300;
 }
 
 
