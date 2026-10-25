@@ -1,98 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --pure-black: #000000;
-  --pure-white: #ffffff;
+  --pure-black:                  #000000;
+  --pure-white:                  #ffffff;
 
-  --only-black: #1f1f1f;
-  --only-white: #efefef;
-
-
-  --sky-day: #88edff;
-  --sky-nighgt: #203539;
-  --moon: #f9ff88;
-  --sun: #f2ff00;
-
-  --light:              #fff956;
-  --night-light:          transparent;
-  --red-night-light:      transparent;
-
-  --light-source:         transparent;
+  --only-black:                  #1f1f1f;
+  --only-white:                  #efefef;
 
 
-  --white:                #efefef;
-  --white-2-light:        #efefef;
-  --white-2-light-source: #efefef;
-  --black:                #1f1f1f;
-  --black-2-light:        #1f1f1f;
-  --black-2-light-source: #1f1f1f;
-  --greenc:               #137d13;
-  --redc:                 #ff3535;
-  --only-redc:            #ff3535;
-  --woodenc:              #7A4110;
-  --filec:                #a987ec;
-  --paperc:               #dec5b4;
+  --sky-day:                     #88edff;
+  --sky-nighgt:                  #203539;
+  --moon:                        #f9ff88;
+  --sun:                         #f2ff00;
+
+  --light:                       #fff956;
+  --night-light:                   transparent;
+  --red-night-light:               transparent;
+
+  --light-source:                  transparent;
+
+
+  --white:                       #efefef;
+  --white-2-light:               #efefef;
+  --white-2-light-source:        #efefef;
+  --black:                       #1f1f1f;
+  --black-2-light:               #1f1f1f;
+  --black-2-light-source:        #1f1f1f;
+  --greenc:                      #137d13;
+  --redc:                        #ff3535;
+  --only-redc:                   #ff3535;
+  --woodenc:                     #7A4110;
+  --filec:                       #a987ec;
+  --paperc:                      #dec5b4;
 
 
 
 }
 
 [data-theme='dark'] {
-  --light-source: #fff715;
-  --night-light: #fff956;
-  --red-night-light: #ff3535;
-  --white: #656565;
-  --white-2-light-source: #fff715;
-  --white-2-light: #fff956;
-  --black: #0a0a0a;
-  --black-2-light-source: #fff715;
-  --black-2-light: #fff956;
-  --greenc: #0c490c;
-  --redc: #7a1313;
-  --woodenc: #3f250f;
-  --filec: #524c5d;
-  --paperc: #a58e7f;
+  --light-source:                #fff715;
+  --night-light:                 #fff956;
+  --red-night-light:             #ff3535;
+  --white:                       #3b3a3a;
+  --white-2-light-source:        #fff715;
+  --white-2-light:               #fff956;
+  --black:                       #0a0a0a;
+  --black-2-light-source:        #fff715;
+  --black-2-light:               #fff956;
+  --greenc:                      #0c490c;
+  --redc:                        #7a1313;
+  --woodenc:                     #3f250f;
+  --filec:                       #524c5d;
+  --paperc:                      #a58e7f;
 }
 
 
 @theme {
 
-  --color-foreground: var(--black);
-  --color-black: var(--black);
-  --color-background: var(--white);
-  --color-white: var(--white);
-  --color-white-2-light: var(--white-2-light);
-  --color-white-2-light-source: var(--white-2-light-source);
-  --color-black-2-light: var(--black-2-light);
-  --color-black-2-light-source: var(--black-2-light-source);
+  --color-foreground:             var(--black);
+  --color-black:                  var(--black);
+  --color-background:             var(--white);
+  --color-white:                  var(--white);
+  --color-white-2-light:          var(--white-2-light);
+  --color-white-2-light-source:   var(--white-2-light-source);
+  --color-black-2-light:          var(--black-2-light);
+  --color-black-2-light-source:   var(--black-2-light-source);
 
-  --color-pure-black: var(--pure-black);
-  --color-pure-white: var(--pure-white);
+  --color-pure-black:             var(--pure-black);
+  --color-pure-white:             var(--pure-white);
 
-  --color-only-black: var(--only-black);
-  --color-only-white: var(--only-white);
-  --color-only-redc: var(--only-redc);
+  --color-only-black:             var(--only-black);
+  --color-only-white:             var(--only-white);
+  --color-only-redc:              var(--only-redc);
 
-  --color-sky-day: var(--sky-day);
-  --color-sky-night: var(--sky-night);
-  --color-moon: var(--moon);
-  --color-sun: var(--sun);
+  --color-sky-day:                var(--sky-day);
+  --color-sky-night:              var(--sky-night);
+  --color-moon:                   var(--moon);
+  --color-sun:                    var(--sun);
 
-  --color-light: var(--light);
-  --color-night-light: var(--night-light);
-  --color-light-source: var(--light-source);
-  --color-red-night-light: var(--red-night-light);
+  --color-light:                  var(--light);
+  --color-night-light:            var(--night-light);
+  --color-light-source:           var(--light-source);
+  --color-red-night-light:        var(--red-night-light);
 
-  --color-greenc: var(--greenc);
-  --color-redc: var(--redc);
-  --color-woodenc: var(--woodenc);
-  --color-filec: var(--filec);
-  --color-paperc: var(--paperc);
+  --color-greenc:                 var(--greenc);
+  --color-redc:                   var(--redc);
+  --color-woodenc:                var(--woodenc);
+  --color-filec:                  var(--filec);
+  --color-paperc:                 var(--paperc);
 
 
 
-  --font-hand: var(--font-coming-soon);
-  --font-machine: var(--font-special-elite);
+  --font-hand:                    var(--font-coming-soon);
+  --font-machine:                 var(--font-special-elite);
 }
 
 
