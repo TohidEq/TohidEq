@@ -1,0 +1,146 @@
+@reference "../../app/globals.css";
+
+.light {
+  @apply
+  absolute
+  top-0
+  left-0
+  inset-0
+  pointer-events-none;
+
+
+}
+
+.light__container {
+  @apply relative w-full h-full;
+}
+
+/* Hanging assembly */
+
+.light__content {
+  @apply absolute top-0 left-1/2
+  flex flex-col items-center
+  p-0 border-0 bg-transparent
+  cursor-pointer pointer-events-auto
+  transition-none;
+
+  transform-origin: top center;
+  animation: light__swing 6s ease-in-out infinite;
+}
+
+/* Cable */
+
+.light__wire {
+  @apply block w-[2px] h-14
+  absolute
+  bg-black
+  origin-top;
+}
+
+
+/* Lamp shape */
+
+.light__lamp{
+  @apply relative
+  -top-[45%]
+  w-24 h-24
+  rounded-full
+  overflow-hidden;
+
+}
+.light__lamp__3angle{
+  @apply bg-foreground
+  relative
+  w-[120%] h-[120%]
+  left-1/2
+  top-1/2
+
+  origin-top-left
+  rotate-45
+
+
+  ;
+}
+.light__lamp__3angle__circle{
+  @apply bg-background/40
+  w-full
+  h-full
+  rounded-full
+  relative
+  overflow-hidden;
+}
+
+.light__bulb{
+  @apply absolute
+  top-0
+  left-0
+  w-1/4 h-1/4
+  rounded-full
+  bg-light-source-2-white;
+}
+
+
+
+/* Glowing bulb */
+
+
+/* Triangular gradient beam */
+
+.light__rays {
+  @apply absolute left-1/2
+  pointer-events-none
+  w-[600px] h-[65vh]
+  -translate-x-1/2
+  -translate-y-6;
+
+  top: calc(100% + 2px);
+
+  clip-path: polygon(47% 0, 53% 0, 100% 100%, 0 100%);
+
+  transition: opacity 500ms ease;
+}
+
+.light__rays--on{
+  @apply
+  bg-linear-to-b
+  from-light/42
+  via-light/20
+  to-transparent;
+}
+
+
+
+/* Switch */
+
+.light__switch {
+}
+
+
+
+/* Swing animation */
+
+@keyframes light__swing {
+  0% {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(-50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .light__content {
+    animation: none;
+  }
+
+  .light__switch {
+    @apply transition-none;
+  }
+}

@@ -5,7 +5,7 @@
   --pure-white:                  #ffffff;
 
   --only-black:                  #1f1f1f;
-  --only-white:                  #efefef;
+  --only-white:                  #cecece;
 
 
   --sky-day:                     #88edff;
@@ -18,11 +18,12 @@
   --red-night-light:               transparent;
 
   --light-source:                  transparent;
+  --light-source-2-white:        #fff715;
 
 
-  --white:                       #efefef;
-  --white-2-light:               #efefef;
-  --white-2-light-source:        #efefef;
+  --white:                       #cecece;
+  --white-2-light:               #cecece;
+  --white-2-light-source:        #cecece;
   --black:                       #1f1f1f;
   --black-2-light:               #1f1f1f;
   --black-2-light-source:        #1f1f1f;
@@ -39,6 +40,7 @@
 
 [data-theme='dark'] {
   --light-source:                #fff715;
+  --light-source-2-white:        #cecece;
   --night-light:                 #fff956;
   --red-night-light:             #ff3535;
   --white:                       #3b3a3a;
@@ -81,6 +83,7 @@
   --color-light:                  var(--light);
   --color-night-light:            var(--night-light);
   --color-light-source:           var(--light-source);
+  --color-light-source-2-white:   var(--light-source-2-white);
   --color-red-night-light:        var(--red-night-light);
 
   --color-greenc:                 var(--greenc);
@@ -96,7 +99,9 @@
 }
 
 
-
+*,* *{
+  @apply select-none;
+}
 
 body {
   @apply
@@ -131,6 +136,10 @@ body {
   top-[8%];
 }
 
+
+#light{
+  @apply z-30;
+}
 
 
 
