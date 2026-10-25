@@ -14,7 +14,7 @@
 }
 
 .clock__frame {
-  @apply relative aspect-square w-full overflow-hidden rounded-full border-2 border-black bg-background;
+  @apply relative aspect-square w-full overflow-hidden rounded-full border md:border-2 border-black bg-background ;
 }
 
 /* Clock hands */
@@ -29,15 +29,15 @@
 }
 
 .clock__h {
-  @apply z-10 h-[25%] w-[2.5px] bg-black;
+  @apply z-10 h-[25%] w-[1.5px] bg-black;
 }
 
 .clock__m {
-  @apply z-20 h-[30%] w-[2.5px] bg-black;
+  @apply z-20 h-[30%] w-[1.5px] bg-black;
 }
 
 .clock__s {
-  @apply z-30 h-[42%] w-[2px] bg-redc;
+  @apply z-30 h-[42%] w-[1px] bg-redc;
 }
 
 /* Dots at the tips of the hands */
@@ -49,32 +49,30 @@
 }
 
 .clock__h span {
-  @apply h-1.5 w-1.5 bg-black
-  shadow-[0_0_8px_2px_var(--night-light)];
+  @apply h-1.5 w-1.5 bg-black-2-light-source
+  shadow-[0_0_2px_2px_var(--night-light)];
 }
 
 .clock__m span {
-  @apply h-1.5 w-1.5 bg-black
-  shadow-[0_0_8px_2px_var(--night-light)];
+  @apply h-1.5 w-1.5 bg-black-2-light-source
+  shadow-[0_0_2px_2px_var(--night-light)];
 }
 
 .clock__s span {
   @apply h-1 w-1  bg-only-redc
-  shadow-[0_0_8px_2px_var(--red-night-light)];
+  shadow-[0_0_2px_2px_var(--red-night-light)];
 }
 
 [data-theme='dark'] .clock__dots__3,
 [data-theme='dark'] .clock__dots__6,
 [data-theme='dark'] .clock__dots__9,
-[data-theme='dark'] .clock__dots__12,
-[data-theme='dark'] .clock__m span,
-[data-theme='dark'] .clock__h span
+[data-theme='dark'] .clock__dots__12
 {
   @apply
-
   border
   border-light-source ;
 }
+
 
 /* Clock face markers */
 
@@ -86,7 +84,7 @@
 .clock__dots__6,
 .clock__dots__9,
 .clock__dots__12 {
-  @apply absolute block rounded-full bg-black h-1.5 w-1.5
+  @apply absolute block rounded-full bg-black h-1 w-1 md:h-1.5 md:w-1.5
   border border-foreground;
 }
 
