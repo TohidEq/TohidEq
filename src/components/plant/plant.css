@@ -1,0 +1,129 @@
+@reference "../../app/globals.css";
+
+
+.plant{
+}
+
+.plant__container{
+}
+
+.plant__content{
+}
+
+.plant__pot{
+  @apply relative;
+}
+
+.plant__pot__container{
+  @apply relative
+  w-10 h-10
+  overflow-hidden;
+}
+
+.plant__pot__top{
+  @apply bg-foreground
+  absolute
+  w-full h-full bottom-1/2 left-0
+  rounded-full;
+}
+
+.plant__pot__bottom{
+  @apply bg-foreground
+  absolute
+  w-[80%] h-full
+  left-[10%] top-0
+  rounded-b-sm;
+}
+
+
+
+
+
+.plant__flower{
+  @apply absolute
+  w-1/2 h-full
+  left-0 bottom-full
+  translate-x-1/3
+  rounded-tr-[100%]
+  border-t-2 border-r-2 border-greenc
+  ;
+}
+
+/* Leafs */
+.plant__flower::before, .plant__flower::after{
+  @apply absolute content-[""] block
+  -top-[2%] left-[42%]
+  bg-greenc
+  origin-left
+  transition-all duration-200
+  w-[70%] h-[20%] rounded-full;
+
+}
+
+.plant__flower::after{
+  @apply rotate-[100deg];
+}
+.plant__flower::before{
+  @apply -rotate-12;
+}
+
+
+[data-theme='dark'] .plant__flower::after{
+  @apply left-[29%] top-[21%] scale-150;
+}
+[data-theme='dark'] .plant__flower::before{
+  @apply left-[109%] scale-150;
+}
+
+
+
+/* Head */
+
+.plant__flower__flytrap__head{
+  @apply absolute
+    w-full
+    h-full
+    bottom-[105%] left-[2%]
+    origin-bottom-left
+    -rotate-[120deg] transition-all duration-150;
+}
+
+[data-theme='dark'] .plant__flower__flytrap__head{
+  @apply -rotate-[20deg] scale-150;
+}
+
+
+.plant__flower__flytrap__upper-jaw{
+  @apply absolute block
+    w-full h-full
+    bottom-0 left-0
+    bg-greenc
+    rounded-r-full
+}
+
+.plant__flower__flytrap__lower-jaw{
+  @apply absolute block
+    w-[66%] h-[76%]
+    bottom-0 right-full
+    bg-greenc
+    rounded-l-full
+    origin-bottom-right
+    -rotate-3;
+}
+
+[data-theme='dark'] .plant__flower__flytrap__lower-jaw{
+  @apply -rotate-45
+}
+
+
+.plant__flower__flytrap__eye{
+  @apply absolute block
+    w-2 h-2
+    left-[35%] top-[34%]
+    rounded-full
+    shadow-[0_0_6px_2px_var(--red-night-light)]
+    bg-red-night-light;
+}
+
+
+

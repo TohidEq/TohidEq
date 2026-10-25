@@ -50,17 +50,17 @@
 
 .clock__h span {
   @apply h-1 w-1 bg-black-2-light-source
-  shadow-[0_0_2px_2px_var(--night-light)];
+  shadow-[0_0_4px_2px_var(--night-light)];
 }
 
 .clock__m span {
   @apply h-1 w-1 bg-black-2-light-source
-  shadow-[0_0_2px_2px_var(--night-light)];
+  shadow-[0_0_4px_2px_var(--night-light)];
 }
 
 .clock__s span {
   @apply h-1 w-1  bg-only-redc
-  shadow-[0_0_2px_2px_var(--red-night-light)];
+  shadow-[0_0_4px_2px_var(--red-night-light)];
 }
 
 [data-theme='dark'] .clock__dots__3,

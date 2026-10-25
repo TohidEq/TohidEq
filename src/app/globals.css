@@ -119,6 +119,13 @@ body {
 }
 
 
+#room{
+  @apply
+  relative
+  overflow-x-hidden
+  h-screen;
+}
+
 
 
 
@@ -132,10 +139,19 @@ body {
 #clock{
   @apply -z-40
   absolute
-  left-[35%]
+  left-[39%]
   -translate-x-1/2
   top-[8%];
 }
+
+
+#plant{
+  @apply absolute
+  top-[64%]
+  right-[13%]
+  ;
+}
+
 
 
 #light{
@@ -145,9 +161,10 @@ body {
 
 #light__switch{
   @apply
-  left-[35%]
+  right-[20vw]
   -translate-x-1/2
-  top-[30%];
+  top-[39vh]
+  -translate-y-full;
 }
 
 
