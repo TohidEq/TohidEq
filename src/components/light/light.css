@@ -113,8 +113,67 @@
 /* Switch */
 
 .light__switch {
+  @apply
+  pointer-events-auto
+  cursor-pointer
+  bg-transparent
+  absolute
+  border-[1.5px] border-foreground
+  p-[1px]
+  rounded-md
+
+  ;
 }
 
+
+.light__switch__content {
+  @apply relative
+  bg-transparent
+  border-[1px]
+  border-foreground/80
+  p-1
+  rounded-md;
+}
+.light__switch__title{
+  @apply absolute bottom-full  left-0 ;
+}
+.light__switch__content>span {
+  @apply text-black-2-light-source
+  font-extrabold
+  bg-transparent;
+
+}
+
+.light__switch__key{
+  @apply relative
+  w-[23px] h-[30px] mx-auto
+  border-[1px] border-foreground
+  rounded-sm
+  ;
+}
+.light__switch__key::before{
+  @apply content-[""] absolute
+  w-2/5 h-2/3
+  left-1/2
+  -translate-x-1/2
+  bg-white
+  border-[1px] border-t-foreground rounded-t-xs border-b-transparent bottom-1/2;
+}
+.light__switch__key::after{
+  @apply content-[""] absolute
+  w-[2px] h-[2px]
+  left-1/2
+  -top-[2px]
+  -translate-x-1/2
+  bg-light-source
+  shadow-[0_0_2px_2px_var(--night-light)]
+  rounded-full;
+}
+
+.light__switch__key--off.light__switch__key{
+  @apply -scale-100;
+
+}
 
 
 /* Swing animation */

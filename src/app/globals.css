@@ -132,13 +132,22 @@ body {
 #clock{
   @apply -z-40
   absolute
-  left-[30%]
+  left-[35%]
+  -translate-x-1/2
   top-[8%];
 }
 
 
 #light{
   @apply z-30;
+}
+
+
+#light__switch{
+  @apply
+  left-[35%]
+  -translate-x-1/2
+  top-[30%];
 }
 
 
