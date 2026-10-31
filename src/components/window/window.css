@@ -1,0 +1,115 @@
+@reference "../../app/globals.css";
+
+
+.window{
+
+}
+
+.window__container{
+
+}
+
+.window__content{
+
+}
+
+
+.window__sun{
+  @apply absolute
+  bg-sun
+  rounded-full
+  w-full aspect-square
+  shadow-[0_0_4px_2px_var(--light)];
+}
+
+.window__moon{
+  @apply absolute
+  w-full aspect-square
+  bg-transparent;
+
+  filter: drop-shadow(0 0 10px var(--moon));
+
+}
+
+.window__moon__content{
+  @apply rounded-full
+  w-full aspect-square
+  top-0 left-0
+  bg-moon;
+
+  clip-path: polygon(
+    33.34% 2.86%, 52.11% 0.05%, 70.59% 4.43%, 86.09% 15.39%,
+    96.40% 31.36%, 100% 50%, 96.40% 68.64%, 86.09% 84.61%,
+    70.59% 95.57%, 52.11% 99.95%, 33.34% 97.14%,
+    44.32% 91.66%, 53.64% 83.66%, 60.73% 73.63%,
+    65.16% 62.19%, 66.67% 50%, 65.16% 37.81%,
+    60.73% 26.37%, 53.64% 16.34%, 44.32% 8.34%
+  );
+}
+
+
+.window__cloud{
+  @apply absolute
+  w-full
+  aspect-square
+  ;
+}
+
+.window__cloud>div{
+  @apply absolute
+  aspect-square
+  top-1/2
+  -translate-y-1/2
+  rounded-full;
+  border-width: 1px;
+}
+
+.window__cloud__left{
+  @apply w-3/5
+  bg-pure-white
+  border-pure-black
+  -left-1/4;
+}
+.window__cloud__center{
+  @apply w-[90%]
+  bg-pure-white
+  border-pure-black;
+}
+.window__cloud__right{
+  @apply w-2/3
+  bg-pure-white
+  border-pure-black
+  -right-1/4;
+}
+
+.window__cloud__white{
+  @apply w-full
+  h-1/2
+  bg-pure-white
+  left-[5%] border-transparent;
+}
+
+.window__star{
+  @apply absolute
+  w-full aspect-square;
+}
+
+.window__star::before,
+.window__star::after{
+  @apply absolute content-[""]
+  w-2/3 h-full
+  left-1/2 top-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+  bg-moon;
+  clip-path: polygon(50% 0, 75% 50%, 48% 100%, 25% 50%);
+}
+.window__star::before{
+  @apply rotate-90;
+}
+
+
+
+
+
+

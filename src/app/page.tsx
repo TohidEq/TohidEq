@@ -1,10 +1,9 @@
 'use client';
-import { useMounted } from '@/hooks/use-mounted';
-import { useTheme } from 'next-themes';
 import Wall from '@/components/wall/wall';
 import Clock from '../components/clock/clock';
 import Light from '../components/light/light';
 import Plant from '../components/plant/plant';
+import Window from '@/components/window/window';
 
 export default function Home() {
 
@@ -17,6 +16,11 @@ export default function Home() {
             <Clock />
             <Plant />
             <Light />
+            <div className="w-8 h-8 m-10  bg-amber-950 relative">
+
+              <Window />
+
+            </div>
           </div>
         </div>
       </main>
