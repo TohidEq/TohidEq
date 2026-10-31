@@ -15,12 +15,8 @@ export default function Home() {
             <Wall />
             <Clock />
             <Plant />
+            <Window />
             <Light />
-            <div className="w-8 h-8 m-10  bg-amber-950 relative">
-
-              <Window />
-
-            </div>
           </div>
         </div>
       </main>

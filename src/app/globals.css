@@ -16,6 +16,7 @@
   --light:                       #fff956;
   --night-light:                   transparent;
   --red-night-light:               transparent;
+  --green-night-light:             transparent;
 
   --light-source:                  transparent;
   --light-source-2-white:        #fff715;
@@ -43,6 +44,7 @@
   --light-source-2-white:        #cecece;
   --night-light:                 #fff956;
   --red-night-light:             #ff3535;
+  --green-night-light:           #137d13;
   --white:                       #3b3a3a;
   --white-2-light-source:        #fff715;
   --white-2-light:               #fff956;
@@ -85,6 +87,7 @@
   --color-light-source:           var(--light-source);
   --color-light-source-2-white:   var(--light-source-2-white);
   --color-red-night-light:        var(--red-night-light);
+  --color-green-night-light:      var(--green-night-light);
 
   --color-greenc:                 var(--greenc);
   --color-redc:                   var(--redc);
