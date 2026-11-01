@@ -143,8 +143,7 @@
 
   bg-background
   text-black-2-light-source
-  text-shadow-[0_0_6px_2px_var(--night-light)]
-
+  text-shadow-[0_0_16px_var(--night-light),0_0_30px_var(--night-light)]
   ;
 }
 
