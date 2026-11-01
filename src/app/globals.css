@@ -29,6 +29,8 @@
   --black-2-light:               #1f1f1f;
   --black-2-light-source:        #1f1f1f;
   --greenc:                      #137d13;
+  --only-greenc:                 #137d13;
+  --only-night-greenc:           #0c490c;
   --redc:                        #ff3535;
   --only-redc:                   #ff3535;
   --woodenc:                     #7A4110;
@@ -76,6 +78,8 @@
   --color-only-black:             var(--only-black);
   --color-only-white:             var(--only-white);
   --color-only-redc:              var(--only-redc);
+  --color-only-greenc:            var(--only-greenc);
+  --color-only-night-greenc:      var(--only-night-greenc);
 
   --color-sky-day:                var(--sky-day);
   --color-sky-night:              var(--sky-night);
