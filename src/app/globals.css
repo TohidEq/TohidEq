@@ -9,7 +9,7 @@
 
 
   --sky-day:                     #88edff;
-  --sky-nighgt:                  #203539;
+  --sky-nighgt:                  #142123;
   --moon:                        #f9ff88;
   --sun:                         #f2ff00;
 
@@ -115,7 +115,10 @@ body {
   font-hand
   text-foreground
   bg-background
-  overflow-x-hidden;
+  overflow-x-hidden
+  overflow-y-hidden
+
+  max-h-[200vh];
 }
 
 .home__content{
@@ -155,9 +158,21 @@ body {
 #plant{
   @apply absolute
   top-[64%]
-  right-[13%]
+  left-[32vw]
   ;
 }
+
+#window{
+  @apply top-[30vh]
+  -translate-y-1/2;
+}
+
+
+#human{
+  @apply top-1/2 left-3/5;
+}
+
+
 
 
 
@@ -168,7 +183,7 @@ body {
 
 #light__switch{
   @apply
-  right-[20vw]
+  right-[9vw]
   -translate-x-1/2
   top-[39vh]
   -translate-y-full;

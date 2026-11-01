@@ -4,6 +4,7 @@ import Clock from '../components/clock/clock';
 import Light from '../components/light/light';
 import Plant from '../components/plant/plant';
 import Window from '@/components/window/window';
+import Human from '../components/human/human';
 
 export default function Home() {
 
@@ -16,6 +17,11 @@ export default function Home() {
             <Clock />
             <Plant />
             <Window />
+
+            <Human />
+
+            {/* <Table /> */}
+
             <Light />
           </div>
         </div>

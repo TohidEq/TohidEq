@@ -2,6 +2,7 @@
 
 
 .plant{
+  @apply -scale-x-100
 }
 
 .plant__container{

@@ -2,12 +2,11 @@
 
 .window{
   @apply absolute
-  top-[30vh]
-  -translate-y-1/2
   overflow-hidden
   w-[80vmin] aspect-square
   origin-left
   perspective-origin-left
+  cursor-pointer
   ;
 
   transform: perspective(30vw) rotateY(40deg);
@@ -117,7 +116,9 @@
 
 .window__frame{
   @apply absolute bg-transparent
-  border-[12px] border-background
+  border-[12px]
+  border-r-[53px]
+  border-background
   top-0 left-0
   w-full h-full
   -z-10;
@@ -128,7 +129,7 @@
   top-1/2 left-1/2
   -translate-x-1/2
   -translate-y-1/2
-  w-full h-0
+  w-[110%] h-0
   border-8 border-background
 }
 .window__frame::before{
@@ -173,7 +174,7 @@
   z-[11]
   transition-all duration-500
   bg-woodenc
-  w-[50%] h-[20vmin]
+  w-[90%] h-[20vmin]
   top-1/2 left-1/2
   -translate-x-1/2
   rounded-full;
