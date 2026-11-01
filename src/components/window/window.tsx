@@ -37,6 +37,7 @@ export default function Window() {
       <div className="window__container">
         <div className="window__content">
           <div className={`window__inside window__inside--${windowState}`}>
+            <div className="window__frame"></div>
             <div className="window__blinds">
               <div className="window__blinds-manager">
                 <span/>
@@ -51,6 +52,7 @@ export default function Window() {
               <div className="window__blind"></div>
             </div>
           </div>
+
           <div className="window__outside"
                 style={{background,}}>
 

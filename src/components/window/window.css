@@ -80,9 +80,8 @@
   bg-linear-to-b
   from-only-greenc
   to-only-night-greenc
-  from-0%
-  to-100%
-
+  from-10%
+  to-80%
   rounded-full;
 
 }
@@ -116,11 +115,33 @@
   z-10;
 }
 
+.window__frame{
+  @apply absolute bg-transparent
+  border-[12px] border-background
+  top-0 left-0
+  w-full h-full
+  -z-10;
+}
+.window__frame::after,
+.window__frame::before{
+  @apply absolute content-[""]
+  top-1/2 left-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+  w-full h-0
+  border-8 border-background
+}
+.window__frame::before{
+  @apply rotate-90;
+}
+
+
+
 .window__blinds{
   @apply w-full h-full
   flex flex-col
   justify-between
-  ;
+  z-10;
 }
 
 .window__blinds-manager{
@@ -165,8 +186,9 @@
 .window__blind{
   @apply w-full h-[10.5%]
   rounded-xs
-  bg-foreground/95
+  bg-foreground/90
   transition-all duration-200;
+
 }
 .window__inside--open .window__blind{
   @apply scale-y-[0.1];
