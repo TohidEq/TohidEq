@@ -89,7 +89,7 @@
 .light__rays {
   @apply absolute left-1/2
   pointer-events-none
-  w-[600px] h-[65vh]
+  w-[500px] h-[45vh]
   -translate-x-1/2
   -translate-y-6;
 

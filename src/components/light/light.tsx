@@ -43,7 +43,7 @@ export default function Light() {
           onClick={toggleTheme}
           aria-label="Toggle light and dark theme"
         >
-          <span className="light__switch__title">Light</span>
+          <span className="light__switch__title"></span>
           <div className="light__switch__content">
             <span>ON</span>
             <div className="light__switch__key"></div>
