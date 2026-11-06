@@ -14,7 +14,7 @@
 }
 
 .clock__frame {
-  @apply relative aspect-square w-full rounded-full border md:border-2 border-black bg-background ;
+  @apply relative aspect-square w-full rounded-full border md:border-2 border-black bg-transparent;
 }
 
 /* Clock hands */

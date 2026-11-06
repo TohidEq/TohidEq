@@ -16,7 +16,7 @@ const MESSAGES_LIST = [
   "Seriously? What exactly are you looking for?",
 ];
 
-const MESSAGE_DELAY = 3000;
+const MESSAGE_DELAY = 6000;
 const FIRST_MESSAGE_DELAY = 500;
 const LIGHT_OFF_DELAY = 30 * 1000;
 const LIGHT_ON_DELAY = 2 * 60 * 1000;
@@ -95,7 +95,7 @@ export default function Human() {
 
   return (
     <div className="human" id="human">
-      <main className="human__countainer">
+      <div className="human__countainer">
         <div className="human__content">
           <div className={`human__message human__message--${messageVisibility} absolute`}>
             {humanMessage}
@@ -117,7 +117,7 @@ export default function Human() {
               </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

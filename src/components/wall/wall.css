@@ -2,35 +2,33 @@
 
 .wall{
   @apply
-  w-screen
-  h-screen
   relative
-  bg-greenc/0
+  w-[100vw]
+  h-[100vh]
+  bg-transparent
 
   ;
 }
 
 .wall__container{
-
+  @apply w-full h-full
+  bg-transparent;
 }
 
 .wall__content{
-  @apply
-  w-[80vmin]
+  @apply w-[80vmin]
   h-[80vmin]
-
+  bg-transparent
   absolute
   left-[25%]
-  bottom-1/3
-
-  ;
+  bottom-1/3;
 }
 
 .wall__x, .wall__y, .wall__z{
   @apply
   bg-linear-to-r
-  from-foreground
-  via-foreground
+  from-black
+  via-black
   to-transparent
   from-0%
   via-70%

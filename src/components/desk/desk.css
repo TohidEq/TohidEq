@@ -1,0 +1,91 @@
+@reference "../../app/globals.css";
+
+.desk{
+  @apply absolute
+  w-screen h-screen
+  pointer-events-none
+  pb-7;
+
+  perspective: 800px;
+}
+
+.desk__container{
+  @apply w-full h-full
+  bg-only-woodenc
+  perspective-near;
+
+
+  transform-origin: bottom center;
+}
+.desk__container::after{
+  @apply absolute content-[""]
+  top-full
+  left-0
+  bg-only-night-woodenc
+  w-full
+  h-8
+  perspective-midrange;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+}
+
+.desk__light{
+  @apply absolute
+  top-[10px]
+  left-[10px]
+  w-[calc(100%-20px)]
+  h-[calc(100%-20px)]
+  overflow-hidden
+  pointer-events-none
+  ;
+}
+.desk__light::after{
+  @apply absolute content-[""]
+  bg-black rounded-full
+  left-[2px]
+  top-full
+  -translate-y-1/2
+  w-[10vmin] h-[8vmin]
+  pointer-events-none
+  ;
+}
+.desk__light__lamp{
+  @apply absolute
+  w-[calc(100vw-10vmin-10px)] h-full
+  left-[calc(5vmin-4px)]
+  top-0
+
+  rounded-tl-[10%]
+  border-foreground
+  border-t-8
+  border-l-8
+  pointer-events-none
+  ;
+
+}
+.desk__light__ray{
+  @apply absolute
+  w-[90%] h-[10vmin]
+  top-0 right-0
+  bg-linear-to-b
+  from-night-light/20
+  to-transparent
+  pointer-events-none
+  ;
+}
+
+
+
+
+
+
+
+
+
+
+.desk__content{
+  @apply w-1/5 h-1/5 mx-auto bg-blue-600/30
+  pointer-events-auto ;
+  perspective: 800px;
+  transform-origin: bottom center;
+}

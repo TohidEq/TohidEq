@@ -34,6 +34,8 @@
   --redc:                        #ff3535;
   --only-redc:                   #ff3535;
   --woodenc:                     #7A4110;
+  --only-woodenc:                #7A4110;
+  --only-night-woodenc:          #3f250f;
   --filec:                       #a987ec;
   --paperc:                      #dec5b4;
 
@@ -79,7 +81,9 @@
   --color-only-white:             var(--only-white);
   --color-only-redc:              var(--only-redc);
   --color-only-greenc:            var(--only-greenc);
+  --color-only-woodenc:           var(--only-woodenc);
   --color-only-night-greenc:      var(--only-night-greenc);
+  --color-only-night-woodenc:     var(--only-night-woodenc);
 
   --color-sky-day:                var(--sky-day);
   --color-sky-night:              var(--sky-night);
@@ -110,20 +114,30 @@
   @apply select-none;
 }
 
-body {
+html{
   @apply
+  max-h-[250dvh]
+  overflow-y-hidden
+  ;
+}
+body {
+  @apply m-0
   font-hand
   text-foreground
   bg-background
   overflow-x-hidden
-  overflow-y-hidden
-
-  max-h-[200vh];
+  max-h-[300vh]
+  ;
 }
+.home__container{
+  @apply
+  overflow-x-hidden
 
+  max-h-[300vh]
+  ;
+}
 .home__content{
   @apply
-  relative
   overflow-x-hidden
   ;
 }
@@ -131,9 +145,11 @@ body {
 
 #room{
   @apply
-  relative
-  overflow-x-hidden
-  h-screen;
+  absolute
+
+  h-screen
+  ;
+  /* h-[calc(200vh+300px)] */
 }
 
 
@@ -142,12 +158,11 @@ body {
 /* ---------- ITEMS ----------- */
 
 #wall{
-  @apply -z-50;
 
 }
 
 #clock{
-  @apply -z-40
+  @apply z-10
   absolute
   left-[39%]
   -translate-x-1/2
@@ -172,6 +187,11 @@ body {
   @apply top-1/2 left-3/5;
 }
 
+
+#desk{
+  @apply top-[50%]
+  ;
+}
 
 
 
