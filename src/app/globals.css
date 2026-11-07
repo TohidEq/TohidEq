@@ -33,6 +33,9 @@
   --only-night-greenc:           #0c490c;
   --redc:                        #ff3535;
   --only-redc:                   #ff3535;
+
+  --only-bluec:                  #253975;
+  --only-night-bluec:            #152350;
   --woodenc:                     #7A4110;
   --only-woodenc:                #7A4110;
   --only-night-woodenc:          #3f250f;
@@ -80,10 +83,12 @@
   --color-only-black:             var(--only-black);
   --color-only-white:             var(--only-white);
   --color-only-redc:              var(--only-redc);
+  --color-only-bluec:             var(--only-bluec);
   --color-only-greenc:            var(--only-greenc);
   --color-only-woodenc:           var(--only-woodenc);
   --color-only-night-greenc:      var(--only-night-greenc);
   --color-only-night-woodenc:     var(--only-night-woodenc);
+  --color-only-night-bluec:       var(--only-night-bluec);
 
   --color-sky-day:                var(--sky-day);
   --color-sky-night:              var(--sky-night);

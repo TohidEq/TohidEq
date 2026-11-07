@@ -1,0 +1,159 @@
+@reference "../../app/globals.css";
+
+
+.folder{
+  @apply w-[90%] h-full
+  font-machine
+  bg-only-night-bluec
+  ml-auto;
+
+}
+
+.folder__container{
+  @apply w-full h-full
+  ;
+}
+
+.folder__content{
+  @apply relative
+  w-full h-full
+  ;
+}
+
+/* MINI COVER (LEFT) */
+.folder__cover-mini{
+  @apply  w-[10%] h-full
+  absolute
+  top-0
+  right-full
+  ;
+  perspective: 300px;
+
+}
+.folder__cover-mini__container{
+  @apply relative
+  w-full h-full
+  bg-only-night-bluec
+  pt-[20%]
+  ;
+  transform-origin: right center;
+  transform: perspective(200px) rotateY(-30deg);
+
+}
+
+.folder__cover-mini__content{
+  @apply
+  text-center
+  overflow-x-hidden
+  w-[90%]
+  mx-auto
+  py-[12%]
+  bg-pure-white
+  rounded-lg;
+}
+
+.folder__cover-mini__content h3,
+.folder__cover-mini__content h4{
+  @apply font-bold;
+}
+.folder__cover-mini__content h3{
+  @apply scale-90 md:scale-100;
+}
+
+.folder__cover-mini__content h4{
+  @apply scale-[0.8] md:scale-90;
+}
+
+.folder__cover-mini__content p{
+  @apply scale-75;
+}
+
+
+.folder__cover-mini__hole{
+  @apply absolute
+  w-[80%] aspect-square
+  bg-pure-white
+  rounded-full
+  bottom-[10%]
+  left-1/2
+  -translate-x-1/2
+  ;
+}
+
+
+.folder__cover-mini__hole span{
+  @apply absolute
+  w-[85%] h-[85%]
+  left-1/2 top-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+  bg-pure-black
+  rounded-full;
+}
+
+
+/* ============= pages ================== */
+.folder__pages{
+  @apply w-full h-full;
+  perspective: 400px;
+}
+
+
+
+/* ====================================== */
+.folder__cover{
+  @apply bg-only-bluec
+  w-full h-full
+  transition-all duration-300;
+  transform-origin: left center;
+
+}
+
+
+.folder__cover:active{
+  transform: perspective(400px) rotateY(-180deg);
+}
+
+
+.folder__cover__content{
+  @apply transition-all duration-150
+}
+.folder__cover:active .folder__cover__content{
+  @apply opacity-0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================== */
+
+.folder__cover__content h2{
+  @apply absolute
+  w-[60%] py-[8%]
+  top-1/6 left-1/2
+  -translate-x-1/2
+  bg-pure-white text-pure-black
+  text-center
+  tracking-widest
+  font-bold
+  border-2 border-pure-black
+  rounded-2xl
+  text-[clamp(1.25rem,0.9375rem+1.5625vw,2.5rem)]
+  ;
+}
+
+
+

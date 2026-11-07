@@ -2,6 +2,7 @@
 'use client';
 
 import './desk.css';
+import Folder from '../folder/folder';
 
 
 export default function Desk(props: {scrollPercent:number}) {
@@ -38,9 +39,13 @@ export default function Desk(props: {scrollPercent:number}) {
           </div>
         </div>
         <div className="desk__content">
-          {rotatePercentToDeg(scrollPercent)}
-          <br />
-          { scrollPercent}
+          {/* TODO: remove this */}
+          {/* {rotatePercentToDeg(scrollPercent)} */}
+          {/* <br /> */}
+          {/* { scrollPercent} */}
+          {/* :ODOT */}
+
+          <Folder />
         </div>
       </div>
     </div>

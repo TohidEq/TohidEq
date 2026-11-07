@@ -86,8 +86,7 @@
   left-1/2
   -translate-x-1/2
   bg-linear-to-b
-  from-light/30
-  via-light/15
+  from-light/15
   to-transparent
   transition-all duration-200
   opacity-0

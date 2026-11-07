@@ -11,6 +11,7 @@
 
 .desk__container{
   @apply w-full h-full
+  rounded-t-2xl
   bg-only-woodenc
   perspective-near;
 
@@ -22,6 +23,7 @@
   top-full
   left-0
   bg-only-night-woodenc
+  rounded-b-2xl
   w-full
   h-8
   perspective-midrange;
@@ -50,8 +52,8 @@
   ;
 }
 .desk__light__lamp{
-  @apply absolute
-  w-[calc(100vw-10vmin-10px)] h-full
+  @apply absolute z-30
+  w-[calc(100vw-10vmin-10px)] h-[calc(100%-4vmin)]
   left-[calc(5vmin-4px)]
   top-0
 
@@ -64,7 +66,7 @@
 
 }
 .desk__light__ray{
-  @apply absolute
+  @apply absolute z-50
   w-[90%] h-[10vmin]
   top-0 right-0
   bg-linear-to-b
@@ -79,12 +81,20 @@
 
 
 
-
+/* ------------------- */
+/* ------------------- */
 
 
 
 .desk__content{
-  @apply w-1/5 h-1/5 mx-auto bg-blue-600/30
+  @apply absolute
+  bg-blue-600/0
+  w-[80vmin]
+  aspect-square
+  top-1/2
+  right-0
+  -translate-y-1/2
+  translate-x-[-10%]
   pointer-events-auto ;
   perspective: 800px;
   transform-origin: bottom center;
