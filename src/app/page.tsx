@@ -1,19 +1,19 @@
 'use client';
 import Wall from '@/components/wall/wall';
-import Clock from '../components/clock/clock';
-import Light from '../components/light/light';
-import Plant from '../components/plant/plant';
+import Clock from '@/components/clock/clock';
+import Light from '@/components/light/light';
+import Plant from '@/components/plant/plant';
 import Window from '@/components/window/window';
-import Human from '../components/human/human';
+import Human from '@/components/human/human';
 import Desk from '@/components/desk/desk';
 import { FullPageProvider, FullPageWrapper, Section } from '@alvalens/react-fullpage-snap';
-import { useEffect, useState } from 'react';
+import react from 'react';
 
 export default function Home() {
 
-  const [scrollPercent, setScrollPercent] = useState<number>(0);
+  const [scrollPercent, setScrollPercent] = react.useState<number>(0);
   const deskTop = 50 ; // ? vh
-  useEffect(() => {
+  react.useEffect(() => {
     const handleScroll = () => {
       const maxScroll = window.innerHeight * (deskTop/1.5/100);
 
@@ -45,6 +45,7 @@ export default function Home() {
             <Window />
 
             <Human />
+
 
             <Desk scrollPercent={scrollPercent} />
 

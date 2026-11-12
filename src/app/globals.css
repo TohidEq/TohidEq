@@ -163,6 +163,8 @@ body {
 /* ---------- ITEMS ----------- */
 
 #wall{
+  @apply
+  overflow-x-hidden;
 
 }
 
@@ -171,7 +173,9 @@ body {
   absolute
   left-[39%]
   -translate-x-1/2
-  top-[8%];
+  top-[8%]
+  overflow-x-hidden;
+  ;
 }
 
 
@@ -184,17 +188,21 @@ body {
 
 #window{
   @apply top-[30vh]
-  -translate-y-1/2;
+  -translate-y-1/2
+  overflow-x-hidden;
+  ;
 }
 
 
 #human{
-  @apply top-1/2 left-3/5;
+  @apply top-1/2 left-3/5
+  ;
 }
 
 
 #desk{
   @apply top-[50%]
+  overflow-x-hidden;
   ;
 }
 
@@ -202,13 +210,14 @@ body {
 
 
 #light{
-  @apply z-30;
+  @apply z-30
+  ;
 }
 
 
 #light__switch{
   @apply
-  right-[9vw]
+  right-[99vw]
   -translate-x-1/2
   top-[39vh]
   -translate-y-full;
@@ -251,5 +260,3 @@ button{
 .asd{
   @apply bg-pure-black;
 }
-
-

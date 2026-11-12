@@ -9,6 +9,7 @@
 
 }
 
+
 .folder__container{
   @apply w-full h-full
   ;
@@ -28,6 +29,7 @@
   right-full
   ;
   perspective: 300px;
+
 
 }
 .folder__cover-mini__container{
@@ -93,7 +95,7 @@
 
 
 /* ============= pages ================== */
-.folder__pages{
+/*.folder__pages{
   @apply w-full h-full;
   perspective: 400px;
 }
@@ -101,37 +103,105 @@
 
 
 /* ====================================== */
-.folder__cover{
-  @apply bg-only-bluec
-  w-full h-full
-  transition-all duration-300;
+
+
+
+
+.folder__pages{
+  @apply relative w-full h-full;
+  perspective: 2200px;
+  transform-style: preserve-3d;
+}
+
+.folder__page{
+  @apply absolute
+  inset-0 text-pure-black
+  h-full
+  transition-transform duration-700 ease-in-out;
+
   transform-origin: left center;
+  /*backface-visibility: hidden;*/
+  transform-style: preserve-3d;
+}
 
+.folder__page--full{
+  @apply w-full;
+}
+.folder__page--normal{
+  @apply w-[85%]
+  bg-pure-white;
 }
 
 
-.folder__cover:active{
-  transform: perspective(400px) rotateY(-180deg);
+.folder__page.is-flipped{
+  animation: page-flip 700ms ease-in-out forwards;
+}
+
+.folder__page.is-unflipped{
+  animation: page-unflip 700ms ease-in-out forwards;
+}
+
+.folder__page__content{
+  @apply relative h-full transition-all duration-[700ms];
+  opacity: 1;
+}
+
+.folder__page::after{
+  @apply content-[""] absolute
+  w-[10%] h-full
+  top-0
+  left-0
+  bg-linear-to-r
+  from-pure-black/20
+  to-transparent;
+}
+
+.folder__page.is-flipped .folder__page__content{
+  animation: page-content-hide 700ms step-end forwards;
+}
+
+.folder__page.is-unflipped .folder__page__content{
+  animation: page-content-show 700ms step-end forwards;
 }
 
 
-.folder__cover__content{
-  @apply transition-all duration-150
+
+.folder__controls{
+  @apply absolute
+  -bottom-2 left-1/2
+  -translate-x-1/2
+  translate-y-[100%]
+  z-50
+  w-full
+  px-5
+  flex ;
 }
-.folder__cover:active .folder__cover__content{
-  @apply opacity-0
+
+.folder__controls button{
+  @apply px-5 py-2
+  w-full
+  font-extrabold
+  rounded-lg
+  text-pure-black
+  font-bold
+  transition-opacity duration-200;
+}
+.btn-r, .btn-l{
+  @apply
+  from-pure-white
+  to-only-woodenc;
+}
+.btn-c{
+  @apply
+  from-only-woodenc
+  via-pure-white
+  to-only-woodenc
+  transition-all duration-300;
 }
 
-
-
-
-
-
-
-
-
-
-
+.folder__controls button:disabled{
+  @apply opacity-10 cursor-not-allowed ;
+}
 
 
 
@@ -139,6 +209,13 @@
 
 
 /* =================================== */
+.folder__cover{
+  @apply
+  w-full h-full
+  transition-all duration-300;
+  background-color: var(--only-bluec) !important;
+}
+
 
 .folder__cover__content h2{
   @apply absolute
@@ -157,3 +234,93 @@
 
 
 
+
+
+@keyframes page-flip{
+  0%{
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+
+  50%{
+    transform: rotateY(-30deg);
+    opacity: 0;
+  }
+
+  100%{
+    transform: rotateY(-180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes page-unflip{
+  0%{
+    transform: rotateY(-180deg);
+    opacity: 1;
+  }
+  50%{
+    transform: rotateY(-30deg);
+    opacity: 0;
+  }
+  100%{
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes page-content-hide{
+  0%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes page-content-show{
+  0%, 50%{
+    opacity: 0;
+  }
+  50.01%, 100%{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*----=========----*/
+/*
+ * A=100%
+ * B=85%
+ * C=? (fill 20% of A) => (15/85)% == 23%
+ */
+.folder__page__flag--normal::before{
+  @apply content-[""] absolute
+    w-[17%]
+    h-[10%]
+    rounded-r-lg
+    left-full
+    -translate-x-1
+}
+#fp-2::before{
+  @apply
+  h-[10%]
+  bg-pure-white
+  top-0
+  ;
+}
+
+#fp-3::before{
+  @apply
+  h-[10%]
+  bg-pure-white
+  top-[11%]
+  ;
+}
