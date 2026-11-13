@@ -50,7 +50,7 @@
   w-[90%]
   mx-auto
   py-[12%]
-  bg-pure-white
+  bg-paperc
   rounded-lg;
 }
 
@@ -74,7 +74,7 @@
 .folder__cover-mini__hole{
   @apply absolute
   w-[80%] aspect-square
-  bg-pure-white
+  bg-only-white
   rounded-full
   bottom-[10%]
   left-1/2
@@ -122,16 +122,44 @@
   transform-origin: left center;
   /*backface-visibility: hidden;*/
   transform-style: preserve-3d;
+
+
+}
+
+.folder__page::before{
+  @apply absolute content-[""]
+  w-[4px] h-full
+  top-0 left-full
+  ;
+}
+.folder__page--full::before{
+  @apply bg-linear-to-r
+    from-pure-black/10
+    to-transparent;
+}
+
+.folder__page--normal::before{
+  @apply bg-linear-to-r
+  from-pure-black/30
+  to-transparent
+  ;
+}
+.folder__page--normal::after{
+  @apply absolute content-[""]
+  w-[7%] h-full
+  top-0
+  left-0
+  bg-linear-to-r from-pure-black/30 to-transparent;
 }
 
 .folder__page--full{
   @apply w-full;
 }
-.folder__page--normal{
-  @apply w-[85%]
-  bg-pure-white;
-}
 
+.folder__page--normal{
+  @apply w-[92%]
+  bg-paperc;
+}
 
 .folder__page.is-flipped{
   animation: page-flip 700ms ease-in-out forwards;
@@ -142,19 +170,21 @@
 }
 
 .folder__page__content{
-  @apply relative h-full transition-all duration-[700ms];
+  @apply relative h-full transition-all duration-[700ms]
+  px-[5%]
+  py-[0.2%]
+  ;
   opacity: 1;
 }
 
-.folder__page::after{
-  @apply content-[""] absolute
-  w-[10%] h-full
-  top-0
-  left-0
-  bg-linear-to-r
-  from-pure-black/20
-  to-transparent;
+.folder__page--normal .folder__page__content::after{
+  @apply absolute content-[""]
+  w-[3%] h-full
+  right-0 top-0
+  ;
 }
+
+
 
 .folder__page.is-flipped .folder__page__content{
   animation: page-content-hide 700ms step-end forwards;
@@ -165,38 +195,38 @@
 }
 
 
+.folder__page.is-unflipped .folder__projects-label{
+  @apply bottom-0
+  ;
+}
+.folder__page.is-flipped .folder__projects-label{
+  @apply top-0
+  ;
+}
+
+
 
 .folder__controls{
   @apply absolute
-  -bottom-2 left-1/2
+  top-full left-1/2
   -translate-x-1/2
-  translate-y-[100%]
   z-50
   w-full
-  px-5
-  flex ;
+  px-[14%]
+  flex gap-1 ;
 }
 
 .folder__controls button{
-  @apply px-5 py-2
+  @apply px-5
   w-full
   font-extrabold
-  rounded-lg
   text-pure-black
-  font-bold
+  bg-paperc
   transition-opacity duration-200;
 }
 .btn-r, .btn-l{
-  @apply
-  from-pure-white
-  to-only-woodenc;
 }
 .btn-c{
-  @apply
-  from-only-woodenc
-  via-pure-white
-  to-only-woodenc
-  transition-all duration-300;
 }
 
 .folder__controls button:disabled{
@@ -222,7 +252,8 @@
   w-[60%] py-[8%]
   top-1/6 left-1/2
   -translate-x-1/2
-  bg-pure-white text-pure-black
+  bg-paperc
+  text-pure-black
   text-center
   tracking-widest
   font-bold
@@ -231,11 +262,254 @@
   text-[clamp(1.25rem,0.9375rem+1.5625vw,2.5rem)]
   ;
 }
+.folder__cover__more{
+  @apply absolute text-center
+  w-[70%]
+  bottom-[10%]
+  left-1/2
+  -translate-x-1/2
+  text-only-white
+  font-extrabold
+  ;
+}
 
 
 
 
 
+/*----=========----*/
+.folder__page__label--normal{
+  @apply absolute
+    flex
+    justify-center
+    items-center
+    rounded-r-lg
+    -translate-x-[1px]
+    left-full
+    text-center
+    md:text-[clamp(0.75rem,0.5rem+0.8vw,1.25rem)]
+    text-[clamp(0.625rem,0.375rem+0.6vw,1rem)]
+    ;
+    writing-mode: vertical-lr;
+}
+.folder__page.is-flipped .folder__page__label{
+  @apply -scale-y-100;
+}
+
+.folder__projects-label{
+  @apply absolute
+  flex
+  flex-wrap
+  justify-around
+  h-[400%]
+  left-full
+  text-only-white
+  ;
+}
+
+/*
+ * A=100%
+ * B=85%
+ * C=? (fill 15% of A in B) => (1500/85)% == 23%
+ * C=? (fill 8% of A in B) => (800/92)% == 8.6% ~ 8.7%
+ */
+
+/*
+* #fp-1 Cover
+* #fp-2 About
+* #fp-3 Skills
+* #fp-4 P1
+* #fp-5 P2
+* #fp-6 P3
+* #fp-7 P4
+* #fp-8 Interests
+* #fp-9 Contact
+*/
+#fp-about .folder__page__label--normal{
+  @apply
+  h-[15%]
+  w-[8.6%]
+  bg-tag-2
+  top-0
+  ;
+}
+#fp-about .folder__page__content::after{
+  @apply bg-tag-2;
+}
+#fp-skills .folder__page__label--normal{
+  @apply
+  h-[15%]
+  w-[8.6%]
+  bg-tag-3
+  top-[calc(15%*1)]
+  ;
+}
+#fp-skills .folder__page__content::after{
+  @apply bg-tag-3;
+}
+#fp-p1 .folder__page__label--normal{
+  @apply
+  h-[8.2%]
+  w-[4%]
+  bg-tag-4
+  top-[calc(15%*2)]
+  ;
+}
+#fp-p1 .folder__page__content::after{
+  @apply bg-tag-4;
+}
+#fp-p2 .folder__page__label--normal{
+  @apply
+  h-[8.2%]
+  w-[4%]
+  bg-tag-5
+  top-[calc(15%*2+8.3%*1)]
+  ;
+}
+#fp-p2 .folder__page__content::after{
+  @apply bg-tag-5;
+}
+#fp-p3 .folder__page__label--normal{
+  @apply
+  h-[8.2%]
+  w-[4%]
+  bg-tag-6
+  top-[calc(15%*2+8.3%*2)]
+  ;
+}
+#fp-p3 .folder__page__content::after{
+  @apply bg-tag-6;
+}
+#fp-p4 .folder__page__label--normal{
+  @apply
+  h-[8.2%]
+  w-[4%]
+  bg-tag-7
+  top-[calc(15%*2+8.3%*3)]
+  ;
+}
+#fp-p4 .folder__page__content::after{
+  @apply bg-tag-7;
+}
+#fp-interests .folder__page__label--normal{
+  @apply
+  h-[15%]
+  w-[8.6%]
+  bg-tag-8
+  top-[calc(15%*2+8.3%*4)]
+  ;
+}
+#fp-interests .folder__page__content::after{
+  @apply bg-tag-8;
+}
+#fp-contact .folder__page__label--normal{
+  @apply
+  h-[15%]
+  w-[8.6%]
+  bg-tag-9
+  top-[calc(15%*3+8.3%*4)]
+  ;
+}
+#fp-contact .folder__page__content::after{
+  @apply bg-tag-9;
+}
+
+
+/* ========= PAGE ========= */
+
+.folder__page__content section{
+  @apply grid grid-cols-1 content-around
+  h-full
+  ;
+}
+
+.folder__page__content header{
+  @apply relative
+  flex flex-wrap justify-between;
+}
+.folder__page__content header span{
+  @apply pt-1 md:pt-2 text-[clamp(1.3125rem,3.75vw,1.6875rem)];
+}
+.folder__page__content header .img{
+  @apply absolute
+  aspect-square h-[110%] md:h-[200%]
+  bg-pure-white
+  -rotate-6
+  border-only-black/70
+  border-2
+  right-0
+  top-1/2
+  -translate-y-2/5
+  -translate-x-1/5
+  ;
+}
+.folder__page__content header img{
+  @apply absolute w-full h-full top-0 left-0;
+}
+
+.folder__page__content ul {
+  @apply list-none flex flex-wrap gap-x-2 md:gap-x-4 gap-y-1 md:gap-y-2;
+}
+
+.folder__page__content li {
+  @apply font-medium
+    border-b border-current/35
+    pb-0.5 md:pb-1;
+}
+
+.folder__page__content li::before {
+  content: "—";
+  @apply mr-1 md:mr-2 opacity-50;
+}
+
+
+
+
+
+
+
+
+.big-med{
+  @apply text-justify text-[clamp(0.9rem,3.1vw,1.3rem)]  leading-[1.2]
+}
+
+
+
+
+.med{
+  @apply text-justify text-[clamp(0.8rem,3vw,1.2rem)] max-w-[430px] leading-[1.2];
+}
+
+
+.smll{
+  @apply text-justify text-[clamp(0.685rem,2.5vw,1.125rem)] max-w-[430px]
+
+  ;
+}
+.brdr-t{
+  @apply border-t border-current/35;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= ANIMATIONS =========== */
 @keyframes page-flip{
   0%{
     transform: rotateY(0deg);
@@ -289,38 +563,4 @@
   50.01%, 100%{
     opacity: 1;
   }
-}
-
-
-
-
-
-/*----=========----*/
-/*
- * A=100%
- * B=85%
- * C=? (fill 20% of A) => (15/85)% == 23%
- */
-.folder__page__flag--normal::before{
-  @apply content-[""] absolute
-    w-[17%]
-    h-[10%]
-    rounded-r-lg
-    left-full
-    -translate-x-1
-}
-#fp-2::before{
-  @apply
-  h-[10%]
-  bg-pure-white
-  top-0
-  ;
-}
-
-#fp-3::before{
-  @apply
-  h-[10%]
-  bg-pure-white
-  top-[11%]
-  ;
 }

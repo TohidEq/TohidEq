@@ -40,7 +40,19 @@
   --only-woodenc:                #7A4110;
   --only-night-woodenc:          #3f250f;
   --filec:                       #a987ec;
-  --paperc:                      #dec5b4;
+  --paperc:                      #f4d8c6;
+  --only-night-paperc:           #7b6c64;
+
+
+  --tag-2:                       #EDE3DA;
+  --tag-3:                       #A29E9B;
+  --tag-4:                       #9D8FC6;
+  --tag-5:                       #69ADC7;
+  --tag-6:                       #71CCA9;
+  --tag-7:                       #B9D36E;
+  --tag-8:                       #EDD0A9;
+  --tag-9:                       #E7AF5B;
+
 
 
 
@@ -62,8 +74,8 @@
   --redc:                        #7a1313;
   --woodenc:                     #3f250f;
   --filec:                       #524c5d;
-  --paperc:                      #a58e7f;
 }
+  /*--paperc:                      #a58e7f;*/
 
 
 @theme {
@@ -89,6 +101,7 @@
   --color-only-night-greenc:      var(--only-night-greenc);
   --color-only-night-woodenc:     var(--only-night-woodenc);
   --color-only-night-bluec:       var(--only-night-bluec);
+  --color-only-night-paperc:      var(--only-night-paperc);
 
   --color-sky-day:                var(--sky-day);
   --color-sky-night:              var(--sky-night);
@@ -108,7 +121,14 @@
   --color-filec:                  var(--filec);
   --color-paperc:                 var(--paperc);
 
-
+  --color-tag-2:                  var(--tag-2);
+  --color-tag-3:                  var(--tag-3);
+  --color-tag-4:                  var(--tag-4);
+  --color-tag-5:                  var(--tag-5);
+  --color-tag-6:                  var(--tag-6);
+  --color-tag-7:                  var(--tag-7);
+  --color-tag-8:                  var(--tag-8);
+  --color-tag-9:                  var(--tag-9);
 
   --font-hand:                    var(--font-coming-soon);
   --font-machine:                 var(--font-special-elite);
@@ -217,7 +237,7 @@ body {
 
 #light__switch{
   @apply
-  right-[99vw]
+  right-[9vw]
   -translate-x-1/2
   top-[39vh]
   -translate-y-full;
