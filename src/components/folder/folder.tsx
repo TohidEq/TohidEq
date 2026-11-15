@@ -4,10 +4,14 @@
 import { useState } from 'react';
 import './folder.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useMounted } from '@/hooks/use-mounted';
 
 export default function Folder() {
   const PAGES_COUNT = 9;
   const [currentPage, setCurrentPage] = useState<number>(0);
+
+  const mounted = useMounted();
 
   const getPageState = (page: number) =>
     currentPage >= page ? 'is-flipped' : 'is-unflipped';
@@ -22,6 +26,8 @@ export default function Folder() {
   const prevPage = () => {
     setCurrentPage((prev) => Math.max(prev - 1, 0));
   };
+
+  if (!mounted) return;
 
   return (
     <div className="folder" id="folder">
@@ -50,7 +56,7 @@ export default function Folder() {
               onClick={prevPage}
               disabled={currentPage === 0}
             >
-              {"-"}
+              {"<-"}
             </button>
 
 
@@ -66,7 +72,7 @@ export default function Folder() {
               onClick={nextPage}
               disabled={currentPage === PAGES_COUNT-1}
             >
-              {"+"}
+              {"->"}
             </button>
           </div>
 
@@ -178,7 +184,26 @@ export default function Folder() {
               </div>
 
               <div className="folder__page__content">
-                <p>page3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, vel veritatis. At, inventore fugiat! Illum laborum ipsam ea voluptatem eveniet praesentium vero? Voluptate neque praesentium rerum quia placeat, cupiditate rem?</p>
+                <section className="fp-p1">
+                  <header>
+                    <span className='w-full'>
+                      <h1 className='pb-0.5 md:pb-1'>P1: DOT</h1>
+                      <p className='scnd-title text-[clamp(1rem,3.1vw,1.4rem)] opacity-70'>Defense of Titans</p>
+                    </span>
+                    <div className="img">
+                      <Image src="/images/ss/ss-p1.png" alt="dot-game-demo"   fill />
+                    </div>
+                  </header>
+                  <p className='med'>
+                    A gaming landing page for a multiplayer battle arena, featuring heroes, NFTs, esports, and game highlights. Translated from Figma into a responsive web experience.
+                  </p>
+                  <ul className='smll'>
+                    <li>Github: <Link href="https://github.com/TohidEq/web-design-2">Repository</Link></li>
+                    <li>Demo: <Link href="https://dot-t-eq.vercel.app/">Live Preview</Link></li>
+                    <li>Figma: <Link href="https://www.figma.com/design/9zO7zf75KQkSMipkQJzqhK/">Design File</Link></li>
+                    <li>Stack: Next.js · TypeScript · Tailwind CSS · SCSS</li>
+                  </ul>
+                </section>
               </div>
             </div>
 
@@ -194,7 +219,26 @@ export default function Folder() {
               </div>
 
               <div className="folder__page__content">
-                <p>page3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, vel veritatis. At, inventore fugiat! Illum laborum ipsam ea voluptatem eveniet praesentium vero? Voluptate neque praesentium rerum quia placeat, cupiditate rem?</p>
+                <section className="fp-p2">
+                  <header>
+                    <span>
+                      <h1 className='pb-0.5 md:pb-1'>P2: Night Trips</h1>
+                      <p className='scnd-title text-[clamp(1rem,3.1vw,1.4rem)] opacity-70'>Escape into the world of travel</p>
+                    </span>
+                    <div className="img">
+                      <Image src="/images/ss/ss-p2.png" alt="night-trips-demo"  fill />
+                    </div>
+                  </header>
+                  <p className='med'>
+                    A travel-themed landing page featuring beautiful destinations and adventure experiences, brought to life from a Figma design.
+                  </p>
+                  <ul className='smll'>
+                    <li>Github: <Link href="https://github.com/TohidEq/web-design-1">Repository</Link></li>
+                    <li>Demo: <Link href="https://web-design-1-night-trips-teq.vercel.app/">Live Preview</Link></li>
+                    <li>Figma: <Link href="https://www.figma.com/design/qinMy6AE08VosT4d52uHxH/">Design File</Link></li>
+                    <li>Stack: Next.js · TypeScript · Tailwind CSS</li>
+                  </ul>
+                </section>
               </div>
             </div>
 
@@ -210,7 +254,25 @@ export default function Folder() {
               </div>
 
               <div className="folder__page__content">
-                <p>page3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, vel veritatis. At, inventore fugiat! Illum laborum ipsam ea voluptatem eveniet praesentium vero? Voluptate neque praesentium rerum quia placeat, cupiditate rem?</p>
+                <section className="fp-p3">
+                  <header>
+                    <span>
+                      <h1 className='pb-0.5 md:pb-1'>P3: T.Eq.Blog</h1>
+                      <p className='scnd-title text-[clamp(1rem,3.1vw,1.4rem)] opacity-70'>Thoughts and words.</p>
+                    </span>
+                    <div className="img">
+                      <Image src="/images/ss/ss-p3.png" alt="tohideq-blog-demo"  fill />
+                    </div>
+                  </header>
+                  <p className='med'>
+                    A personal blog built with MDX, allowing posts and images to be managed through a separate GitHub repository. Designed for a simple and enjoyable reading experience.
+                  </p>
+                  <ul className='smll'>
+                    <li>Github: <Link href="https://github.com/TohidEq/tohideq-blog">Repository</Link></li>
+                    <li>Demo: <Link href="https://tohideq-blog.vercel.app/">Live Preview</Link></li>
+                    <li>Stack: Next.js · TypeScript · Tailwind CSS · Sass · MDX</li>
+                  </ul>
+                </section>
               </div>
             </div>
 
@@ -236,7 +298,24 @@ export default function Folder() {
               </div>
 
               <div className="folder__page__content">
-                <p>page3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, vel veritatis. At, inventore fugiat! Illum laborum ipsam ea voluptatem eveniet praesentium vero? Voluptate neque praesentium rerum quia placeat, cupiditate rem?</p>
+                <section className="fp-p4">
+                  <header>
+                    <span>
+                      <h1 className='pb-0.5 md:pb-1'>P4: JBlogs</h1>
+                      <p className='scnd-title text-[clamp(1rem,3.1vw,1.4rem)] opacity-70'>J(son)Blogs</p>
+                    </span>
+                    <div className="img">
+                      <Image src="/images/ss/ss-p4.png" alt="jblogs-demo" fill />
+                    </div>
+                  </header>
+                  <p className='med'>
+                    A lightweight blogging application built to explore React and working with a JSON-based backend using JSON Server.
+                  </p>
+                  <ul className='smll'>
+                    <li>Github: <Link href="https://github.com/TohidEq/jblogs">Repository</Link></li>
+                    <li>Stack: React · JavaScript · JSON Server</li>
+                  </ul>
+                </section>
               </div>
             </div>
 
@@ -307,35 +386,35 @@ export default function Folder() {
                     <address>
                       <ul>
                         <li>
-                          <a href="mailto:TohidEq@gmail.com">
+                          <Link href="mailto:TohidEq@gmail.com">
                             Email
-                          </a>
+                          </Link>
                         </li>
 
                         <li>
-                          <a
+                          <Link
                             href="https://t.me/tohid_eq"
                             target="_blank"
                             rel="noreferrer"
                           >
                             Telegram
-                          </a>
+                          </Link>
                         </li>
 
                         <li>
-                          <a href="tel:+989307827788">
+                          <Link href="tel:+989307827788">
                             Phone
-                          </a>
+                          </Link>
                         </li>
 
                         <li>
-                          <a
+                          <Link
                             href="https://github.com/TohidEq"
                             target="_blank"
                             rel="noreferrer"
                           >
                             GitHub
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </address>
