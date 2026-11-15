@@ -140,10 +140,10 @@
 }
 
 html{
-  @apply
-  max-h-[250dvh]
-  overflow-y-hidden
-  ;
+  /*;*/
+  /*@apply*/
+  /*overflow-y-hidden*/
+  /*max-h-[250dvh]*/
 }
 body {
   @apply m-0
@@ -151,15 +151,15 @@ body {
   text-foreground
   bg-background
   overflow-x-hidden
-  max-h-[300vh]
   ;
+  /*max-h-[300vh]*/
 }
 .home__container{
   @apply
   overflow-x-hidden
 
-  max-h-[300vh]
   ;
+  /*max-h-[300vh]*/
 }
 .home__content{
   @apply

@@ -8,6 +8,7 @@ import Human from '@/components/human/human';
 import Desk from '@/components/desk/desk';
 import { FullPageProvider, FullPageWrapper, Section } from '@alvalens/react-fullpage-snap';
 import react from 'react';
+import ProjectArchive from '@/components/project-archive/project-archive';
 
 export default function Home() {
 
@@ -55,7 +56,7 @@ export default function Home() {
           </div>
           <FullPageProvider
             scrollingSpeed={1000}
-            anchors={['YourRoom', 'MyFolder', 'More']}
+            anchors={['YourRoom', 'MyFolder', 'Archive-1', 'Archive-2']}
             menu="#navigation"
           >
             <FullPageWrapper>
@@ -65,9 +66,14 @@ export default function Home() {
               <Section className='h-screen '>
                 <span className='invisible hidden'>desk</span>
               </Section>
-              <Section className='h-screen bg-black text-white '>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum et, blanditiis rem nam ducimus recusandae inventore voluptatibus est dolores voluptate ad quam atque quaerat modi! Facere eum porro soluta.</p>
+              <Section className='h-screen bg-pure-black text-white '>
+                <div className="container mx-auto">
+                  <ProjectArchive/>
+                </div>
               </Section>
+              <section>
+                <span className="invisible"></span>
+              </section>
             </FullPageWrapper>
           </FullPageProvider>
         </div>
