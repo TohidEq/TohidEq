@@ -98,10 +98,10 @@ export const projectGroups: ProjectGroup[] = [
         url: "https://github.com/TohidEq/rust-game-riverride",
       },
       {
-        id: "godot-maze",
+        id: "godot-maze-3d",
         name: "gd-game-3d-maze",
         description:
-          "A 3D maze game developed with Godot, featuring procedurally generated mazes with different difficulty levels. Explore DFS-generated easy mazes or take on harder mazes generated using Prim's algorithm. The game also includes adjustable X, Y and Z dimensions, camera controls and mobile-friendly joystick and button controls.",
+          "A 3D maze (6 Ways: Right, Left, Fowrard, Backward, Up, Down) game developed with Godot, featuring procedurally generated mazes with different difficulty levels. Explore DFS-generated easy mazes or take on harder mazes generated using Prim's algorithm. The game also includes adjustable X, Y and Z dimensions, camera controls and mobile-friendly joystick and button controls.",
         technologies: ["Godot", "GDScript", "3D", "DFS", "Prim's Algorithm"],
         url: "https://github.com/TohidEq/gd-game-3d-maze",
       },
@@ -149,7 +149,7 @@ export const projectGroups: ProjectGroup[] = [
         id: "memory-game",
         name: "memory-game",
         description:
-          "A browser-based memory game repository created with Create React App.",
+          "A simple and interactive memory card game where players flip over hidden cards to find matching pairs. Test your memory, improve your concentration, and try to match all pairs using as few moves as possible.",
         technologies: ["React", "JavaScript", "Create React App"],
         url: "https://github.com/TohidEq/memory-game",
       },
@@ -184,7 +184,7 @@ export const projectGroups: ProjectGroup[] = [
         id: "next-counter",
         name: "next-counter",
         description:
-          "A small Next.js application exploring the fundamentals of React-based development and interactive web interfaces.",
+          "A customizable multi-counter web app where the URL determines the grid layout. Set the number of rows and columns directly in the URL to create multiple independent counters, each of which increments with a simple click. A minimal and flexible way to manage multiple counters in one view.",
         technologies: ["Next.js", "React", "JavaScript"],
         url: "https://github.com/TohidEq/next-counter",
       },
@@ -209,7 +209,7 @@ export const projectGroups: ProjectGroup[] = [
         id: "joke-maker",
         name: "joke-maker-site",
         description:
-          "A small website project built with React and Create React App.",
+          "Generates jokes with your name (or any name)",
         technologies: ["React", "JavaScript", "Create React App"],
         url: "https://github.com/TohidEq/joke-maker-site",
       },
@@ -225,7 +225,7 @@ export const projectGroups: ProjectGroup[] = [
         id: "cooking-bro",
         name: "cooking-bro",
         description:
-          "A React-based web project created with Create React App.",
+          "A simple recipe manager for creating, saving, and exploring your favorite recipes.",
         technologies: ["React", "JavaScript", "Create React App"],
         url: "https://github.com/TohidEq/cooking-bro",
       },
@@ -250,15 +250,15 @@ export const projectGroups: ProjectGroup[] = [
         id: "iran-car-plate",
         name: "iran-car-plate-city-yooz",
         description:
-          "A small Iranian vehicle registration plate lookup project written using Yooz, a programming language. Its purpose is to identify the city associated with an Iranian car plate, offering a practical example of using a programming language for a localized lookup tool.",
-        technologies: ["Yooz"],
+          "A small Iranian vehicle registration plate lookup project. Its purpose is to identify the city associated with an Iranian car plate, offering a practical example of using a programming language for a localized lookup tool.",
+        technologies: ["Yooz","JavaScript"],
         url: "https://github.com/TohidEq/iran-car-plate-city-yooz",
       },
       {
         id: "100-hour-clock",
         name: "100-hour-clock",
         description:
-          "An experimental clock project exploring an alternative 100-hour time concept.",
+          "Why should a day have only 24 hours? A different way to experience time. This clock transforms your regular 24-hour day into a 100-hour system, giving you a new perspective on daily planning and time management",
         technologies: ["React", "JavaScript", "Create React App"],
         url: "https://github.com/TohidEq/100-hour-clock",
       },
@@ -266,7 +266,7 @@ export const projectGroups: ProjectGroup[] = [
         id: "wiki-cher",
         name: "wiki-cher",
         description:
-          "A Next.js web application repository.",
+          "Search in WikiPedia",
         technologies: ["Next.js", "React", "JavaScript"],
         url: "https://github.com/TohidEq/wiki-cher",
       },
