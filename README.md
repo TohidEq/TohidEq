@@ -1,4 +1,12 @@
-### ᴡ⠀⠀⠀ᴇ⠀⠀⠀ʟ⠀⠀⠀ᴄ⠀⠀⠀ᴏ⠀⠀⠀ᴍ⠀⠀⠀ᴇ
+#### ⠀⠀ᴡ⠀⠀⠀ᴇ⠀⠀⠀ʟ⠀⠀⠀ᴄ⠀⠀⠀ᴏ⠀⠀⠀ᴍ⠀⠀⠀ᴇ
+
+##### Resume: **[`Markdown`](https://github.com/TohidEq/TohidEq/blob/master/public/resume/TohidEq-Resume.md) . [`PDF`](https://github.com/TohidEq/TohidEq/blob/master/public/resume/TohidEq-Resume.pdf) . [`Download`](https://tohideq.vercel.app/resume/TohidEq-Resume.pdf)**
+
+##### Portfolio: [**TohidEq**.vercel.app](https://TohidEq.vercel.app)
+
+##### **Email**: [TohidEq@gmail.com](mailto:TohidEq@gmail.com)
+##### **Telegram**: [@Tohid_Eq](https://t.me/Tohid_Eq)
+
 
 ```
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⢔⣒⠂⣀⣀⣤⣄⣀⠀⠀
@@ -50,6 +58,3 @@
 <p align="left">
 &emsp;&emsp;<kbd>Python</kbd> <kbd>C++</kbd> <kbd>Rust</kbd> <kbd>Java</kbd>
 </p>
-
-- **Email**: [TohidEq@gmail.com](mailto:TohidEq@gmail.com)
-- **Telegram**: [@Tohid_Eq](https://t.me/Tohid_Eq)
